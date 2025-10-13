@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Coridra - Digital Marketing & Development Agency",
   description: "Cordra Studios is a professional marketing and development agency.",
+  robots: {
+    index: false,
+    follow: false,
+  }
 };
 
 export default function RootLayout({
