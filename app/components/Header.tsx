@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 export default function Header() {
     const pathname = usePathname();
 
-    const getCurrentLink = (path) => {
+    const getCurrentLink = (path: string) => {
         return pathname === path ? "text-cyan-400" : "text-white";
     };
 
