@@ -12,7 +12,8 @@ export default function Header() {
     };
 
     return (
-        <header className="h-20 px-82 flex justify-start items-center bg-gray-900 relative">
+        <header className="h-18 flex justify-center items-center bg-gray-900 relative
+        xl:pr-52 lg:px-0">
             <div className="bg-gray-50 flex justify-center items-center cursor-pointer ">
                 <img className="h-12 w-12" alt="img"/>
             </div>

@@ -29,15 +29,11 @@ body {
 }
 
 ul, li {
-  padding: 0 20px;
+  @apply px-[10px] xl:px-[20px]
 }
 
 .nav-links {
-  @apply font-normal hover:text-blue-700 transition-colors duration-100 cursor-pointer;
-}
-
-.header-submenu-list {
-  @apply py-2 px-2 hover:bg-gray-100 hover:rounded cursor-pointer;
+  @apply font-normal hover:text-blue-300 transition-colors duration-100 cursor-pointer;
 }
 
 .stacked-card {
