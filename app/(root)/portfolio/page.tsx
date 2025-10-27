@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Portfolio() {
   return (
     <>
-      <section className="flex justify-center h-screen bg-cyan-100">
+      <section className="flex justify-center h-1/2 sm:h-screen bg-cyan-100">
         <div className="xl:pl-2">
           <div className="xl:pt-18 grid sm:grid-cols-[1fr_1fr] xl:grid-cols-[1fr_1fr] md:h-192 w-full">
             <div className="xl:pt-12 pt-12">
@@ -28,32 +28,32 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section className="h-screen flex justify-center">
+      <section className="sm:h-1/2 flex justify-center">
         <div className="prevent-height-inheritance">
-          <div className="flex flex-col gap-18 rounded-4xl px-24 py-18 shadow-2xl">
-            <div className="wwd-top-row flex gap-24 w-full justify-around">
+          <div className="flex flex-col gap-4 sm:gap-18 rounded-4xl p-6 sm:px-24 sm:py-18 sm:shadow-2xl">
+            <div className="wwd-top-row flex flex-col gap-2 sm:gap-24 w-full justify-around sm:flex-row shrink">
               <div className="wwd-left-text">
                 <p className="text-green-600 pb-1">Our Goals</p>
-                <h2 className="text-5xl">How it works</h2>
+                <h2 className="text-3xl sm:text-5xl text-nowrap">How it works</h2>
               </div>
-              <div className="wwd-right-text w-112">
-                <p className="text-lg pt-4">Cordra Studios is focused on helping small businesses find the right tools to grow</p>
+              <div className="wwd-right-text max-w-112 min-w-[300px]">
+                <p className="text-lg pb-2 sm:pt-4">Cordra Studios is focused on helping small businesses find the right tools to grow</p>
               </div>
             </div>
-            <div className="wwd-bottom-row flex justify-between">
-              <div className="wwd-item1">
-                <div className="iconimage w-12 h-12 bg-black mb-6"></div>
-                <h3 className="pb-2">Subheading</h3>
+            <div className="wwd-bottom-row flex justify-between flex-col items-center sm:items-start sm:flex-row">
+              <div className="wwd-item">
+                <div className="iconimage"></div>
+                <h3 className="">Subheading</h3>
                 <p>Paragraph</p>
               </div>
-              <div className="wwd-item1">
-                <div className="iconimage w-12 h-12 bg-black mb-6"></div>
-                <h3 className="pb-2">Subheading</h3>
+              <div className="wwd-item">
+                <div className="iconimage"></div>
+                <h3 className="">Subheading</h3>
                 <p>Paragraph</p>
               </div>
-              <div className="wwd-item1">
-                <div className="iconimage w-12 h-12 bg-black mb-6"></div>
-                <h3 className="pb-2">Subheading</h3>
+              <div className="wwd-item">
+                <div className="iconimage"></div>
+                <h3 className="">Subheading</h3>
                 <p>Paragraph</p>
               </div>
             </div>
@@ -62,10 +62,10 @@ export default function Portfolio() {
       </section>
 
       <section className="h-screen">
-        <div className="px-6">
+        <div className="px-2">
           <h2 className="text-2xl text-center pt-12 pb-8">Our Services</h2>
 
-          <div className="flex flex-col items-center sm:items-start sm:justify-center gap-6 sm:flex-row sm:flex-wrap sm:items-stretch">
+          <div className="services-parent flex flex-col items-center sm:items-start sm:justify-center gap-6 sm:flex-row sm:flex-wrap sm:items-stretch">
             <div className="servcie-container web-dev pt-2 p-4">
               <h3 className="text-center pb-2">Web Development</h3>
               <div className="border p-2 mb-6">

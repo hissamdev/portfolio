@@ -40,9 +40,20 @@ ul, li {
   @apply w-98 h-98 border rounded-2xl absolute cursor-pointer transition-transform duration-100 ease-in-out hover:-translate-y-4 hover:scale-100;
 }
 
+.wwd-item div {
+  @apply w-12 h-12 bg-black mb-1 sm:mb-6;
+}
+
+.wwd-item p {
+  @apply pb-4 sm:pb-0;
+}
+
+.services-parent h4 {
+  @apply text-lg;
+}
+
 .servcie-container {
-  min-width: 300px;
-  max-width: 365px;
+  @apply sm:max-w-[365px] min-w-[300px];
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.30);
   @apply flex-1 h-full;
 }
