@@ -40,3 +40,13 @@ ul, li {
   @apply w-98 h-98 border rounded-2xl absolute cursor-pointer transition-transform duration-100 ease-in-out hover:-translate-y-4 hover:scale-100;
 }
 
+.servcie-container {
+  min-width: 300px;
+  max-width: 365px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.30);
+  @apply flex-1 h-full;
+}
+
+.servcie-container h3 {
+  @apply text-xl;
+}

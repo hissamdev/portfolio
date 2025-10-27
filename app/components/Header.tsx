@@ -12,13 +12,13 @@ export default function Header() {
     };
 
     return (
-        <header className="h-18 flex justify-center items-center bg-gray-900 relative
+        <header className="h-18 w-full flex justify-center items-center bg-gray-900 relative
         xl:pr-52 lg:px-0">
             <div className="bg-gray-50 flex justify-center items-center cursor-pointer ">
                 <img className="h-12 w-12" alt="img"/>
             </div>
 
-            <nav className="flex justify-center text-white">
+            <nav className="hidden md:flex justify-center text-white">
                 <ul className="flex">
                     <li><Link href="/" className={"nav-links " + getCurrentLink("/")}>Home</Link></li>
                     <HeaderServicesMenu />
