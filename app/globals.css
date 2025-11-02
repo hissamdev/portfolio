@@ -22,6 +22,10 @@
 
 */
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -38,6 +42,10 @@ ul, li {
 
 .stacked-card {
   @apply w-98 h-98 border rounded-2xl absolute cursor-pointer transition-transform duration-100 ease-in-out hover:-translate-y-4 hover:scale-100;
+}
+
+.wwd-item {
+  @apply max-w-75;
 }
 
 .wwd-item div {
