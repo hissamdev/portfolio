@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,8 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const interFont = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"]
+})
+
 export const metadata: Metadata = {
-  title: "Coridra - Digital Marketing & Development Agency",
+  title: "Professional Digital Marketing & Development Agency | Cordra Digital",
   description: "Cordra Studios is a professional marketing and development agency.",
   robots: {
     index: false,
@@ -29,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${interFont.variable} antialiased`}
       >
         {children}
       </body>

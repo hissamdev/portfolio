@@ -12,7 +12,7 @@ export default function Header() {
     };
 
     return (
-        <header className="h-18 w-full flex justify-center items-center bg-gray-900 relative
+        <header className="h-18 w-full flex justify-center items-center bg-[#515151] relative
         xl:pr-52 lg:px-0">
             <div className="bg-gray-50 flex justify-center items-center cursor-pointer ">
                 <img className="h-12 w-12" alt="img"/>
