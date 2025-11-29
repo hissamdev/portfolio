@@ -1,6 +1,5 @@
 'use client';
 
-import React from "react";
 import { useState } from "react";
 
 export default function ServicesMenu() {
@@ -8,8 +7,8 @@ export default function ServicesMenu() {
 
     return(
         <>
-            <li><p className="nav-links" onClick={() => setServicesMenu(!servicesMenu)}>Services</p>
-            <div className={`h-82 w-122 bg-gray-50 absolute top-full left-108 p-8 border border-black text-black ${servicesMenu ? "block" : "hidden"}`}>
+            <li><p tabIndex={0} className="nav-links select-none" onClick={() => setServicesMenu(!servicesMenu)}>Services</p>
+            <div className={`h-82 w-122 bg-white absolute top-full left-108 p-8 border border-black text-black z-100 ${servicesMenu ? "block" : "hidden"}`}>
                 <div>
                     <h3 className="text-[1.2rem]">SEO Packages</h3>
                     <div className="header-submenu-list"><p>Monthly SEO</p></div>

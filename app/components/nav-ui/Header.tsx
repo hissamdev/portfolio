@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import HeaderServicesMenu from "./ServicesMenu";
+import HeaderServicesMenu from "../ServicesMenu";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
