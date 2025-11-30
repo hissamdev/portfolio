@@ -1,5 +1,4 @@
 import Image from "next/image";
-import StackedCards from "@/app/components/StackedCards";
 import Link from "next/link";
 
 export default function Portfolio() {
