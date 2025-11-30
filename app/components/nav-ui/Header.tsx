@@ -21,10 +21,10 @@ export default function Header() {
             <nav className="hidden md:flex justify-center text-white">
                 <ul className="flex">
                     <li><Link href="/" className={"nav-links " + getCurrentLink("/")}>Home</Link></li>
+                    <li><Link href="/portfolio" className={"nav-links " + getCurrentLink("/portfolio")}>Portfolio</Link></li>
                     <HeaderServicesMenu />
                     <li><Link href="/about" className={"nav-links " + getCurrentLink("/about")}>About Us</Link></li>
                     <li><Link href="/what-we-do" className={"nav-links " + getCurrentLink("/what-we-do")}>What we do</Link></li>
-                    <li><Link href="/portfolio" className={"nav-links " + getCurrentLink("/portfolio")}>Portfolio</Link></li>
                 </ul>
             </nav>
         </header>

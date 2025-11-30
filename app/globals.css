@@ -37,7 +37,7 @@ ul, li {
 }
 
 .nav-links {
-  @apply font-normal hover:text-blue-300 transition-colors duration-100 cursor-pointer;
+  @apply font-normal hover:text-cyan-400 transition-colors duration-100 cursor-pointer;
 }
 
 .stacked-card {
