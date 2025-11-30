@@ -1,11 +1,11 @@
 "use client";
-import { useState } from "react";
+import { ReactHTMLElement, useState } from "react";
 
 export default function Resume() {
     const [info, setInfo] = useState({name: "Ahmed Hissam", email: "ahissam05@gmail.com", title: "Full Stack Developer", school: "", studyTitle: "", studyDate: "", companyName: "", positionTitle: "", mainResponsibilities: "", dateFrom: "", dateTo: ""});
     const [editing, setEditing] = useState({generalSection: false, educationSection: false, workSection: false});
 
-    function handleControlledInput(e) {
+    function handleControlledInput(e: React.ChangeEvent<HTMLInputElement>) {
         setInfo(prev => ({ ...prev, [e.target.name]: e.target.value}))
     }
 
