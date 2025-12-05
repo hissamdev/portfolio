@@ -75,7 +75,11 @@ ul, li {
 }
 
 .feature-item {
-  @apply px-[18px] py-[24px];
+  @apply flex justify-center items-center w-[320px];
+}
+
+.feature-item > div {
+  @apply w-[284px] py-[24px];
 }
 
 .feature-item h4 {
@@ -87,21 +91,34 @@ ul, li {
 }
 
 .service-item {
-  @apply flex items-center gap-[30px] py-[21px] flex items-center gap-[30px] py-[21px];
+  @apply gap-[35px];
+}
+
+.service-item p {
+  @apply pb-[5px];
+}
+
+.text-side {
+  @apply md:w-[698px] flex flex-col gap-[5px];
 }
 
 .text-side h2 {
-  @apply leading-[140%] text-[32px] font-bold ;
+  @apply md:leading-[140%] text-[36px] font-bold ;
 }
 
 .text-side p {
-  @apply leading-[140%];
+  @apply md:text-[24px] leading-[140%];
 }
 
 .wcu-item-text h3 {
-  @apply leading-[29px] text-[24px] font-bold ;
+  @apply leading-[29px] md:text-[24px] font-bold ;
 }
 
 .wcu-item-text p {
-  @apply leading-[24px] text-[20px] w-[386px] ;
+  @apply leading-[24px] md:text-[20px] md:w-[386px] ;
+}
+
+
+.header-controls-container div {
+  @apply p-2 bg-gray-500;
 }

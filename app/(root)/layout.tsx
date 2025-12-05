@@ -1,10 +1,15 @@
-import Header from "../components/nav-ui/Header";
+import ComponentLoader from "../components/ComponentLoader";
 
-export default function HomeLayout({ children }: {children: React.ReactNode;}) {
+export default function HomeLayout({ children }: {children: React.ReactNode}) {
   return (
       <>
-        <Header />
+        <ComponentLoader />
         {children}
       </>
   );
 }
+
+
+// Create a component loader component, it checks whether a component should be loaded.
+// Use pathname to check if the pathname matches
+// If it does, 
