@@ -17,7 +17,7 @@ export default function Header() {
                 <div className="bg-gray-200 flex justify-center items-center cursor-pointer ">
                     <img className="h-12 w-12" alt="img"/>
                 </div>
-                <nav className="hidden md:flex justify-center items-center text-white">
+                <nav className="main-header-nav hidden md:flex justify-center items-center text-white">
                     <ul className="flex">
                         <li><Link href="/" className={"nav-links " + getCurrentLink("/")}>Home</Link></li>
                         <li><Link href="/portfolio" className={"nav-links " + getCurrentLink("/portfolio")}>Portfolio</Link></li>

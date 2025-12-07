@@ -8,7 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
@@ -32,7 +32,7 @@ body {
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
 
-ul, li {
+.main-header-nav ul, .main-header-nav li {
   @apply px-[10px] xl:px-[20px]
 }
 
@@ -121,4 +121,20 @@ ul, li {
 
 .header-controls-container div {
   @apply p-2 bg-gray-500;
+}
+
+.projects-nav-item {
+  @apply flex items-center;
+}
+
+.projects-nav-item div {
+  @apply flex items-center px-2 cursor-pointer h-[30px] hover:bg-white/6 rounded;
+}
+
+.projects-nav-item div p {
+  @apply leading-[30px];
+}
+
+.projects-nav-item div .nav-icon {
+  @apply w-4 h-4 bg-gray-500 mr-[8px];
 }
