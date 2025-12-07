@@ -18,7 +18,7 @@ const interFont = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Professional Digital Marketing & Development Agency | Cordra Digital",
+  title: "Professional Digital Marketing & Development Agency | Cordra Studios",
   description: "Cordra Studios is a professional marketing and development agency.",
   robots: {
     index: false,
