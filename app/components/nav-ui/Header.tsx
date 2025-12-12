@@ -20,7 +20,65 @@ export default function Header() {
                 <nav className="main-header-nav hidden md:flex justify-center items-center text-white">
                     <ul className="flex">
                         <li><Link href="/" className={"nav-links " + getCurrentLink("/")}>Home</Link></li>
-                        <li><Link href="/portfolio" className={"nav-links " + getCurrentLink("/portfolio")}>Portfolio</Link></li>
+                        <li>
+                        <div className="header-portfolio relative z-500 group">
+                            <Link href="/portfolio" className={"nav-links " + getCurrentLink("/portfolio")}>Portfolio</Link>
+                            <div className="hover-bridge-div absolute w-48 h-12 left-[-50] invisible group-hover:visible"></div>
+                            <div className="absolute flex justify-center w-[666px] pb-[26px] bg-white border border-gray-400 left-[-100] top-13 rounded-sm
+                            opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <div className="header-portfolio-menu-alignment  text-black flex flex-col ">
+                                    <div className="pt-[26px] text-[14px] leading-[17px] font-light italic w-[558px]">
+                                        <p>Full-Stack Development | Digital Marketing | SEO Specialist | WordPress Development</p>
+                                    </div>
+
+                                    <div className="flex gap-[47px]">
+                                        <div className="pt-[20px] w-[329px] flex flex-col gap-1.5">
+                                            <div className="border-b-[2px] border-b-[#2600FF] py-[2.5px]"><a href="/portfolio" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Visit Portfolio</a></div>
+                                            <div>
+                                                <div className="border-b-[2px] border-b-[#2600FF] py-[2.5px]">
+                                                    <a href="/portfolio/projects" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Projects</a>
+                                                </div>
+
+                                                <div className="header-projects-nested pt-[11px] pl-[15px] flex flex-col gap-1">
+                                                    <a href="/portfolio/projects" className="header-projects-nested hover:text-[#456AFF]">GitHub UI Clone</a>
+                                                    <a href="/portfolio/projects/small-projects/resume" className="header-projects-nested hover:text-[#456AFF] ">Resume</a>
+                                                    <a className="header-projects-nested text-gray-500">Memory Card</a>
+                                                    <a className="header-projects-nested text-gray-500">Tic Tac Toe</a>
+                                                </div>
+                                            </div>
+
+                                            <div className="pt-[38px]">
+                                                <p className="text-[14px] leading-[17px] italic font-light ">Founder, Ahmed Hissam</p>
+                                            </div>
+                                        </div>
+                                        <div className="pt-5 text-[14px] leading-[17px] font-light flex flex-col">
+                                            <div>
+                                                <p className="pb-[5px] italic">Tech Stack</p>
+                                                <div className="pl-[7px]">
+                                                    <p>HTML</p>
+                                                    <p>CSS</p>
+                                                    <p>React</p>
+                                                    <p>Next JS</p>
+                                                    <p>Tailwind</p>
+                                                    <p>TypeScript</p>
+                                                    <p>Express JS</p>
+                                                    <p>PostgresSQL</p>
+                                                    <p>Prisma</p>
+                                                </div>
+
+                                                <a
+                                                download="Ahmed Hissam Resume.pdf"
+                                                href="Ahmed-Hissam-Resume.pdf"
+                                                className="inline-block mt-[19px] ml-[7px] text-[15px] leading-[18px] px-[11.5px] py-[13px] bg-[#FF9500] hover:bg-[#FF9500]/80 cursor-pointer text-white font-semibold rounded-[2px]">Download my Resume</a>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </li>
                         <HeaderServicesMenu />
                         <li><Link href="/about" className={"nav-links " + getCurrentLink("/about")}>About Us</Link></li>
                         <li><Link href="/what-we-do" className={"nav-links " + getCurrentLink("/what-we-do")}>What we do</Link></li>
@@ -29,7 +87,7 @@ export default function Header() {
             </div>
 
             <div className="download-resume">
-                <a className="inline-block text-white font-bold leading-[19px] text-[16px] px-[34px] py-[9.5px] bg-[#5174FF] hover:bg-[#5174FF]/90 cursor-pointer rounded-[6px]"
+                <a className="inline-block text-white font-bold leading-[19px] text-[16px] px-[34px] py-[9.5px] bg-[#5174FF] hover:bg-[#5174FF]/90 cursor-pointer rounded-md"
                     href="Ahmed-Hissam-Resume.pdf"
                     download="Ahmed Hissam Resume.pdf"
                 >Download Resume</a>
