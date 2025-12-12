@@ -158,3 +158,11 @@ body {
 .techstack-frontend-ul li {
   @apply text-[24px] leading-[34px];
 }
+
+.web-dev-experiences {
+  @apply pl-[42px] pr-[42px];
+}
+
+.web-dev-experiences p {
+  @apply pt-[15px] text-[23px] leading-[28px];
+}

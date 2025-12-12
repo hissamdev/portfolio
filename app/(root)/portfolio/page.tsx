@@ -66,6 +66,32 @@ export default function Portfolio() {
               </div>
             </div>
 
+            <div className="absolute top-620 right-52 h-334">
+              <div className="nav-toc-container sticky top-70">
+                <div className="toc-top-bar pb-3 flex justify-between w-[322px] text-[24px] text-[#456AFF] leading-[29px] font-bold ">
+                  <p className="cursor-pointer hover:text-[#456AFF]/80">Projects</p>
+                  <p className="cursor-pointer hover:text-[#456AFF]/80">Resume</p>
+                  <p className="cursor-pointer hover:text-[#456AFF]/80">LinkedIn</p>
+                </div>
+                <div className="p-px rounded-[10px] bg-[linear-gradient(128deg,#636AFA_20%,#FF1014_100%)]">
+                  <div className="toc-bottom-box h-[342px] rounded-[10px] bg-white pt-[25px] pl-[18px] ">
+                    <div className="flex flex-col">
+                      <p className="pl-2.5 text-[20px] leading-[24px] ">Discover my Skills</p>
+                      <ul className="portfolio-toc-list pt-3 pl-[30px]">
+                        <li>Introduction</li>
+                        <li>Full Stack Development</li>
+                        <li>Digital Marketing</li>
+                        <li>SEO Specialist</li>
+                        <li>Running Paid Ads</li>
+                        <li>Tracking Code Setup</li>
+                        <li className="font-bold underline"><a download="Ahmed Hissam Resume.pdf" href="Ahmed-Hissam-Resume.pdf" className="transition-all duration-100 hover:text-[#456AFF]">Get in Touch</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -90,7 +116,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section className="h-screen flex justify-center pr-[20px]">
+      <section className="flex justify-center pr-[20px]">
         <div className="grid grid-cols-[981px_auto] gap-[152px]">
           <div className="">
             <h2 id="full-stack-section" className="text-[53px] leading-[64px] font-semibold">Full Stack Web Development</h2>
@@ -135,9 +161,104 @@ export default function Portfolio() {
             </div>
 
             <div className="pt-[40px]">
-              <h3 className="text-[39px] leading-[47px] font-bold ">Front-End Development</h3>
-              <div className="grid grid-cols-2 grid-rows-2 gap-[5px]">
-                <div className="row-span-2 text-[30px] leading-[36px] bold">Figma</div>
+              <div>
+                <h3 className="text-[39px] leading-[47px] font-bold">Front-End Development</h3>
+                
+                <div className="pt-[20px] pl-[5px] grid grid-cols-[auto,875px] grid-rows-[auto,auto] gap-y-[5px] gap-x-[18px]">
+                  <div className="col-span-2 text-[30px] leading-[36px] font-bold relative"><p>Figma</p>
+                    <div className="hierarchical-tree-design flex absolute top-[41px]">
+                      <div className="ml-[2px] mt-[1.5px] h-[100px] border-l border-l-3 border-l-[#8000FF] box-border"></div>
+                      <div className="flex flex-col">
+                        <div className="w-[19px] h-[30px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                        <div className="w-[19px] h-[71px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="web-dev-experiences">
+                    <p className="">Created design prototypes in Figma to ensure a neat UI and comfortable UX for best user satisfaction (this website was entirely designed and developed by me)</p>
+                    <p className="">Turned Figma UI designs into code to appear in the browser. In the process, I ensured to match the original design with proper spacing, layout, line heights, text size, padding etc. matching precisely</p>
+                  </div>
+                </div>
+                <div className="pt-[32px] pl-[5px] grid grid-cols-[auto,875px] grid-rows-[auto,auto] gap-y-[5px] gap-x-[18px] ">
+                  <div className="col-span-2 text-[30px] leading-[36px] font-bold relative"><p>React</p>
+                    <div className="hierarchical-tree-design flex absolute top-[41px]">
+                      <div className="ml-[2px] mt-[1.5px] h-[199px] border-l border-l-3 border-l-[#8000FF] box-border"></div>
+                      <div className="flex flex-col">
+                        <div className="w-[19px] h-[30px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                        <div className="w-[19px] h-[71px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                        <div className="w-[19px] h-[99px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="web-dev-experiences">
+                    <p className="">I have experience developing with React (Vite) and Next JS along with Tailwind CSS and TypeScript type-declarations</p>
+                    <p className="">I have experience with React useEffect and useState, and have knowledge of other React hooks. Worked with useState and browser cookies for conditional rendering</p>
+                    <p className="">Furthermore, I have a slight experience using React Native for Android</p>
+                  </div>
+                </div>
+                <div className="pt-[32px] pl-[5px] grid grid-cols-[auto,875px] grid-rows-[auto,auto] gap-y-[5px] gap-x-[18px] ">
+                  <div className="col-span-2 text-[30px] leading-[36px] font-bold relative"><p>Next JS</p>
+                    <div className="hierarchical-tree-design flex absolute top-[41px]">
+                      <div className="ml-[2px] mt-[1.5px] h-[214px] border-l border-l-3 border-l-[#8000FF] box-border"></div>
+                      <div className="flex flex-col">
+                        <div className="w-[19px] h-[30px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                        <div className="w-[19px] h-[43px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                        <div className="w-[19px] h-[71px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                        <div className="w-[19px] h-[71px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="web-dev-experiences">
+                    <p className="">Build this site with Next JS with file based page and API routing</p>
+                    <p className="">Good knowledge of Next JS server and client components, nested layout files, slots and parallel routing etc.</p>
+                    <p className="">I am proficient with Tailwind CSS and I have experience writing TypeScript in Next JS</p>
+                    <p className="font-bold italic underline">Interested? Find my info.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-[40px]">
+                <h3 className="text-[39px] leading-[47px] font-bold">Backend Development</h3>
+                <div className="pt-[32px] pl-[5px] grid grid-cols-[auto,875px] grid-rows-[auto,auto] gap-y-[5px] gap-x-[18px] ">
+                  <div className="col-span-2 text-[30px] leading-[36px] font-bold relative"><p>Express JS / Node</p>
+                    <div className="hierarchical-tree-design flex absolute top-[41px]">
+                      <div className="ml-[2px] mt-[1.5px] h-[158px] border-l border-l-3 border-l-[#8000FF] box-border"></div>
+                      <div className="flex flex-col">
+                        <div className="w-[19px] h-[30px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                        <div className="w-[19px] h-[43px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                        <div className="w-[19px] h-[43px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                        <div className="w-[19px] h-[43px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="web-dev-experiences">
+                    <p className="">Made a mock subscription tracker API for a practice project</p>
+                    <p className="">Implementations of EJS for templating</p>
+                    <p className="">Used HTTPie for understanding API headers</p>
+                    <p className="">Relatively less experience than the front end, but I carry a strong understanding</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-[40px]">
+                <h3 className="text-[39px] leading-[47px] font-bold">Hosting & Deployment</h3>
+                <div className="pt-[32px] pl-[5px] grid grid-cols-[auto,875px] grid-rows-[auto,auto] gap-y-[5px] gap-x-[18px] ">
+                  <div className="col-span-2 text-[30px] leading-[36px] font-bold relative"><p>Netlify CI/CD</p>
+                    <div className="hierarchical-tree-design flex absolute top-[41px]">
+                      <div className="ml-[2px] mt-[1.5px] h-[115px] border-l border-l-3 border-l-[#8000FF] box-border"></div>
+                      <div className="flex flex-col">
+                        <div className="w-[19px] h-[30px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                        <div className="w-[19px] h-[43px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                        <div className="w-[19px] h-[43px] border-b border-b-3 border-b-[#8000FF] box-border"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="web-dev-experiences">
+                    <p className="">Deployed and hosted my Next JS application on Netlify through GitHub</p>
+                    <p className="">Resolved errors that occurred during the Netlify CI/CD Pipeline</p>
+                    <p className="">Thoroughly used Git for deployment and version control</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -148,6 +269,10 @@ export default function Portfolio() {
             <div className="w-[364px] h-[203px] bg-gray-200"></div>
           </div>
         </div>
+      </section>
+
+      <section className="h-screen bg-gray-500">
+
       </section>
     </>
   );
