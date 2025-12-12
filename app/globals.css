@@ -40,6 +40,10 @@ body {
   @apply font-normal hover:text-cyan-400 transition-colors duration-100 cursor-pointer;
 }
 
+.header-projects-nested a {
+  @apply text-[20px] leading-6 font-semibold;
+}
+
 .stacked-card {
   @apply w-98 h-98 border rounded-2xl absolute cursor-pointer transition-transform duration-100 ease-in-out hover:-translate-y-4 hover:scale-100;
 }
@@ -137,4 +141,20 @@ body {
 
 .projects-nav-item div .nav-icon {
   @apply w-4 h-4 bg-gray-500 mr-[8px];
+}
+
+.portfolio-tags-item {
+  @apply inline-block mr-2.5 text-[#3B82F6] text-[24px] leading-[29px]  px-1.5 py-2.5 bg-[#3B82F6]/10 rounded-sm cursor-pointer hover:bg-[#3B82F6]/20;
+}
+
+.portfolio-toc-list {
+  @apply list-disc;
+}
+
+.portfolio-toc-list li {
+  @apply text-[18px] leading-[22px] pb-2.5;
+}
+
+.techstack-frontend-ul li {
+  @apply text-[24px] leading-[34px];
 }
