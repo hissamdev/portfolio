@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { Geist, Geist_Mono, Inter } from "next/font/google";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -36,6 +38,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${interFont.variable} antialiased`}
       >
+
+        {process.env.NODE_ENV === "production" && (<GoogleAnalytics gaId=""/>)}
         {children}
       </body>
     </html>
