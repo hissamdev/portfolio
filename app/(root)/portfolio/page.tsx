@@ -271,8 +271,77 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section className="h-screen bg-gray-500">
+      <section className="h-screen">
+        <div className="lg:pt-[117px] lg:pl-[189px] w-[894px]">
+          <h2 className="text-[48px] leading-[58px] font-bold ">Digital Marketing</h2>
+          <p className="lg:pt-[8px] text-[20px] leading-[24px] ">I have about 2 years of experience in digital marketing, along with a certification from an in-person course of 6 months from Creative IT Institute. Although I don’t have professional experience working for a company yet, I went through practical demonstrations at my course.</p>
+        </div>
 
+        <div className="pt-[95px] flex flex-col items-center">
+          <h3 className="text-[32px] leading-[39px] italic">I can cover many areas of digital marketing</h3>
+          <div className="pt-[44px] flex gap-[65px_75px] w-[1428px] flex-wrap">
+            <div className="dm-cards-container flex">
+              <div className="dm-card-alignment">
+                <div className="dm-card-content">
+                  <div className="dm-card-img w-full h-[181px] bg-gray-200">
+                  </div>
+                  <h4>SEO</h4>
+                  <p>Search Engine Optimization is the process of optimizing a website for better Google rankings</p>
+                </div>
+              </div>
+            </div>
+            <div className="dm-cards-container flex">
+              <div className="dm-card-alignment">
+                <div className="dm-card-content">
+                  <div className="dm-card-img w-full h-[181px] bg-gray-200">
+                  </div>
+                  <h4>SEO</h4>
+                  <p>Search Engine Optimization is the process of optimizing a website for better Google rankings</p>
+                </div>
+              </div>
+            </div>
+            <div className="dm-cards-container flex">
+              <div className="dm-card-alignment">
+                <div className="dm-card-content">
+                  <div className="dm-card-img w-full h-[181px] bg-gray-200">
+                  </div>
+                  <h4>SEO</h4>
+                  <p>Search Engine Optimization is the process of optimizing a website for better Google rankings</p>
+                </div>
+              </div>
+            </div>
+            <div className="dm-cards-container flex">
+              <div className="dm-card-alignment">
+                <div className="dm-card-content">
+                  <div className="dm-card-img w-full h-[181px] bg-gray-200">
+                  </div>
+                  <h4>SEO</h4>
+                  <p>Search Engine Optimization is the process of optimizing a website for better Google rankings</p>
+                </div>
+              </div>
+            </div>
+            <div className="dm-cards-container flex">
+              <div className="dm-card-alignment">
+                <div className="dm-card-content">
+                  <div className="dm-card-img w-full h-[181px] bg-gray-200">
+                  </div>
+                  <h4>SEO</h4>
+                  <p>Search Engine Optimization is the process of optimizing a website for better Google rankings</p>
+                </div>
+              </div>
+            </div>
+            <div className="dm-cards-container flex">
+              <div className="dm-card-alignment">
+                <div className="dm-card-content">
+                  <div className="dm-card-img w-full h-[181px] bg-gray-200">
+                  </div>
+                  <h4>SEO</h4>
+                  <p>Search Engine Optimization is the process of optimizing a website for better Google rankings</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

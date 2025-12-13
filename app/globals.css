@@ -166,3 +166,23 @@ body {
 .web-dev-experiences p {
   @apply pt-[15px] text-[23px] leading-[28px];
 }
+
+.dm-card-alignment {
+  @apply w-[426px] h-[478px] border flex flex-col items-center rounded-[17px];
+}
+
+.dm-card-content {
+  @apply p-[21px];
+}
+
+.dm-card-img {
+  @apply rounded-[21px];
+}
+
+.dm-card-content h4 {
+  @apply pt-[28px] pl-[14px] text-[24px] leading-[29px] font-bold;
+}
+
+.dm-card-content p {
+  @apply px-[14px] pt-[12px] text-[21px] leading-[29px];
+}
