@@ -50,7 +50,7 @@ export default function Portfolio() {
                 <div className="p-px rounded-[10px] bg-[linear-gradient(128deg,#636AFA_20%,#FF1014_100%)]">
                   <div className="toc-bottom-box h-[342px] rounded-[10px] bg-white pt-[25px] pl-[18px] ">
                     <div className="flex flex-col">
-                      <p className="pl-2.5 text-[20px] leading-[24px] ">Discover my Skills</p>
+                      <p className="pl-2.5 text-body-style ">Discover my Skills</p>
                       <ul className="portfolio-toc-list pt-3 pl-[30px]">
                         <li>Introduction</li>
                         <li>Full Stack Development</li>
@@ -76,7 +76,7 @@ export default function Portfolio() {
                 <div className="p-px rounded-[10px] bg-[linear-gradient(128deg,#636AFA_20%,#FF1014_100%)]">
                   <div className="toc-bottom-box h-[342px] rounded-[10px] bg-white pt-[25px] pl-[18px] ">
                     <div className="flex flex-col">
-                      <p className="pl-2.5 text-[20px] leading-[24px] ">Discover my Skills</p>
+                      <p className="pl-2.5 text-body-style ">Discover my Skills</p>
                       <ul className="portfolio-toc-list pt-3 pl-[30px]">
                         <li>Introduction</li>
                         <li>Full Stack Development</li>
@@ -271,10 +271,10 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section className="h-screen">
+      <section className="">
         <div className="lg:pt-[117px] lg:pl-[189px] w-[894px]">
           <h2 className="text-[48px] leading-[58px] font-bold ">Digital Marketing</h2>
-          <p className="lg:pt-[8px] text-[20px] leading-[24px] ">I have about 2 years of experience in digital marketing, along with a certification from an in-person course of 6 months from Creative IT Institute. Although I don’t have professional experience working for a company yet, I went through practical demonstrations at my course.</p>
+          <p className="lg:pt-[8px] text-body-style ">I have about 2 years of experience in digital marketing, along with a certification from an in-person course of 6 months from Creative IT Institute. Although I don’t have professional experience working for a company yet, I went through practical demonstrations at my course.</p>
         </div>
 
         <div className="pt-[95px] flex flex-col items-center">
@@ -339,6 +339,396 @@ export default function Portfolio() {
                   <p>Search Engine Optimization is the process of optimizing a website for better Google rankings</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-[168px] h-[360px] bg-[#5973FF] flex justify-center items-center">
+        <div className="flex w-[1434px] justify-between">
+          <div className="pt-[43px]">
+            <h5 className="text-[43px] leading-[52px] font-bold text-white">Interested so far?</h5>
+            <p className="pt-[5px] text-[29px] leading-[35px] font-bold text-white">I am currently open to work! Feel free to get in touch</p>
+            <a className="mt-[20px] inline-block px-[19px] py-[12.5px] bg-white text-[18px] leading-[22px] text-black font-bold rounded-[6px]">Download Resume</a>
+          </div>
+
+          <div className="w-[507px] h-[268px] bg-white rounded-[28px]">
+            <div className="section-cta-interested pl-[56px] pt-[30px]">
+              <h5 className="text-[21px] leading-[25px]">Table of Contents</h5>
+              <ul className="pt-[8px] pl-8 text-[21px] leading-[139.2%] list-disc">
+                <li>SEO</li>
+                <li>Paid Ads</li>
+                <li>Tracking Code Setup</li>
+                <li>Social Media Management</li>
+                <li>Marketing Funnels</li>
+                <li>Data Analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-[95px] ">
+        <div className="flex flex-col items-center">
+          <h4 className="text-center text-[36px] leading-[44px] font-bold ">Experience & Skills</h4>
+          <p className="pt-[6px] w-[757px] text-center text-[24px] leading-[29px]">Let’s talk about my skills and experience in the digital marketing topics mentioned above starting with:</p>
+        </div>
+
+        <div className="pt-[42px] pl-[227px]">
+          <h3 className="text-[37px] leading-[45px] font-bold">SEO (Search Engine Optimization)</h3>
+          <p className="pt-[12px] w-[847px] text-body-style">I am an SEO expert and have a deep understanding of optimizing websites or webpages for better Google rankings and visibility.</p>
+        </div>
+
+        <div className="pt-[49px] flex flex-col items-center">
+          <div className="skill-display-container">
+            <div className="skill-display-left">
+              <h4 className="">Keyword Research</h4>
+              <p className="text-body-style">Keyword research is one of the most important parts of SEO, and often marks the start of  your website’s journey.</p>
+              <hr className="skill-display-hr1 "></hr>
+              <p className="text-body-style">Keyword research is one of the most important parts of SEO, and often marks the start of  your website’s journey.</p>
+              <hr className="skill-display-hr2"></hr>
+              <p className="text-body-style">Keyword research is one of the most important parts of SEO, and often marks the start of  your website’s journey.</p>
+              <hr className="skill-display-hr3"></hr>
+            </div>
+
+            <div>
+              <div className="w-[333px] h-[188px] bg-gray-200"></div>
+              <div className="mt-[26px] w-[333px] h-[188px] bg-gray-200"></div>
+            </div>
+          </div>
+
+          <h4 className="pt-[65px] text-[36px] leading-[44px] font-bold">Keyword Research Template</h4>
+          <div className="mt-[29px] w-[857px] h-[415px] bg-gray-200"></div>
+
+          <h4 className="pt-[86px] text-[36px] leading-[44px] font-bold">Keyword Research Process</h4>
+          <h5 className="pt-[20px] text-[25px] leading-[30px] text-center ">This is a summary of where the efforts go while choosing a keyword</h5>
+
+          <div className="pt-[47px] flex">
+            <div className="krp-flexbox">
+              <h6 className="">Seed keywords</h6>
+              <ol className="">
+                <li className="main-li">Generate a list of high quality seed keywords</li>
+                <li className="">Select keywords that match:</li>
+                <ul className="pt-[6px]">
+                  <li>Search volume</li>
+                  <li>Traffic Potential</li>
+                  <li>Business Potential</li>
+                  <li>Keyword Difficulty</li>
+                </ul>
+              </ol>
+            </div>
+
+            <div className="krp-flexbox">
+              <h6 className="">Search Intent</h6>
+              <ol className="">
+                <li className="main-li">Ensure keyword matches searcher intent</li>
+                <li className="">Conduct SERP analysis for:</li>
+                <ul className="pt-[6px]">
+                  <li>Content Type</li>
+                  <li>Content Angle</li>
+                  <li>Content Format</li>
+                </ul>
+              </ol>
+            </div>
+
+            <div className="krp-flexbox">
+              <h6 className="">Keyword Difficulty</h6>
+              <ol className="">
+                <li className="main-li">We should be able to rank for our selected keyword</li>
+                <li className="">Look at the top pages ranking for the keyword and access how many pages might have weak SEO for that keyword.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="pt-[180px] flex flex-col items-center">
+          <div className="">
+            <div className="self-start text-[28px] leading-[34px]">
+              <a>Digital marketing</a> <span>/ </span>
+              <a>SEO</a> <span>/ </span>
+              <a>Keyword Research</a> <span>/ </span>
+              <a>On Page</a>
+            </div>
+            <div className="skill-display-container mt-[37px]">
+                <div className="skill-display-left">
+                  <h4 className="">On Page SEO</h4>
+                  <p className="text-body-style">Keyword research is one of the most important parts of SEO, and often marks the start of  your website’s journey.</p>
+                  <hr className="skill-display-hr1 "></hr>
+                  <p className="text-body-style">Keyword research is one of the most important parts of SEO, and often marks the start of  your website’s journey.</p>
+                  <hr className="skill-display-hr2"></hr>
+                  <p className="text-body-style">Keyword research is one of the most important parts of SEO, and often marks the start of  your website’s journey.</p>
+                  <hr className="skill-display-hr3"></hr>
+                </div>
+                <div>
+                  <div className="w-[333px] h-[188px] bg-gray-200"></div>
+                  <div className="mt-[26px] w-[333px] h-[188px] bg-gray-200"></div>
+                </div>
+            </div>
+
+              <div className="pt-[82px] flex justify-between">
+                <div>
+                  <h4 className="text-[34px] leading-[41px] font-bold">On Page Elements to Prioritize</h4>
+                  <p className="pt-[10px] text-body-style max-w-[1053px]">These are some essential on page elements to ensure that our page is set to appear high on Google and create a strong impression to potential users</p>
+                  <ul className="on-page-ul pt-[10px] pl-8 list-disc text-body-style space-y-[14px]">
+                    <li>Meta Title, Description, Hreflang etc. tags. </li>
+                    <li>Meta Title, Description, Hreflang etc. tags. </li>
+                    <li>Meta Title, Description, Hreflang etc. tags. </li>
+                    <li>Meta Title, Description, Hreflang etc. tags. </li>
+                    <li>Meta Title, Description, Hreflang etc. tags. </li>
+                    <li>Meta Title, Description, Hreflang etc. tags. </li>
+                  </ul>
+                </div>
+                
+                <div className="w-[356px] h-[203px] bg-gray-200 self-end"></div>
+              </div>
+          </div>
+
+          <div className="skill-display-container mt-[190px]">
+                <div className="skill-display-left">
+                  <h4 className="">Technical SEO</h4>
+                  <p className="text-body-style">Keyword research is one of the most important parts of SEO, and often marks the start of  your website’s journey.</p>
+                  <hr className="skill-display-hr1 "></hr>
+                  <p className="text-body-style">Keyword research is one of the most important parts of SEO, and often marks the start of  your website’s journey.</p>
+                  <hr className="skill-display-hr2"></hr>
+                  <p className="text-body-style">Keyword research is one of the most important parts of SEO, and often marks the start of  your website’s journey.</p>
+                  <hr className="skill-display-hr3"></hr>
+                </div>
+                <div>
+                  <div className="w-[333px] h-[188px] bg-gray-200"></div>
+                  <div className="mt-[26px] w-[333px] h-[188px] bg-gray-200"></div>
+                </div>
+            </div>
+
+            <div className="pt-[190px] flex gap-[35px]">
+              <div className="flex flex-col items-center">
+                <div className="w-[845px] h-[410px] bg-gray-200"></div>
+                <p className="pt-[19px] w-[630px] text-body-style italic text-center">This template is used to check for common issues across a website</p>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <div className="w-[845px] h-[410px] bg-gray-200"></div>
+                <p className="pt-[19px] w-[630px] text-body-style italic text-center">This template is used to check for common issues across a website</p>
+              </div>
+            </div>
+
+            <div className="pt-[127px]">
+              <h3 className="text-[41px] leading-[50px] font-bold text-center">Off Page SEO</h3>
+              <h4 className="pt-[9px] text-[37px] leading-[45px] text-center w-[1022px]">Google prioritizes both the quality and quantity of backlinks pointing to your website</h4>
+              <h4 className="pt-[39px] text-[27px] leading-[33px] font-bold text-center">I can assist with the creation of backlinks through various working methods</h4>
+            </div>
+            <div className="pt-[35px] flex gap-[113px]">
+              <div className="p-2.5 w-[397px] flex flex-col gap-[17px]">
+                <div className="flex items-center">
+                  <div className="mr-[18px] w-[50px] h-[50px] bg-gray-200"></div>
+                  <h5 className="text-[27px] leading-[33px] font-bold">Guest Posting</h5>
+                </div>
+                <div>
+                  <p className="text-[19px] leading-[23px]">Post high quality blog content on guest sites and point to your website. This transfers link juice from the referring site</p>
+                </div>
+              </div>
+
+              <div className="p-2.5 w-[397px] flex flex-col gap-[17px]">
+                <div className="flex items-center">
+                  <div className="mr-[18px] w-[50px] h-[50px] bg-gray-200"></div>
+                  <h5 className="text-[27px] leading-[33px] font-bold">HARO</h5>
+                </div>
+                <div>
+                  <p className="text-[19px] leading-[23px]">Help a Reporter Out, by providing them the info they are looking for and including your link as a source reference</p>
+                </div>
+              </div>
+
+              <div className="p-2.5 w-[397px] flex flex-col gap-[17px]">
+                <div className="flex items-center">
+                  <div className="mr-[18px] w-[50px] h-[50px] bg-gray-200"></div>
+                  <h5 className="text-[27px] leading-[33px] font-bold">Skyscraper Method</h5>
+                </div>
+                <div>
+                  <p className="text-[19px] leading-[23px]">The process of creating a higher quality page than your competitor and asking the backlink to point to you instead</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div className="pl-[227px] pt-[76px]">
+          <h3 className="text-[37px] leading-[45px] font-bold ">SEO Tools for Better Results</h3>
+          <p className="pt-[3px] text-[25px] leading-[30px]">I have working experience with the following tools and platforms and more</p>
+        </div>
+
+          <div className="mt-[35px] flex justify-center">
+            <div className="w-[691px] h-[220px] pl-[33px] pt-[23px] pb-[41px] pr-[49px] justify-center items-center flex border">
+              <div className="flex text-[23px] leading-[28px]">
+                <div className="w-[359px] flex flex-col gap-2.5">
+                  <h4 className="">From Google</h4>
+                  <div className="flex gap-2.5">
+                    <div className="w-[28px] h-[28px] bg-gray-200"></div>
+                    <p>Google Search Console</p>
+                  </div>
+                  <div className="flex gap-2.5">
+                    <div className="w-[28px] h-[28px] bg-gray-200"></div>
+                    <p>Google Analytics</p>
+                  </div>
+                  <div className="flex gap-2.5">
+                    <div className="w-[28px] h-[28px] bg-gray-200"></div>
+                    <p>Google Business Profile</p>
+                  </div>
+                </div>
+                <div className="w-[203px] flex flex-col gap-2.5">
+                  <h4 className="">External Tools</h4>
+                  <div className="flex gap-2.5">
+                    <div className="w-[28px] h-[28px] bg-gray-200"></div>
+                    <p>Ahrefs</p>
+                  </div>
+
+                  <div className="flex gap-2.5">
+                    <div className="w-[28px] h-[28px] bg-gray-200"></div>
+                    <p>Semrush</p>
+                  </div>
+
+                  <div className="flex gap-2.5">
+                    <div className="w-[28px] h-[28px] bg-gray-200"></div>
+                    <p>ScreamingFrog</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="dm-added-info-col pt-[120px] pl-[227px] flex flex-col space-y-[64px]">
+            <div>
+              <h3>Running Paid Ad Campaigns</h3>
+              <p>I can create and run ad campaigns on platforms like Facebook, Instagram, YouTube, Google Search, Pinterest and LinkedIn</p>
+            </div>
+
+            <div>
+              <h3>Setting up Tracking Codes on a Website</h3>
+              <p>I am able to embed tracking codes into websites either directly or through Google Tag Manager. I can set up Pixel, Conversion API, Google Analytics etc.</p>
+            </div>
+
+            <div>
+              <h3>Social Media Management (SMM)</h3>
+              <p>I can manage social media accounts including scheduling content and collaborating with the creative team.</p>
+            </div>
+
+            <div>
+              <h3>Marketing Funnels</h3>
+              <p>I can help set up marketing funnels that generate warm leads and convert into sales.</p>
+            </div>
+
+            <div>
+              <h3>Analytics Research</h3>
+              <p>Understand and take effective measures based on user behavior and interaction data from analytics tools like GA</p>
+            </div>
+          </div>
+      </section>
+
+      <section className="pt-[109px]">
+        <div className="flex flex-col items-center">
+          <h2 className="text-[45px] leading-[54px] font-bold">Personal Work Preferences</h2>
+          <h3 className="text-[35px] leading-[42px]">Here are my preferred responsibilities, what’s included and what’s not</h3>
+        </div>
+
+        <div className="mt-[39px] h-[377px] bg-[#D36060] flex justify-center items-center gap-[12px]">
+          <div className="bg-white w-[582px] h-[327px] px-[19px] py-[24px]">
+            <h4 className="text-[23px] leading-[28px] font-bold text-center">Main Responsibilities</h4>
+            <div className="pt-[10px] flex flex-col gap-[10px]">
+              <div className="flex gap-2.5">
+                <div className="w-7 h-7 bg-gray-200"></div>
+                <p className="text-[23px] leading-[28px]">Develop and manage websites (front and back end)</p>
+              </div>
+              <div className="flex gap-2.5">
+                <div className="w-7 h-7 bg-gray-200"></div>
+                <p className="text-[23px] leading-[28px]">SEO Implementation</p>
+              </div>
+              <div className="flex gap-2.5">
+                <div className="w-7 h-7 bg-gray-200"></div>
+                <p className="text-[23px] leading-[28px]">Assist with Backlinks</p>
+              </div>
+              <div className="flex gap-2.5">
+                <div className="w-7 h-7 bg-gray-200"></div>
+                <p className="text-[23px] leading-[28px]">Create and Run Ad Campaigns</p>
+              </div>
+              <div className="flex gap-2.5">
+                <div className="w-7 h-7 bg-gray-200"></div>
+                <p className="text-[23px] leading-[28px]">Manage Social Media Accounts</p>
+              </div>
+              <div className="flex gap-2.5">
+                <div className="w-7 h-7 bg-gray-200"></div>
+                <p className="text-[23px] leading-[28px]">...and more</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white w-[582px] h-[327px] px-[19px] py-[24px]">
+            <h4 className="text-[23px] leading-[28px] font-bold text-center">Not Included</h4>
+            <div className="pt-[10px] flex flex-col gap-[10px]">
+              <div className="flex gap-2.5">
+                <div className="w-7 h-7 bg-gray-200"></div>
+                <p className="text-[23px] leading-[28px]">Creating design from scratch (web designer)</p>
+              </div>
+              <div className="flex gap-2.5">
+                <div className="w-7 h-7 bg-gray-200"></div>
+                <p className="text-[23px] leading-[28px]">Creating graphics and illustrations</p>
+              </div>
+              <div className="flex gap-2.5">
+                <div className="w-7 h-7 bg-gray-200"></div>
+                <p className="text-[23px] leading-[28px]">Video editing</p>
+              </div>
+              <div className="flex gap-2.5">
+                <div className="w-7 h-7 bg-gray-200"></div>
+                <p className="text-[23px] leading-[28px]">Copywriting / Content Creation / Scripts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-[97px] h-screen flex flex-col items-center text-[25px] leading-[30px] gap-[31px]">
+          <div className="w-[1219px] flex flex-col gap-[14px]">
+            <h3 className="text-[36px] leading-[44px] font-bold">Addressing the Exclusions</h3>
+            <p className="text-[25px] leading-[30px] ">The exclusions are made as I don’t currently have the knowledge and expertise to fill those roles.</p>
+            <p className="text-[25px] leading-[30px]">Though I do have experience in all of those excluded areas and can attempt them, I would be inefficient and incomplete in doing so. Thus, I prefer sticking to my responsibilities encompassing digital marketing, full stack development, SEO, running paid advertisements, and so on.</p>
+          </div>
+
+          <div className="pl-[18px] w-[1170px] flex flex-col gap-[17px]">
+            <div className="">
+              <h4 className="text-[32px] leading-[39px] font-bold">Web Design</h4>
+              <p>This page was entirely designed by me on Figma. So if necessary, I can tackle web design responsibilities.</p>
+            </div>
+
+            <div className="">
+              <h4 className="text-[32px] leading-[39px] font-bold">Video Editing</h4>
+              <p>I have lots of personal experience with Adobe Premiere Pro and video editing, and have a strong understanding of user engagement and retention. But I’m not a seasonal video editor and prefer outsourcing it or working alongside the editing team instead of editing myself.</p>
+            </div>
+
+            <div className="">
+              <h4 className="text-[32px] leading-[39px] font-bold">Copywriting / Content Creation / Scriptwriting</h4>
+              <p>This page’s text content was written by me, but I prefer not handling this responsibility and handing it to the experts.</p>
+            </div>
+
+            <div className="">
+              <h4 className="text-[32px] leading-[39px] font-bold">Have an issue? Let me know!</h4>
+              <p>If these exclusions are too much of a compromise, I am open to discuss workarounds</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center">
+          <div className="w-[653px] flex flex-col items-center gap-[29px]">
+            <p className="text-center text-[25px] leading-[30px]">This Portfolio is still under work</p>
+            <p className="text-center text-[31px] leading-[38px]">If you found my skills impressive and would like to discuss opportunities, feel free to contact me through my email or phone:</p>
+            <div className="flex justify-center">
+              <div className="grid grid-cols-[auto_1fr] grid-rows-2 gap-x-4 gap-y-2 text-[31px] leading-[38px]">
+                <div className="text-right"><p className="font-semibold">Email:</p></div>
+                <div><p>ahissam05@gmail.com</p></div>
+                <div><p className="font-semibold">Phone: </p></div>
+                <div><p>+880 01802895911</p></div>
+              </div>
+            </div>
+
+            <div className="mb-[38px] portfolio-social-icons pt-5.5 flex gap-[43px]">
+              <Link href="https://discord.com/" className="w-[71px] h-[71px]"><Image src="discord_logo.svg" alt="discord logo" width={71} height={71} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer"/></Link>
+              <Link href="https://discord.com/" className="w-[71px] h-[71px]"><Image src="linkedin_logo.svg" alt="linkedin logo" width={71} height={71} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer" /></Link>
+              <Link href="https://discord.com/" className="w-[71px] h-[71px]"><Image src="github_logo.svg" alt="github logo" width={71} height={71} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer" /></Link>
             </div>
           </div>
         </div>

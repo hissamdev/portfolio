@@ -186,3 +186,63 @@ body {
 .dm-card-content p {
   @apply px-[14px] pt-[12px] text-[21px] leading-[29px];
 }
+
+.text-body-style {
+  @apply text-[20px] leading-[24px];
+}
+
+.skill-display-container {
+  @apply w-[1465px] h-[629px] border rounded-[22px] flex justify-between px-[62px] py-[48px];
+}
+
+.skill-display-container h4 {
+  @apply text-[33px] leading-[40px] font-bold;
+}
+
+.skill-display-container p {
+  @apply pt-[18px] pb-[22px];
+}
+
+.skill-display-left {
+  @apply  w-[742px];
+}
+
+.skill-display-hr1 {
+  @apply bg-[#2F00FF] h-[2px] w-[328px];
+}
+
+.skill-display-hr2 {
+  @apply bg-[#2F00FF] h-[2px] w-[404px];
+}
+
+.skill-display-hr3 {
+  @apply bg-[#2F00FF] h-[2px] w-[544px];
+}
+
+.krp-flexbox {
+  @apply w-[384px];
+}
+
+.krp-flexbox h6 {
+  @apply font-bold text-[32px] leading-[39px];
+}
+
+.krp-flexbox ol {
+  @apply pt-[16px] pl-7 list-decimal text-[19px] leading-[23px];
+}
+
+.krp-flexbox .main-li {
+  @apply pb-[11px];
+}
+
+.krp-flexbox ol ul {
+  @apply list-disc pl-4;
+}
+
+.dm-added-info-col h3 {
+  @apply pb-[13px] text-[36px] leading-[44px] font-bold;
+}
+
+.dm-added-info-col p {
+  @apply text-[23px] leading-[28px];
+}
