@@ -41,7 +41,7 @@ body {
 }
 
 .header-projects-nested a {
-  @apply text-[20px] leading-6 font-semibold;
+  @apply text-[20px] leading-6 font-semibold w-fit;
 }
 
 .stacked-card {

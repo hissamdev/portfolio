@@ -44,7 +44,7 @@ export default function RootLayout({
         <ComponentLoader />
         {children}
         <Footer />
-        {process.env.NODE_ENV === "production" && (<GoogleAnalytics gaId=""/>)}
+        {process.env.NODE_ENV === "production" && process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (<GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />)}
       </body>
     </html>
   );

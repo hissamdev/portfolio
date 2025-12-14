@@ -40,7 +40,7 @@ export default function Header() {
 
                                                 <div className="header-projects-nested pt-[11px] pl-[15px] flex flex-col gap-1">
                                                     <a href="/projects" className="header-projects-nested hover:text-[#456AFF]">GitHub UI Clone</a>
-                                                    <a href="/projects/small-projects/resume" className="header-projects-nested hover:text-[#456AFF] ">Resume</a>
+                                                    <a href="/projects/small-projects/resume" className="header-projects-nested hover:text-[#456AFF] inline-block">Resume</a>
                                                     <a className="header-projects-nested text-gray-500">Memory Card</a>
                                                     <a className="header-projects-nested text-gray-500">Tic Tac Toe</a>
                                                 </div>
@@ -51,18 +51,20 @@ export default function Header() {
                                             </div>
                                         </div>
                                         <div className="pt-5 text-[14px] leading-[17px] font-light flex flex-col">
-                                            <div>
-                                                <p className="pb-[5px] italic">Tech Stack</p>
-                                                <div className="pl-[7px]">
-                                                    <p>HTML</p>
-                                                    <p>CSS</p>
-                                                    <p>React</p>
-                                                    <p>Next JS</p>
-                                                    <p>Tailwind</p>
-                                                    <p>TypeScript</p>
-                                                    <p>Express JS</p>
-                                                    <p>PostgresSQL</p>
-                                                    <p>Prisma</p>
+                                            <div className="h-full flex flex-col justify-between">
+                                                <div>
+                                                    <p className="pb-[5px] italic">Tech Stack</p>
+                                                    <div className="pl-[7px]">
+                                                        <p>HTML</p>
+                                                        <p>CSS</p>
+                                                        <p>React</p>
+                                                        <p>Next JS</p>
+                                                        <p>Tailwind</p>
+                                                        <p>TypeScript</p>
+                                                        <p>Express JS</p>
+                                                        <p>PostgresSQL</p>
+                                                        <p>Prisma</p>
+                                                    </div>
                                                 </div>
 
                                                 <a
