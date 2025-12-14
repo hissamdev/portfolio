@@ -19,10 +19,9 @@ export default function Header() {
                 </div>
                 <nav className="main-header-nav hidden md:flex justify-center items-center text-white">
                     <ul className="flex">
-                        <li><Link href="/" className={"nav-links " + getCurrentLink("/")}>Home</Link></li>
                         <li>
                         <div className="header-portfolio relative z-500 group">
-                            <Link href="/portfolio" className={"nav-links " + getCurrentLink("/portfolio")}>Portfolio</Link>
+                            <Link href="/" className={"nav-links " + getCurrentLink("/")}>Home</Link>
                             <div className="hover-bridge-div absolute w-48 h-12 left-[-50] invisible group-hover:visible"></div>
                             <div className="absolute flex justify-center w-[666px] pb-[26px] bg-white border border-gray-400 left-[-100] top-13 rounded-sm
                             opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -33,15 +32,15 @@ export default function Header() {
 
                                     <div className="flex gap-[47px]">
                                         <div className="pt-[20px] w-[329px] flex flex-col gap-1.5">
-                                            <div className="border-b-[2px] border-b-[#2600FF] py-[2.5px]"><a href="/portfolio" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Visit Portfolio</a></div>
+                                            <div className="border-b-[2px] border-b-[#2600FF] py-[2.5px]"><a href="/" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Visit Portfolio</a></div>
                                             <div>
                                                 <div className="border-b-[2px] border-b-[#2600FF] py-[2.5px]">
-                                                    <a href="/portfolio/projects" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Projects</a>
+                                                    <a href="/projects" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Projects</a>
                                                 </div>
 
                                                 <div className="header-projects-nested pt-[11px] pl-[15px] flex flex-col gap-1">
-                                                    <a href="/portfolio/projects" className="header-projects-nested hover:text-[#456AFF]">GitHub UI Clone</a>
-                                                    <a href="/portfolio/projects/small-projects/resume" className="header-projects-nested hover:text-[#456AFF] ">Resume</a>
+                                                    <a href="/projects" className="header-projects-nested hover:text-[#456AFF]">GitHub UI Clone</a>
+                                                    <a href="/projects/small-projects/resume" className="header-projects-nested hover:text-[#456AFF] ">Resume</a>
                                                     <a className="header-projects-nested text-gray-500">Memory Card</a>
                                                     <a className="header-projects-nested text-gray-500">Tic Tac Toe</a>
                                                 </div>
@@ -79,7 +78,7 @@ export default function Header() {
                             </div>
                         </div>
                         </li>
-                        <HeaderServicesMenu />
+                        <li><Link href="/cordra" className={"nav-links " + getCurrentLink("/cordra")}>Cordra</Link></li>
                         <li><Link href="/about" className={"nav-links " + getCurrentLink("/about")}>About Us</Link></li>
                         <li><Link href="/what-we-do" className={"nav-links " + getCurrentLink("/what-we-do")}>What we do</Link></li>
                     </ul>
