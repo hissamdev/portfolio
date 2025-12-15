@@ -80,9 +80,9 @@ export default function Header() {
                             </div>
                         </div>
                         </li>
-                        <li><Link href="/cordra" className={"nav-links " + getCurrentLink("/cordra")}>Cordra</Link></li>
-                        <li><Link href="/about" className={"nav-links " + getCurrentLink("/cordra/about")}>About Us</Link></li>
-                        <li><Link href="/what-we-do" className={"nav-links " + getCurrentLink("/cordra/what-we-do")}>What we do</Link></li>
+                        <li><Link href="#full-stack-section" className={"nav-links " + getCurrentLink("/root")}>Full Stack</Link></li>
+                        <li><Link href="#digital-marketing-section" className={"nav-links " + getCurrentLink("/root")}>Digital Marketing</Link></li>
+                        <li><Link href="/cordra" className={"nav-links " + getCurrentLink("/cordra")}>Visit Cordra</Link></li>
                     </ul>
                 </nav>
             </div>
