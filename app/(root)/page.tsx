@@ -20,9 +20,9 @@ export default function Portfolio() {
             <hr className="mt-2 w-[377px] text-[#2F00FF] border-[1.5px] " />
             <p className="pt-[15px] text-[20px] leading-6 ">Full Stack Developer, Digital Marketer, SEO Specialist. I help businesses get set online, grow their audience and drive revenue.</p>
             <div className="portfolio-social-icons pt-5.5 flex gap-3">
-              <Link href="https://discord.com/" className="w-[29px] h-[29px]"><Image src="discord_logo.svg" alt="discord logo" width={29} height={29} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer"/></Link>
-              <Link href="https://discord.com/" className="w-[29px] h-[29px]"><Image src="linkedin_logo.svg" alt="linkedin logo" width={29} height={29} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer" /></Link>
-              <Link href="https://discord.com/" className="w-[29px] h-[29px]"><Image src="github_logo.svg" alt="github logo" width={29} height={29} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer" /></Link>
+              <Link href="https://www.linkedin.com/in/ahissam/" target="_blank" className="w-[29px] h-[29px]"><Image src="linkedin_logo.svg" alt="linkedin logo" width={29} height={29} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer" /></Link>
+              <Link href="https://github.com/hissamdev" target="_blank" className="w-[29px] h-[29px]"><Image src="github_logo.svg" alt="github logo" width={29} height={29} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer" /></Link>
+              <Link href="https://discord.com/" target="_blank" className="w-[29px] h-[29px]"><Image src="discord_logo.svg" alt="discord logo" width={29} height={29} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer"/></Link>
             </div>
 
             <div className="mt-4.5 flex items-center gap-[21px]">
@@ -69,9 +69,9 @@ export default function Portfolio() {
             <div className="absolute top-620 right-52 h-334">
               <div className="nav-toc-container sticky top-70">
                 <div className="toc-top-bar pb-3 flex justify-between w-[322px] text-[24px] text-[#456AFF] leading-[29px] font-bold ">
-                  <p className="cursor-pointer hover:text-[#456AFF]/80">Projects</p>
-                  <p className="cursor-pointer hover:text-[#456AFF]/80">Resume</p>
-                  <p className="cursor-pointer hover:text-[#456AFF]/80">LinkedIn</p>
+                  <Link href="/projects" className="cursor-pointer hover:text-[#456AFF]/80">Projects</Link>
+                  <Link href="/Ahmed-Hissam-Resume.pdf" className="cursor-pointer hover:text-[#456AFF]/80">Resume</Link>
+                  <Link href="/" className="cursor-pointer hover:text-[#456AFF]/80">LinkedIn</Link>
                 </div>
                 <div className="p-px rounded-[10px] bg-[linear-gradient(128deg,#636AFA_20%,#FF1014_100%)]">
                   <div className="toc-bottom-box h-[342px] rounded-[10px] bg-white pt-[25px] pl-[18px] ">

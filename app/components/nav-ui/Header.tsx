@@ -21,7 +21,7 @@ export default function Header() {
                     <ul className="flex">
                         <li>
                         <div className="header-portfolio relative z-500 group">
-                            <Link href="/" className={"nav-links " + getCurrentLink("/")}>Home</Link>
+                            <Link href="/" className={"nav-links " + getCurrentLink("/")}>Portfolio</Link>
                             <div className="hover-bridge-div absolute w-48 h-12 left-[-50] invisible group-hover:visible"></div>
                             <div className="absolute flex justify-center w-[666px] pb-[26px] bg-white border border-gray-400 left-[-100] top-13 rounded-sm
                             opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -81,8 +81,8 @@ export default function Header() {
                         </div>
                         </li>
                         <li><Link href="/cordra" className={"nav-links " + getCurrentLink("/cordra")}>Cordra</Link></li>
-                        <li><Link href="/about" className={"nav-links " + getCurrentLink("/about")}>About Us</Link></li>
-                        <li><Link href="/what-we-do" className={"nav-links " + getCurrentLink("/what-we-do")}>What we do</Link></li>
+                        <li><Link href="/about" className={"nav-links " + getCurrentLink("/cordra/about")}>About Us</Link></li>
+                        <li><Link href="/what-we-do" className={"nav-links " + getCurrentLink("/cordra/what-we-do")}>What we do</Link></li>
                     </ul>
                 </nav>
             </div>

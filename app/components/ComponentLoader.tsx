@@ -9,7 +9,7 @@ import ConstructionBar from "../components/ui/ConstructionBar";
 export default function ComponentLoader() {
     const [showConstructionBar, setShowConstructionBar] = useState(true)
     const pathname = usePathname();
-    const isMatchingPath = pathname === "/portfolio/projects";
+    const isMatchingPath = pathname === "/projects";
     
     useEffect(() => {
         setShowConstructionBar(!document.cookie.includes("constructionHidden=true")) // If it doesn't exist, turn false to true and show. If it exists, turn true to false and hide.
