@@ -273,7 +273,7 @@ export default function Portfolio() {
 
       <section className="">
         <div className="lg:pt-[117px] lg:pl-[189px] w-[894px]">
-          <h2 className="text-[48px] leading-[58px] font-bold ">Digital Marketing</h2>
+          <h2 id="digital-marketing-section" className="text-[48px] leading-[58px] font-bold ">Digital Marketing</h2>
           <p className="lg:pt-[8px] text-body-style ">I have about 2 years of experience in digital marketing, along with a certification from an in-person course of 6 months from Creative IT Institute. Although I don’t have professional experience working for a company yet, I went through practical demonstrations at my course.</p>
         </div>
 
