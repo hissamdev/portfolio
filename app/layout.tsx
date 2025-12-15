@@ -23,8 +23,8 @@ const interFont = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Professional Digital Marketing & Development Agency | Cordra Studios",
-  description: "Cordra Studios is a professional marketing and development agency.",
+  title: "Ahmed Hissam - Full Stack Developer, Digital Marketer & SEO Expert",
+  description: "Creating modern web applications and helping them grow while making sure your needs are met. Planned maintenance, focused pricing and more.",
   robots: {
     index: false,
     follow: false,
