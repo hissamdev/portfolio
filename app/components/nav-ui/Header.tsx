@@ -14,8 +14,8 @@ export default function Header() {
     return (
         <header className="h-[26px] md:h-14 w-full flex justify-center items-center gap-10 bg-[#225252] z-10000 xl:pr-2 lg:px-0">
             <div className="flex">
-                <div className="bg-gray-200 flex justify-center items-center cursor-pointer ">
-                    <img className="h-12 w-12" alt="img"/>
+                <div className="bg-gray-200 flex justify-center items-center cursor-pointer rounded-[50px]">
+                    <div className="h-12 w-12"></div>
                 </div>
                 <nav className="main-header-nav hidden md:flex justify-center items-center text-white">
                     <ul className="flex">

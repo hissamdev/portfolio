@@ -19,7 +19,7 @@ export default function ComponentLoader() {
 
     return (
         <>
-            {!isMatchingPath &&
+            { //!isMatchingPath &&
             process.env.NODE_ENV === "production" &&
             showConstructionBar &&
             <ConstructionBar closeBar={() => {setShowConstructionBar(false)}} />}
