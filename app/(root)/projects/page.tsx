@@ -108,6 +108,9 @@ export default function Projects() {
             </div>
         </header>
 
+        <div className="projects-sidebar">
+
+        </div>
 
         <div className="page-projects-body bg-[#0D1117] h-fit min-h-screen pb-20 font-sans text-[14px] ">
             <div className="main-body-alignment w-full flex justify-center">
@@ -128,7 +131,7 @@ export default function Projects() {
                                     </span>
                                     <span className="icon-dropdown"></span>
                                 </button>
-                                <button className="fork-dropdown flex px-2 w-[132px] h-[28px] bg-[#262C36] border border-gray-600 rounded">
+                                <button className="fork-dropdown flex px-2 w-[132px] h-[28px] bg-[#262C36] border border-gray-600 rounded cursor-pointer hover:bg-[#262C36]">
                                     <span className="flex items-center">
                                         <span className="watch-icon w-4 h-4"></span>
                                         <p className="text-[12px] leading-[20px]">Fork</p>
@@ -136,7 +139,7 @@ export default function Projects() {
                                     </span>
                                     <span className="icon-dropdown"></span>
                                 </button>
-                                <button className="fork-dropdown flex px-2 w-[132px] h-[28px] bg-[#262C36] border border-gray-600 rounded">
+                                <button className="fork-dropdown flex px-2 w-[132px] h-[28px] bg-[#262C36] border border-gray-600 rounded cursor-pointer hover:bg-[#262C36]">
                                     <span className="flex items-center">
                                         <span className="watch-icon w-4 h-4"></span>
                                         <p className="text-[12px] leading-[20px]">Stars</p>
@@ -191,7 +194,7 @@ export default function Projects() {
                                 </div>
                             </div>
 
-                            <div className="main-left-content h-fit w-full flex flex-col border rounded border-gray-700 divide-y">
+                            <div className="main-left-content h-fit w-full flex flex-col border rounded border-gray-700 divide-y overflow-hidden ">
                                 <div className="metadata-container bg-[#151B23] rounded-t border-b-gray-700 h-[52px] text-white">
                                     <div className="profile-picture"></div>
                                     <div className="username"></div>
@@ -200,18 +203,46 @@ export default function Projects() {
                                     <div className="time-data"></div>
                                     <div className="icon-history"></div>
                                 </div>
-                                <div className="files-container h-fit text-white px-4">
-                                    <div className="file-item h-[41px] flex justify-between items-center gap-10">
-                                        <div className="flex items-center gap-2.5 min-w-[40%] ">
-                                            <div className="file-icon w-4 h-4 bg-gray-500"></div>
-                                            <div className="file-name">
-                                                <p>app</p>
+                                <div>
+                                    <div className="files-container h-fit text-white ">
+                                        <div className="file-item">
+                                            <div className="file-item-info">
+                                                <div className="file-icon w-4 h-4 bg-gray-500"></div>
+                                                <div className="file-name">
+                                                    <p className="">React Projects</p>
+                                                </div>
                                             </div>
+                                            <div className="file-item-commit-message">
+                                                <p className="">Latest commit</p>
+                                            </div>
+                                            <div className="file-item-time-data text-[#9198a1]">2 days ago</div>
                                         </div>
-                                        <div className="commit-message min-w-[40%]">
-                                            <p>Latest commit</p>
+
+                                        <div className="file-item">
+                                            <div className="file-item-info">
+                                                <div className="file-icon w-4 h-4 bg-gray-500"></div>
+                                                <div className="file-name">
+                                                    <p className="">Express Projects</p>
+                                                </div>
+                                            </div>
+                                            <div className="file-item-commit-message">
+                                                <p className="">Latest commit</p>
+                                            </div>
+                                            <div className="file-item-time-data text-[#9198a1]">2 days ago</div>
                                         </div>
-                                        <div className="time-data">2 days ago</div>
+
+                                        <div className="file-item">
+                                            <div className="file-item-info">
+                                                <div className="file-icon w-4 h-4 bg-gray-500"></div>
+                                                <div className="file-name">
+                                                    <p className="">JavaScript Projects</p>
+                                                </div>
+                                            </div>
+                                            <div className="file-item-commit-message">
+                                                <p className="">Latest commit</p>
+                                            </div>
+                                            <div className="file-item-time-data text-[#9198a1]">2 days ago</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +265,7 @@ export default function Projects() {
                                 <div className="py-4">
                                     <h2 className="text-[16px] leading-[24px] font-semibold">About</h2>
                                     <div className="my-4">
-                                        <Link href="/" className="text-[14px] leading-[24px] font-semibold text-[#4493f8] ">cordra.netlify.app</Link>
+                                        <Link href="/" className="text-[14px] leading-[24px] font-semibold text-[#4493f8] hover:underline">cordra.netlify.app</Link>
                                     </div>
                                     <div className="mt-2">
                                         <Link href="/portfolio/projects" className="text-[#9198a1] hover:text-[#4493f8] ">Readme</Link>

@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.file-item {
+    @apply px-4 w-full h-[41px] flex justify-between items-center gap-10 hover:bg-[#151B23];
+}
+
+.file-item-info {
+    @apply flex items-center gap-2.5 min-w-[40%];
+}
+
+.file-name p {
+    @apply hover:text-[#3C93D6] hover:underline cursor-pointer;
+}
+
+.file-item-commit-message {
+    @apply min-w-[40%];
+}
+
+.file-item-commit-message p {
+    @apply w-fit text-[#9198a1] hover:text-[#3C93D6] hover:underline cursor-pointer;
+}

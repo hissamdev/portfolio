@@ -14,10 +14,10 @@ export default function Footer() {
                     <div className="pt-[51px] font-bold">
                         <h3 className="text-[31px] leading-[38px]">Useful Links</h3>
                         <hr className="w-[205px] bg-white h-[2px]" />
-                        <ul className="pt-[7px] text-[26px] leading-[31px]">
-                            <li>Home</li>
-                            <li>Portfolio</li>
-                            <li>Projects</li>
+                        <ul className="pt-[7px] text-[26px] leading-[31px] space-y-3">
+                            <li><Link href="/">Portfolio</Link></li>
+                            <li><Link href="/cordra">Cordra</Link></li>
+                            <li><Link href="/projects">Projects</Link></li>
                         </ul>
                     </div>
                 </div>
