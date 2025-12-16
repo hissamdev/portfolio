@@ -15,8 +15,6 @@ export default function ComponentLoader() {
         setShowConstructionBar(!document.cookie.includes("constructionHidden=true")) // If it doesn't exist, turn false to true and show. If it exists, turn true to false and hide.
     })
 
-    console.log(process.env.NODE_ENV)
-
     return (
         <>
             { //!isMatchingPath &&

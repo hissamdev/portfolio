@@ -4,6 +4,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 
 import ComponentLoader from "./components/ComponentLoader";
 import Footer from "./components/nav-ui/Footer";
+import ConsentLogger from "./consent-logger";
 
 import "./globals.css";
 
@@ -41,6 +42,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${interFont.variable} antialiased`}
       >
+        <div id="cookiechimp-container" />
+        <ConsentLogger />
         <ComponentLoader />
         {children}
         <Footer />
