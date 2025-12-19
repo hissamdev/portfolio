@@ -4,7 +4,6 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 
 import ComponentLoader from "./components/ComponentLoader";
 import Footer from "./components/nav-ui/Footer";
-import ConsentLogger from "./consent-logger";
 
 import "./globals.css";
 import "./tailwind-files/github_clone.css";
@@ -45,12 +44,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${interFont.variable} antialiased`}
       >
-        <div id="cookiechimp-container" />
-        <ConsentLogger />
+        {process.env.NODE_ENV === "production" &&
+        process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}/>)}
         <ComponentLoader />
         {children}
         <Footer />
-        {process.env.NODE_ENV === "production" && process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (<GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />)}
+       
       </body>
     </html>
   );
