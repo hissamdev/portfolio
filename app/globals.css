@@ -143,10 +143,6 @@ body {
   @apply w-4 h-4 bg-gray-500 mr-[8px];
 }
 
-.portfolio-tags-item {
-  @apply inline-block mr-2.5 text-[#3B82F6] text-[24px] leading-[29px]  px-1.5 py-2.5 bg-[#3B82F6]/10 rounded-sm cursor-pointer hover:bg-[#3B82F6]/20;
-}
-
 .portfolio-toc-list {
   @apply list-disc;
 }
@@ -155,36 +151,24 @@ body {
   @apply text-[18px] leading-[22px] pb-2.5;
 }
 
-.techstack-frontend-ul li {
-  @apply text-[24px] leading-[34px];
-}
-
-.web-dev-experiences {
-  @apply pl-[42px] pr-[42px];
-}
-
-.web-dev-experiences p {
-  @apply pt-[15px] text-[23px] leading-[28px];
-}
-
-.dm-card-alignment {
-  @apply w-[426px] h-[478px] border flex flex-col items-center rounded-[17px];
-}
-
-.dm-card-content {
-  @apply p-[21px];
+.dm-cards-container {
+  @apply w-[480px] h-[366px] border flex flex-col items-center px-[29px] pt-[39px];
 }
 
 .dm-card-img {
-  @apply rounded-[21px];
+  @apply w-[55px] h-[55px] bg-gray-200;
 }
 
 .dm-card-content h4 {
-  @apply pt-[28px] pl-[14px] text-[24px] leading-[29px] font-bold;
+  @apply pt-[28px] text-[24px] leading-[29px] font-bold;
 }
 
 .dm-card-content p {
-  @apply px-[14px] pt-[12px] text-[21px] leading-[29px];
+  @apply pt-[12px] text-[20px] leading-[24px];
+}
+
+.dm-card-content a {
+  @apply inline-block mt-[12px] text-[20px] leading-[24px] cursor-pointer;
 }
 
 .text-body-style {

@@ -7,6 +7,9 @@ import Footer from "./components/nav-ui/Footer";
 import ConsentLogger from "./consent-logger";
 
 import "./globals.css";
+import "./tailwind-files/github_clone.css";
+import "./tailwind-files/portfolio_home.css";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
