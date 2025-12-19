@@ -5,8 +5,8 @@ export default function Portfolio() {
   return (
     <>
       <main>
-        <section className="px-4 lg:px-0 portfolio-hero-section alignment w-full flex justify-center pt-[20px] lg:pt-[98px] ">
-          <div className="hero-container pb-22 h-fit lg:grid lg:w-fit lg:max-w-full lg:grid-cols-[743px_407px] xl:gap-[184px] ">
+        <section className="px-4 lg:px-5 portfolio-hero-section alignment w-full flex justify-center pt-[20px] lg:pt-[98px] ">
+          <div className="hero-container pb-22 h-fit sm:grid lg:w-fit lg:max-w-full sm:grid-cols-[1fr_407px] md:gap-12 xl:grid-cols-[743px_407px] 2xl:gap-[184px] ">
             <div className="portfolio-hero-left flex flex-col">
               <div className="portfolio-tags w-full flex flex-wrap gap-2.5">
                 <a href="#full-stack-section" className="portfolio-tags-item">Full Stack</a>
@@ -19,7 +19,7 @@ export default function Portfolio() {
               <h1 className="pt-[0px] text-[44px] leading-[53px] lg:pt-[13px] lg:text-[64px] lg:leading-[77px] ">Ahmed Hissam</h1>
               <p className="lg:pt-[13px] text-[15px] leading-[18px] lg:text-[20px] lg:leading-6 italic font-semibold">ahissam05@gmail.com <span className=" not-italic text-[20px] leading-6">|</span> +880 01828095911</p>
               <hr className="mt-2 lg:w-[377px] text-[#2F00FF] border-[1.5px] " />
-              <p className="pt-[15px] lg:w-[688px] text-[20px] leading-6 ">Full Stack Developer, Digital Marketer, SEO Specialist. I help businesses get found online, grow their audience and drive revenue.</p>
+              <p className="pt-[15px] md:w-full md:max-w-[688px] text-[20px] leading-6 ">Full Stack Developer, Digital Marketer, SEO Specialist. I help businesses get found online, grow their audience and drive revenue.</p>
               <div className="portfolio-social-icons pt-[11px] lg:pt-5.5 flex gap-3">
                 <Link href="https://www.linkedin.com/in/ahissam/" target="_blank" className="w-[29px] h-[29px]"><Image src="linkedin_logo.svg" alt="linkedin logo" width={29} height={29} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer" /></Link>
                 <Link href="https://github.com/hissamdev" target="_blank" className="w-[29px] h-[29px]"><Image src="github_logo.svg" alt="github logo" width={29} height={29} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer" /></Link>
@@ -38,26 +38,26 @@ export default function Portfolio() {
                     <Link href="/projects" className=""><Image src="github_clone.svg" fill alt="GitHub UI Clone Project" className="object-cover rounded-[5px] transition-opacity duration-100 hover:opacity-90 cursor-pointer"/></Link>
                   </div>
                 </div>
-                <div className="block lg:hidden relative w-[109px] h-[83px] ">
+                <div className="block sm:hidden relative w-[109px] h-[83px] ">
                   <Image src="/hero_personal_img.png" fill alt="An image of me taken while recording a video for a job seeking website" className="object-cover rounded-[5px]" />
                 </div>
               </div>
             </div>
             <div className="portfolio-hero-right flex flex-col justify-start items-start">
               <div className="flex lg:flex-col">
-                <div className="hidden lg:block relative w-[109px] h-[83px] lg:w-[407px] lg:h-[227px]"><Image src="/hero_personal_img.png" fill alt="An image of me taken while recording a video for a job seeking website" className="rounded-2xl" /></div>
+                <div className="hidden sm:block relative w-[407px] h-[227px]"><Image src="/hero_personal_img.png" fill alt="An image of me taken while recording a video for a job seeking website" className="rounded-2xl" /></div>
                 <p className="hidden lg:block pt-1.5 text-[17px] leading-[21px] text-center italic">Recording a personal video for a<br />job seeking website</p>
               </div>
-              <div className="relative">
-                <div className="lg:absolute lg:top-12 lg:left-22 lg:h-250">
+              <div className="pt-[50px] relative w-full">
+                <div className="flex flex-col items-center lg:absolute lg:top-12 lg:left-22 lg:h-250">
                   <div className="nav-toc-container sticky top-70">
-                    <div className="toc-top-bar pb-3 flex justify-between w-[322px] text-[24px] text-[#456AFF] leading-[29px] font-bold ">
+                    <div className="toc-top-bar w-[294px] text-[21px] leading-[25px] font-semibold pb-3 flex justify-between lg:w-[322px] lg:text-[24px] lg:leading-[29px] text-[#456AFF] lg:font-bold">
                       <p className="cursor-pointer hover:text-[#456AFF]/80">Projects</p>
                       <p className="cursor-pointer hover:text-[#456AFF]/80">Resume</p>
                       <p className="cursor-pointer hover:text-[#456AFF]/80">LinkedIn</p>
                     </div>
                     <div className="p-px rounded-[10px] bg-[linear-gradient(128deg,#636AFA_20%,#FF1014_100%)]">
-                      <div className="toc-bottom-box h-[342px] rounded-[10px] bg-white pt-[25px] pl-[18px] ">
+                      <div className="toc-bottom-box h-[301px] lg:h-[342px] rounded-[10px] bg-white pt-[25px] pl-[18px] ">
                         <div className="flex flex-col">
                           <p className="pl-2.5 text-body-style ">Discover my Skills</p>
                           <ul className="portfolio-toc-list pt-3 pl-[30px]">
@@ -224,8 +224,8 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
-        <section className="px-4 lg:px-0 pt-[81px] lg:pt-[117px] flex flex-col w-full max-w-[356] lg:w-full">
-          <div className="w-full max-w-[356] lg:pl-[206px] lg:w-full grid lg:grid-cols-[1025px_auto] gap-[112px]">
+        <section className="px-4 lg:px-0 pt-[81px] lg:pt-[117px] flex flex-col w-full lg:w-full">
+          <div className="lg:pl-[206px] w-full grid lg:grid-cols-[1025px_auto] gap-[112px]">
             <div className="">
               <div>
                 <h2 id="digital-marketing-section" className="text-size-25 lg:text-[48px] lg:leading-[58px] font-bold ">Digital Marketing</h2>
@@ -261,8 +261,10 @@ export default function Portfolio() {
                   </div>
                 </div>
 
-                <div className="mt-[37px] w-full lg:max-w-[327px] h-[380px] bg-gray-200"></div>
+                
             </div>
+
+            <div className="w-full lg:max-w-[327px] h-[380px] bg-gray-200"></div>
           </div>
         </section>
 

@@ -12,7 +12,7 @@ export default function Projects() {
                         <div className="flex justify-center items-center">
                             <a href="/" className="username px-1.5 py-1 hover:bg-white/10 rounded cursor-pointer"><span className="">hissamdev</span></a>
                             <p className="text-gray-500 w-4 text-center">/</p>
-                            <a className="repo-name px-1.5 py-1 hover:bg-white/10 rounded font-semibold cursor-pointer">cordra</a>
+                            <a className="repo-name px-1.5 py-1 hover:bg-white/10 rounded font-semibold cursor-pointer">hissam</a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ export default function Projects() {
                         <div className="flex justify-between">
                             <div className="top-row-left flex items-center">
                                 <div className="profile-picture w-6 h-6 mr-2 inline-block rounded-3xl bg-gray-500"></div>
-                                <div className="repo-name mr-2 text-[20px] leading-[30px] font-semibold hover:underline cursor-pointer ">cordra</div>
+                                <div className="repo-name mr-2 text-[20px] leading-[30px] font-semibold hover:underline cursor-pointer ">hissam</div>
                                 <div className="privacy-status text-[12px] leading-[18px] px-1.5 border rounded-3xl border-gray-700 text-gray-400 ">Private</div>
                             </div>
                             <div className="flex items-center gap-2">
@@ -265,7 +265,7 @@ export default function Projects() {
                                 <div className="py-4">
                                     <h2 className="text-[16px] leading-[24px] font-semibold">About</h2>
                                     <div className="my-4">
-                                        <Link href="/" className="text-[14px] leading-[24px] font-semibold text-[#4493f8] hover:underline">cordra.netlify.app</Link>
+                                        <Link href="/" className="text-[14px] leading-[24px] font-semibold text-[#4493f8] hover:underline">hissam.org</Link>
                                     </div>
                                     <div className="mt-2">
                                         <Link href="/portfolio/projects" className="text-[#9198a1] hover:text-[#4493f8] ">Readme</Link>
