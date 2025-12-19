@@ -33,5 +33,5 @@
 }
 
 .web-dev-experiences p {
-  @apply w-[327px] text-[17px] leading-[21px] lg:text-[20px] lg:leading-[24px] lg:w-full;
+  @apply lg:w-[327px] text-[17px] leading-[21px] lg:text-[20px] lg:leading-[24px] lg:w-full;
 }

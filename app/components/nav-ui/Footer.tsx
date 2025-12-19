@@ -4,8 +4,8 @@ import Image from "next/image"
 export default function Footer() {
     return (
         <>
-        <footer className="flex flex-col items-center bg-[#332323] text-white">
-            <div className="pt-[94px] w-[1196px] flex justify-between">
+        <footer className="hidden lg:flex flex-col items-center bg-[#332323] text-white">
+            <div className="pt-[94px] lg:w-[1196px] flex justify-between">
                 <div className="flex flex-col">
                     <div className="flex flex-col gap-[3px]">
                         <h3 className="text-[31px] leading-[38px] font-bold">Ahmed Hissam</h3>
