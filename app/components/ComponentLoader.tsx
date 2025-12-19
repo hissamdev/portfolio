@@ -17,10 +17,11 @@ export default function ComponentLoader() {
 
     return (
         <>
+            {/*}
             { //!isMatchingPath &&
-            process.env.NODE_ENV === "development" &&
+            process.env.NODE_ENV === "production" &&
             showConstructionBar &&
-            <ConstructionBar closeBar={() => {setShowConstructionBar(false)}} />}
+            <ConstructionBar closeBar={() => {setShowConstructionBar(false)}} />} */}
 
             {!isMatchingPath && <Header />}
         </>

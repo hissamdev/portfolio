@@ -14,9 +14,9 @@ export default function Header() {
     return (
         <header className="h-[60px] md:h-14 w-full flex justify-center items-center gap-10 bg-[#225252] z-10000 xl:pr-2 lg:px-0">
             <div className="flex">
-                <div className="bg-gray-200 flex justify-center items-center cursor-pointer rounded-[50px]">
+                <a href="/" className="bg-gray-200 flex justify-center items-center cursor-pointer rounded-[50px]">
                     <div className="h-12 w-12"></div>
-                </div>
+                </a>
                 <nav className="main-header-nav hidden md:flex justify-center items-center text-white">
                     <ul className="flex">
                         <li>
@@ -82,7 +82,7 @@ export default function Header() {
                         </li>
                         <li><Link href="#full-stack-section" className={"nav-links " + getCurrentLink("/root")}>Full Stack</Link></li>
                         <li><Link href="#digital-marketing-section" className={"nav-links " + getCurrentLink("/root")}>Digital Marketing</Link></li>
-                        <li><Link href="/cordra" className={"nav-links " + getCurrentLink("/cordra-studios")}>Visit Cordra</Link></li>
+                        <li><Link href="/cordra-studios" className={"nav-links " + getCurrentLink("/cordra-studios")}>Visit Cordra</Link></li>
                     </ul>
                 </nav>
             </div>
