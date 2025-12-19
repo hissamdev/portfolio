@@ -18,7 +18,7 @@ export default function ComponentLoader() {
     return (
         <>
             { //!isMatchingPath &&
-            process.env.NODE_ENV === "production" &&
+            process.env.NODE_ENV === "development" &&
             showConstructionBar &&
             <ConstructionBar closeBar={() => {setShowConstructionBar(false)}} />}
 
