@@ -9,9 +9,9 @@ export default function Portfolio() {
           <div className="hero-container pb-22 h-fit sm:grid lg:w-fit lg:max-w-full sm:grid-cols-[1fr_407px] md:gap-12 xl:grid-cols-[743px_407px] 2xl:gap-[184px] ">
             <div className="portfolio-hero-left flex flex-col">
               <div className="portfolio-tags w-full flex flex-wrap gap-2.5">
-                <a href="#full-stack-section" className="portfolio-tags-item">Full Stack</a>
                 <a className="portfolio-tags-item">Digital Marketing</a>
                 <a className="portfolio-tags-item">SEO</a>
+                <a href="#full-stack-section" className="portfolio-tags-item">Full Stack</a>
                 <a className="portfolio-tags-item">Paid Ads</a>
                 <a className="portfolio-tags-item">WordPress</a>
               </div>
