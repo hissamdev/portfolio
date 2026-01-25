@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation"
 
-import Header from "../components/nav-ui/Header";
+import Header from "./nav-ui/Header/Header";
 import ConstructionBar from "../components/ui/ConstructionBar";
 
 export default function ComponentLoader() {
