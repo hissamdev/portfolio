@@ -4,7 +4,7 @@ import Link from "next/link";
 import HeaderServicesMenu from "./ServicesMenu";
 import { usePathname } from "next/navigation";
 
-export default function Header() {
+export default function OldHeader() {
     const pathname = usePathname();
 
     const getCurrentLink = (path: string) => {
@@ -31,10 +31,10 @@ export default function Header() {
                                     </div>
 
                                     <div className="flex gap-[47px]">
-                                        <div className="pt-[20px] w-[329px] flex flex-col gap-1.5">
-                                            <div className="border-b-[2px] border-b-[#2600FF] py-[2.5px]"><a href="/" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Visit Portfolio</a></div>
+                                        <div className="pt-5 w-[329px] flex flex-col gap-1.5">
+                                            <div className="border-b-2 border-b-[#2600FF] py-[2.5px]"><a href="/" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Visit Portfolio</a></div>
                                             <div>
-                                                <div className="border-b-[2px] border-b-[#2600FF] py-[2.5px]">
+                                                <div className="border-b-2 border-b-[#2600FF] py-[2.5px]">
                                                     <a href="/projects" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Projects</a>
                                                 </div>
 
@@ -70,7 +70,7 @@ export default function Header() {
                                                 <a
                                                 download="Ahmed Hissam Resume.pdf"
                                                 href="Ahmed-Hissam-Resume.pdf"
-                                                className="inline-block mt-[19px] ml-[7px] text-[15px] leading-[18px] px-[11.5px] py-[13px] bg-[#FF9500] hover:bg-[#FF9500]/80 cursor-pointer text-white font-semibold rounded-[2px]">Download my Resume</a>
+                                                className="inline-block mt-[19px] ml-[7px] text-[15px] leading-[18px] px-[11.5px] py-[13px] bg-[#FF9500] hover:bg-[#FF9500]/80 cursor-pointer text-white font-semibold rounded-xs">Download my Resume</a>
                                             </div>
                                             
                                             

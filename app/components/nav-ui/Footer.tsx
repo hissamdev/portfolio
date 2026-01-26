@@ -13,7 +13,7 @@ export default function Footer() {
                     </div>
                     <div className="pt-[51px] font-bold">
                         <h3 className="text-[31px] leading-[38px]">Useful Links</h3>
-                        <hr className="w-[205px] bg-white h-[2px]" />
+                        <hr className="w-[205px] bg-white h-0.5" />
                         <ul className="pt-[7px] text-[26px] leading-[31px] space-y-3">
                             <li><Link href="/">Portfolio</Link></li>
                             <li><Link href="/cordra">Cordra</Link></li>
@@ -37,7 +37,7 @@ export default function Footer() {
                         <Link href="https://discord.com/" className="w-[39px] h-[39px]"><Image src="github_logo.svg" alt="github logo" width={39} height={39} className="transition-opacity duration-100 hover:opacity-90 cursor-pointer" /></Link>
                     </div>
 
-                    <div className="pt-[24px]">
+                    <div className="pt-6">
                         <p className="text-[22px] leading-[27px] pb-[41px]">© Copyright 2025 Ahmed Hissam. All Rights Reserved.</p>
                     </div>
             </div>
