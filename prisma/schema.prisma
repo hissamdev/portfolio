@@ -15,5 +15,65 @@ datasource db {
 
 model User {
   id Int @id @default(autoincrement())
-  name String
+  userId String @unique @default(uuid())
+
+  email String @unique
+  password String
+  displayName String?
+  username String @unique
+  slug String?
+  blogs Blog[]
+
+  // More info (optional)
+  companyName String?
+  birthday String?
+  website String?
+  otherLinks String?
+  bio String?
+
+  // Socials
+  instagram String?
+  facebook String?
+  youtube String?
+  twitter String?
+
+  lastOnline DateTime? @default(now())
+  creationDate DateTime @default(now())
+  // Last Updated
+  detailsLastUpdated DateTime @updatedAt
+  emailLastUpdated DateTime @default(now())
+  passwordLastUpdated DateTime @default(now())
+
+  @@map("users")
+}
+
+model Blog {
+  id Int @id @default(autoincrement())
+  authorId String
+  author User @relation(fields: [authorId], references: [userId])
+
+  title String
+  content String
+  slug String @unique
+
+  // Visibility
+  isPublished Boolean @default(false)
+  Status String @default("Unpublished")
+  allowIndexing Boolean?
+
+  publishDate DateTime @default(now())
+  lastUpdated DateTime @default(now())
+
+  @@map("blogs")
+}
+
+model Auth {
+  email String
+  token String @unique
+  code Int
+  expiresAt DateTime
+  usedAt DateTime?
+  createdAt DateTime @default(now())
+
+  @@map("auth")
 }

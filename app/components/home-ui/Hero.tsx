@@ -1,6 +1,8 @@
 import { Check } from "lucide-react";
+import AuditButton from "./AuditButton";
 
 export default function Hero() {
+
     return (
         <>
             <section className="hero-section pt-[140px] h-900 bg-[#0b0e14]">
@@ -46,7 +48,8 @@ export default function Hero() {
 
                     <div className="flex flex-col gap-3">
                         <button className="py-3.5 bg-[#6366f1] rounded-xl text-white text-[13.3px] font-bold">Explore Services</button>
-                        <button className="py-3.5 bg-[#14171C] rounded-xl text-white text-[13.3px] font-bold border border-white/10">Free SEO Audit</button>
+
+                        <AuditButton />
                     </div>
                 </div>
 
