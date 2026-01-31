@@ -6,16 +6,11 @@ import { sendAuthEmail } from "@/lib/email";
 
 
 export async function POST(req: Request) {
-    console.log('API route hit')
-
     const { email } = await req.json();
-    console.log('email received, ', email)
-
+    
     if (!email || typeof email !== 'string') {
         return NextResponse.json({ ok: true })
     }
-
-    console.log('After if statement')
 
     const expiresAt = new Date(Date.now() + 10 * 60 * 1000)
     const normalizedEmail = email.toLowerCase().trim()

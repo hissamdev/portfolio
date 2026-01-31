@@ -12,12 +12,11 @@ export async function sendAuthEmail(to: string, code: string, link: string) {
     
     try {
         await transporter.sendMail({
-    from: '"My App" <no-reply@myapp.com>',
-    to,
-    subject: 'Email subject',
-    text: `Email text, code: ${code}, magic link: ${link}.`,
-})
-    console.log(`Email send successfully to ${to} with code ${code} and link ${link}`)
+            from: '"My App" <no-reply@myapp.com>',
+            to,
+            subject: 'Email subject',
+            text: `Email text, code: ${code}, magic link: ${link}.`,
+        })
     } catch (err) {
         console.error(err)
     }
