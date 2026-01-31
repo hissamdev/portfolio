@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "auth" ALTER COLUMN "code" SET DATA TYPE TEXT;

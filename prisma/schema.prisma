@@ -68,10 +68,10 @@ model Blog {
 }
 
 model Auth {
-  email String
-  token String @unique
-  code Int
   expiresAt DateTime
+  email String
+  code String
+  token String @unique
   usedAt DateTime?
   createdAt DateTime @default(now())
 
