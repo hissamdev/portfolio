@@ -1,37 +1,19 @@
-import { useState } from "react";
 
-export default function AuditForm() {
-    const [email, setEmail] = useState('');
-    const [url, setUrl] = useState('');
-    const [message, setMessage] = useState('');
-    const [loading, setLoading] = useState(false);
+type Props = {
+    handleSubmit: (e:React.FormEvent<HTMLFormElement>) => Promise<void>,
+    email: string,
+    setEmail: React.Dispatch<React.SetStateAction<string>>,
+    url: string,
+    setUrl: React.Dispatch<React.SetStateAction<string>>,
+    message: string,
+    setMessage: React.Dispatch<React.SetStateAction<string>>,
+    loading: boolean,
+}
 
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault()
-        setLoading(true);
-
-        try {
-            await fetch('api/auth/request', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                email,
-                url,
-                message,
-            })
-        })
-
-        } catch (err) {
-            console.error(err);
-        }
-        
-        setLoading(false)
-    }
+export default function AuditForm({ handleSubmit, email, setEmail, url, setUrl, message, setMessage, loading }: Props) {
 
     return (
-        <form onSubmit={handleSubmit} onClick={e => e.stopPropagation()} className="px-[24px] pt-[29px] pb-20 w-full h-fit bg-[#353535] rounded-lg text-white">
+        <form onSubmit={handleSubmit}>
             <h3 className="text-lg ">Enter your email</h3>
             <p className="pt-1.5 text-sm">Please enter your email to request a free SEO audit of your website.</p>
 

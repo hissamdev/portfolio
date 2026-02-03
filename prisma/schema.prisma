@@ -13,16 +13,30 @@ datasource db {
   provider = "postgresql"
 }
 
+model ConfirmEmail {
+  id Int @id @default(autoincrement())
+  expiresAt DateTime
+  email String
+  code String
+  token String @unique
+  usedAt DateTime?
+  creationDate DateTime @default(now())
+
+  @@map("confirm_email")
+}
+
 model User {
   id Int @id @default(autoincrement())
   userId String @unique @default(uuid())
 
+  verifiedEmail Boolean @default(false)
   email String @unique
-  password String
+  password String?
   displayName String?
-  username String @unique
+  username String? @unique
   slug String?
   blogs Blog[]
+  auditRequests AuditRequest[]
 
   // More info (optional)
   companyName String?
@@ -67,13 +81,15 @@ model Blog {
   @@map("blogs")
 }
 
-model Auth {
-  expiresAt DateTime
-  email String
-  code String
-  token String @unique
-  usedAt DateTime?
-  createdAt DateTime @default(now())
+model AuditRequest {
+  id Int @id @default(autoincrement())
+  userId String
+  user User @relation(fields: [userId], references: [userId])
+  url String
+  message String?
 
-  @@map("auth")
+  creationDate DateTime @default(now())
+  lastUpdated DateTime @default(now())
+
+  @@map("audit_requests")
 }
