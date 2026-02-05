@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import prisma from "@/lib/prisma"
 import crypto from 'crypto'
-
+import jwt from 'jsonwebtoken';
 
 export async function POST(req: Request) {
     const { email, code } = await req.json()
@@ -44,21 +44,38 @@ export async function GET(req: Request) {
     }
     const hashedToken = crypto.createHash('sha256').update(token).digest('hex')
 
-    const verification = await prisma.confirmEmail.findFirst({
+    const confirmEmail = await prisma.confirmEmail.findFirst({
         where: { token: hashedToken, expiresAt: { gte: new Date() } },
     })
 
-    if (verification) {
+    if (confirmEmail) {
         try {
             await prisma.user.update({
-                where: { email: verification.email },
-                data: { verifiedEmail: true }
+                where: { email: confirmEmail.email },
+                update: { verifiedEmail: true },
             })
         } catch (err) {
             console.error(err)
         }
     }
 
-    return NextResponse.json({ ok: true, message: "Email verified successfully!" })
+    // JWT Implementation
+
+    const jwtToken = jwt.sign(
+        { userId: confirmEmail.userId },
+        process.env.JWT_SECRET!,
+        { expiresIn: "15m" }
+    )
+
+    const response = NextResponse.json({ message: "Email confirmed & logged in" })
+    response.cookies.set("authToken", jwtToken, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'lax',
+        maxAge: 15,
+        path: '/',
+    })
+
+    return response;
 
 }
