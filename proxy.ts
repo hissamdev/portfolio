@@ -5,7 +5,8 @@ import { parseAuthCookie, verifyJwt } from "./utils/jwt";
 export async function proxy(request: NextRequest) {
     const token = parseAuthCookie(request.headers.get('cookies'))
 
-    const isProtectedRoute = !request.nextUrl.pathname.startsWith('/login');
+    const isProtectedRoute = request.nextUrl.pathname.startsWith('/dashboard');
+    const loginRoute = request.nextUrl.pathname.startsWith('/login')
     if (isProtectedRoute) {
         if (!token) {
             return NextResponse.redirect(new URL('/login', request.url))
@@ -18,9 +19,9 @@ export async function proxy(request: NextRequest) {
             response.cookies.delete('authToken')
             return response;
         }
-    } else {
+    } else if (loginRoute) {
         if (token && verifyJwt(token)) {
-            return NextResponse.redirect(new URL('dashboard', request.url))
+            return NextResponse.redirect(new URL('/dashboard', request.url))
         }
     }
 
