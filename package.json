@@ -1,12 +1,12 @@
 {
-  "name": "agency-nextjs",
+  "name": "ahmed-hissam",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
@@ -19,7 +19,7 @@
     "@types/cookie": "^0.6.0",
     "@types/nodemailer": "^7.0.9",
     "cookie": "^1.1.1",
-    "dotenv": "^17.2.3",
+    "dotenv": "^17.2.4",
     "framer-motion": "^12.29.2",
     "jsonwebtoken": "^9.0.3",
     "lucide-react": "^0.563.0",
@@ -36,7 +36,7 @@
     "@types/pg": "^8.16.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "prisma": "^6.19.2",
+    "prisma": "^7.3.0",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
     "typescript": "^5",

@@ -7,13 +7,24 @@ import Header from "./nav-ui/Header/Header";
 import ConstructionBar from "../components/ui/ConstructionBar";
 
 export default function ComponentLoader() {
-    const [showConstructionBar, setShowConstructionBar] = useState(true)
     const pathname = usePathname();
     const isMatchingPath = pathname === "/projects";
+
+    const [showConstructionBar, setShowConstructionBar] = useState(true)
+    
     
     useEffect(() => {
-        setShowConstructionBar(!document.cookie.includes("constructionHidden=true")) // If it doesn't exist, turn false to true and show. If it exists, turn true to false and hide.
-    })
+        const syncConstructionBar = () => {
+            const isHidden = document.cookie.includes("constructionHidden=true");
+
+            setShowConstructionBar((prev) => {
+                const newValue = !isHidden;
+                return prev !== newValue ? newValue : prev;
+            })
+        }
+        
+        syncConstructionBar();
+    }, [])
 
     return (
         <>

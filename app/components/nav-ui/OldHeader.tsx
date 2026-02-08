@@ -14,9 +14,9 @@ export default function OldHeader() {
     return (
         <header className="h-[60px] md:h-14 w-full flex justify-center items-center gap-10 bg-[#225252] z-10000 xl:pr-2 lg:px-0">
             <div className="flex">
-                <a href="/" className="bg-gray-200 flex justify-center items-center cursor-pointer rounded-[50px]">
+                <Link href="/" className="bg-gray-200 flex justify-center items-center cursor-pointer rounded-[50px]">
                     <div className="h-12 w-12"></div>
-                </a>
+                </Link>
                 <nav className="main-header-nav hidden md:flex justify-center items-center text-white">
                     <ul className="flex">
                         <li>
@@ -32,7 +32,7 @@ export default function OldHeader() {
 
                                     <div className="flex gap-[47px]">
                                         <div className="pt-5 w-[329px] flex flex-col gap-1.5">
-                                            <div className="border-b-2 border-b-[#2600FF] py-[2.5px]"><a href="/" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Visit Portfolio</a></div>
+                                            <div className="border-b-2 border-b-[#2600FF] py-[2.5px]"><Link href="/" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Visit Portfolio</Link></div>
                                             <div>
                                                 <div className="border-b-2 border-b-[#2600FF] py-[2.5px]">
                                                     <a href="/projects" className="text-[20px] leading-6 font-semibold hover:text-[#456AFF]">Projects</a>

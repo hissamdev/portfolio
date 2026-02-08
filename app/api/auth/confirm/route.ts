@@ -48,21 +48,19 @@ export async function GET(req: Request) {
         where: { token: hashedToken, expiresAt: { gte: new Date() } },
     })
 
-    if (confirmEmail) {
-        try {
-            await prisma.user.update({
-                where: { email: confirmEmail.email },
-                update: { verifiedEmail: true },
-            })
-        } catch (err) {
-            console.error(err)
-        }
+    if (!confirmEmail) {
+        return NextResponse.json({ ok: false, message: "The verification link doesn't exist or has expired" })
     }
 
-    // JWT Implementation
+    const user = await prisma.user.findUnique({
+        where: { email: confirmEmail.email },
+    })
 
+    if (!user) return NextResponse.json({ ok: false, message: "An error occured, please try again" }, { status: 500 })
+
+    // JWT Implementation
     const jwtToken = jwt.sign(
-        { userId: confirmEmail.userId },
+        { userId: user.userId },
         process.env.JWT_SECRET!,
         { expiresIn: "15m" }
     )

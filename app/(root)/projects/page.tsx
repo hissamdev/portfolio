@@ -10,7 +10,7 @@ export default function Projects() {
                     <div className="logo-icon w-8 h-8 inline-block rounded-3xl bg-gray-500 ml-1 cursor-pointer"></div>
                     <div className="flex items-center">
                         <div className="flex justify-center items-center">
-                            <a href="/" className="username px-1.5 py-1 hover:bg-white/10 rounded cursor-pointer"><span className="">hissamdev</span></a>
+                            <Link href="/" className="username px-1.5 py-1 hover:bg-white/10 rounded cursor-pointer"><span className="">hissamdev</span></Link>
                             <p className="text-gray-500 w-4 text-center">/</p>
                             <a className="repo-name px-1.5 py-1 hover:bg-white/10 rounded font-semibold cursor-pointer">hissam</a>
                         </div>
