@@ -1,4 +1,5 @@
 'use client'
+import { FormEvent } from "react";
 
 import { useState } from "react";
 import AuditForm from "./AuditForm";
@@ -12,26 +13,11 @@ export default function CreateAccount({ toggleModal }: {toggleModal: () => void}
     const [loading, setLoading] = useState(false);
     const [submitted, setSubmitted] = useState(false)
 
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault()
+    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault()
         setLoading(true);
 
-        try {
-            await fetch('api/auth/request', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                email,
-                url,
-                message,
-            })
-        })
-
-        } catch (err) {
-            console.error(err);
-        }
+        const formData = new FormData(event.currentTarget)
         
         setLoading(false)
     }

@@ -10,7 +10,9 @@ type Props = {
     loading: boolean,
 }
 
-export default function AuditForm({ handleSubmit, email, setEmail, url, setUrl, message, setMessage, loading }: Props) {
+
+
+export default function AuditForm({ email, setEmail, url, setUrl, message, setMessage, loading }: Props) {
 
     return (
         <form onSubmit={handleSubmit}>
@@ -18,20 +20,20 @@ export default function AuditForm({ handleSubmit, email, setEmail, url, setUrl, 
             <p className="pt-1.5 text-sm">Please enter your email to request a free SEO audit of your website.</p>
 
             <section className="pt-[21px]">
-                <fieldset className="flex flex-col gap-1.5">
+                <div className="flex flex-col gap-1.5">
                     <label htmlFor="email" className="text-sm">Email</label>
-                    <input value={email} onChange={(e) => setEmail(e.target.value)} id="email" type="email" autoComplete="email" required className="px-1.5 h-[30px] border border-white/40 focus:outline-2 rounded-sm" />
-                </fieldset>
+                    <input id="email" name="email" type="email" placeholder="Email" autoComplete="email" required className="px-1.5 h-[30px] border border-white/40 focus:outline-2 rounded-sm" />
+                </div>
 
-                <fieldset className="pt-[14px] flex flex-col gap-1.5">
+                <div className="pt-[14px] flex flex-col gap-1.5">
                     <label className="text-sm">Website URL</label>
-                    <input value={url} onChange={(e) => setUrl(e.target.value)} id="url" type="url" autoComplete="url" required className="px-1.5 h-[30px] border border-white/40 focus:outline-2 rounded-sm" />
-                </fieldset>
+                    <input id="url" name="url" type="url" placeholder="Website URL" autoComplete="url" required className="px-1.5 h-[30px] border border-white/40 focus:outline-2 rounded-sm" />
+                </div>
 
-                <fieldset className="pt-[14px] flex flex-col gap-1.5">
+                <div className="pt-[14px] flex flex-col gap-1.5">
                     <label className="text-sm">Send message (optional)</label>
-                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} id="message" autoComplete="text" className="px-1.5 h-15 border border-white/40 focus:outline-2 rounded-sm" />
-                </fieldset>
+                    <textarea value={message} name="message" autoComplete="text" className="px-1.5 h-15 border border-white/40 focus:outline-2 rounded-sm" />
+                </div>
 
                 <button type="submit" disabled={loading} className="mt-[14px] w-full h-[36px] bg-white text-[12px] text-black font-bold rounded-md">Get Free SEO Audit</button>
             </section>
