@@ -1,3 +1,4 @@
+import { requestAudit } from "@/app/actions/auth"
 
 type Props = {
     handleSubmit: (e:React.FormEvent<HTMLFormElement>) => Promise<void>,
@@ -15,7 +16,7 @@ type Props = {
 export default function AuditForm({ email, setEmail, url, setUrl, message, setMessage, loading }: Props) {
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form action={requestAudit}>
             <h3 className="text-lg ">Enter your email</h3>
             <p className="pt-1.5 text-sm">Please enter your email to request a free SEO audit of your website.</p>
 
@@ -32,7 +33,7 @@ export default function AuditForm({ email, setEmail, url, setUrl, message, setMe
 
                 <div className="pt-[14px] flex flex-col gap-1.5">
                     <label className="text-sm">Send message (optional)</label>
-                    <textarea value={message} name="message" autoComplete="text" className="px-1.5 h-15 border border-white/40 focus:outline-2 rounded-sm" />
+                    <textarea name="message" placeholder="(Optional) Enter a message" autoComplete="text" className="px-1.5 h-15 border border-white/40 focus:outline-2 rounded-sm" />
                 </div>
 
                 <button type="submit" disabled={loading} className="mt-[14px] w-full h-[36px] bg-white text-[12px] text-black font-bold rounded-md">Get Free SEO Audit</button>

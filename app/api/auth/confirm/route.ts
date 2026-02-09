@@ -32,7 +32,6 @@ export async function POST(req: Request) {
         where: { email: normalizedEmail },
         data: { verifiedEmail: true }
     })
-
 }
 
 export async function GET(req: Request) {

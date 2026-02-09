@@ -14,65 +14,71 @@ datasource db {
 }
 
 model ConfirmEmail {
-  id Int @id @default(autoincrement())
-  expiresAt DateTime
-  email String
-  code String
-  token String @unique
-  usedAt DateTime?
-  creationDate DateTime @default(now())
+  id           Int       @id @default(autoincrement())
+  expiresAt    DateTime
+  email        String
+  code         String
+  token        String    @unique
+  usedAt       DateTime?
+  creationDate DateTime  @default(now())
 
   @@map("confirm_email")
 }
 
 model User {
-  id Int @id @default(autoincrement())
-  userId String @unique @default(uuid())
-
-  verifiedEmail Boolean @default(false)
-  email String @unique
-  password String?
-  displayName String?
-  username String? @unique
-  slug String?
-  blogs Blog[]
+  id String @id @default(uuid())
+  verifiedEmail Boolean        @default(false)
+  email         String         @unique
+  password      String?
+  displayName   String?
+  username      String?        @unique
+  slug          String?
+  blogs         Blog[]
   auditRequests AuditRequest[]
 
   // More info (optional)
   companyName String?
-  birthday String?
-  website String?
-  otherLinks String?
-  bio String?
+  birthday    String?
+  website     String?
+  otherLinks  String?
+  bio         String?
 
   // Socials
   instagram String?
-  facebook String?
-  youtube String?
-  twitter String?
+  facebook  String?
+  youtube   String?
+  twitter   String?
 
-  lastOnline DateTime? @default(now())
-  creationDate DateTime @default(now())
+  lastOnline          DateTime? @default(now())
+  creationDate        DateTime  @default(now())
   // Last Updated
-  detailsLastUpdated DateTime @updatedAt
-  emailLastUpdated DateTime @default(now())
-  passwordLastUpdated DateTime @default(now())
+  detailsLastUpdated  DateTime  @updatedAt
+  emailLastUpdated    DateTime  @default(now())
+  passwordLastUpdated DateTime  @default(now())
+
+  name          String
+  emailVerified Boolean   @default(false)
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  sessions      Session[]
+  accounts      Account[]
 
   @@map("users")
 }
 
 model Blog {
-  id Int @id @default(autoincrement())
+  id       Int    @id @default(autoincrement())
   authorId String
-  author User @relation(fields: [authorId], references: [userId])
+  author   User   @relation(fields: [authorId], references: [id])
 
-  title String
+  title   String
   content String
-  slug String @unique
+  slug    String @unique
 
   // Visibility
-  isPublished Boolean @default(false)
-  Status String @default("Unpublished")
+  isPublished   Boolean  @default(false)
+  Status        String   @default("Unpublished")
   allowIndexing Boolean?
 
   publishDate DateTime @default(now())
@@ -82,14 +88,63 @@ model Blog {
 }
 
 model AuditRequest {
-  id Int @id @default(autoincrement())
-  userId String
-  user User @relation(fields: [userId], references: [userId])
-  url String
+  id      Int     @id @default(autoincrement())
+  userId  String
+  user    User    @relation(fields: [userId], references: [id])
+  url     String
   message String?
 
   creationDate DateTime @default(now())
-  lastUpdated DateTime @default(now())
+  lastUpdated  DateTime @default(now())
 
   @@map("audit_requests")
+}
+
+model Session {
+  id        String   @id
+  expiresAt DateTime
+  token     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  ipAddress String?
+  userAgent String?
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([token])
+  @@index([userId])
+  @@map("session")
+}
+
+model Account {
+  id                    String    @id
+  accountId             String
+  providerId            String
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  @@index([userId])
+  @@map("account")
+}
+
+model Verification {
+  id         String   @id
+  identifier String
+  value      String
+  otpCode    String?
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([identifier])
+  @@map("verification")
 }

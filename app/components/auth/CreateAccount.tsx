@@ -17,7 +17,8 @@ export default function CreateAccount({ toggleModal }: {toggleModal: () => void}
         event.preventDefault()
         setLoading(true);
 
-        const formData = new FormData(event.currentTarget)
+        const formData = new FormData(event.currentTarget);
+        const email = formData.get("")
         
         setLoading(false)
     }
