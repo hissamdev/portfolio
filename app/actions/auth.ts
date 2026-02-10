@@ -1,6 +1,5 @@
 'use server'
 
-import prisma from "@/lib/prisma";
 import { auth } from "@/utils/auth";
 import { headers } from "next/headers";
 

@@ -10,7 +10,7 @@ export default function Hero() {
                     <div>
                         <div className="flex items-center gap-3">
                             <div className="w-7 h-px bg-indigo-500/50 "></div>
-                            <span className="text-[#818cf8] text-[12.25px] font-medium tracking-wide ">Hey, I&aposm Ahmed Hissam</span>
+                            <span className="text-[#818cf8] text-[12.25px] font-medium tracking-wide ">Hey, I&apos;m Ahmed Hissam</span>
                         </div>
                         <h1 className="pt-[18px] text-white text-[31px] leading-9 font-bold">Full Stack Engineer <br />
                             <span className="bg-[linear-gradient(90deg,#60A5FA,#A78BFA,#F472B6)] bg-clip-text text-transparent">Custom websites</span>

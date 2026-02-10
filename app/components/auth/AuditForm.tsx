@@ -1,19 +1,6 @@
 import { requestAudit } from "@/app/actions/auth"
 
-type Props = {
-    handleSubmit: (e:React.FormEvent<HTMLFormElement>) => Promise<void>,
-    email: string,
-    setEmail: React.Dispatch<React.SetStateAction<string>>,
-    url: string,
-    setUrl: React.Dispatch<React.SetStateAction<string>>,
-    message: string,
-    setMessage: React.Dispatch<React.SetStateAction<string>>,
-    loading: boolean,
-}
-
-
-
-export default function AuditForm({ email, setEmail, url, setUrl, message, setMessage, loading }: Props) {
+export default function AuditForm({ loading, setEmail }: { loading: boolean, setEmail: React.Dispatch<React.SetStateAction<string>> }) {
 
     return (
         <form action={requestAudit}>
@@ -23,7 +10,7 @@ export default function AuditForm({ email, setEmail, url, setUrl, message, setMe
             <section className="pt-[21px]">
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="email" className="text-sm">Email</label>
-                    <input id="email" name="email" type="email" placeholder="Email" autoComplete="email" required className="px-1.5 h-[30px] border border-white/40 focus:outline-2 rounded-sm" />
+                    <input id="email" name="email" type="email" placeholder="Email" autoComplete="email" onChange={(e) => setEmail(e.target.value)} required className="px-1.5 h-[30px] border border-white/40 focus:outline-2 rounded-sm" />
                 </div>
 
                 <div className="pt-[14px] flex flex-col gap-1.5">

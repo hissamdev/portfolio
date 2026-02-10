@@ -1,17 +1,14 @@
 'use client'
 import { FormEvent } from "react";
-
 import { useState } from "react";
 import AuditForm from "./AuditForm";
 import CodeInput from "./CodeInput";
 import { motion } from "framer-motion";
 
 export default function CreateAccount({ toggleModal }: {toggleModal: () => void}) {
-    const [email, setEmail] = useState('');
-    const [url, setUrl] = useState('');
-    const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false);
     const [submitted, setSubmitted] = useState(false)
+    const [email, setEmail] = useState('')
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault()
@@ -29,12 +26,12 @@ export default function CreateAccount({ toggleModal }: {toggleModal: () => void}
                 <div onClick={e => e.stopPropagation()} className="pt-[29px] pb-20 w-full h-fit bg-[#353535] rounded-lg text-white overflow-hidden">
                     <motion.div className="w-[200%] flex" animate={{x: submitted ? "-50%" : "0%"}} transition={{ type: 'spring', duration: 0.2 }} >
                         <div className="px-[24px] w-1/2 ">
-                            <AuditForm handleSubmit={handleSubmit} email={email} setEmail={setEmail} url={url} setUrl={setUrl} message={message} setMessage={setMessage} loading={loading} />
+                            <AuditForm loading={loading} setEmail={setEmail} />
                             <button onClick={() => setSubmitted(!submitted)}>Swipe</button>
                         </div>
                         <div className="px-[24px] w-1/2">
                             <button onClick={() => setSubmitted(!submitted)}>Swipe</button>
-                            <CodeInput />
+                            <CodeInput email={email} />
                         </div>
                     </motion.div>
                 </div>

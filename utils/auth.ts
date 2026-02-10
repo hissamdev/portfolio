@@ -12,12 +12,12 @@ export const auth = betterAuth({
     plugins: [
         magicLink({
             sendMagicLink: async ({ email, token, url, }, ctx) => {
-                console.log('-------------------------------------------------------------------------------------------BAUTH PARAMETERS:', email, token, url)
+                // Generate 6 digit code
                 const otpCode = String(Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000)
                 
-                 const fetchRow = await prisma.verification.findFirst({
+                const fetchRow = await prisma.verification.findFirst({
                     where: { identifier: token }
-                 })
+                })
 
 
                  await prisma.verification.update({

@@ -1,8 +1,24 @@
-import { useCallback, useRef, useState } from "react"
+'use client'
+import { useCallback, useEffect, useRef, useState } from "react"
+import { verifyOtp } from "@/app/actions/verifyOtp"
 
-export default function CodeInput({ length = 6 }) {
+export default function CodeInput({ email }: { email: string }) {
+    const length = 6;
     const [code, setCode] = useState<string[]>(Array(length).fill(''))
-    const inputsRef = useRef<(HTMLInputElement | null)[]>([])
+    const inputsRef = useRef<(HTMLInputElement | null)[]>([]) // Used for focus
+
+    useEffect(() => {
+        const codeComplete = code.every(slot => slot !== '')
+        if (codeComplete) {
+            const joinedCode = code.join('')
+            
+            const handleVerification = async () => {
+                const response = await verifyOtp(joinedCode, email)
+                console.log(response)
+            }
+            handleVerification();
+        }
+    },)
 
     const focusNextEmpty = useCallback((index: number) => {
         for (let i = index + 1; i < length; i++) {
@@ -30,6 +46,7 @@ export default function CodeInput({ length = 6 }) {
         if (value) {
             focusNextEmpty(index)
         }
+
     }, [code, focusNextEmpty])
 
     function handleKeyDown(e: React.KeyboardEvent, index: number) {
