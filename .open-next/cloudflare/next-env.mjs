@@ -1,3 +1,0 @@
-export const production = {"JWT_SECRET":"6f8fdougihk74vbh3409sdhb67l8ds04gbjk3lajsgbli93bqo9v4fgn78oggal","DATABASE_URL":"postgresql://psql:password@localhost:5432/db_psql","GMAIL_USER":"standonbiztwin@gmail.com","GMAIL_PASS":"ljmpelpxctryorbn"};
-export const development = {"JWT_SECRET":"6f8fdougihk74vbh3409sdhb67l8ds04gbjk3lajsgbli93bqo9v4fgn78oggal","DATABASE_URL":"postgresql://psql:password@localhost:5432/db_psql","GMAIL_USER":"standonbiztwin@gmail.com","GMAIL_PASS":"ljmpelpxctryorbn"};
-export const test = {"JWT_SECRET":"6f8fdougihk74vbh3409sdhb67l8ds04gbjk3lajsgbli93bqo9v4fgn78oggal","DATABASE_URL":"postgresql://psql:password@localhost:5432/db_psql","GMAIL_USER":"standonbiztwin@gmail.com","GMAIL_PASS":"ljmpelpxctryorbn"};
