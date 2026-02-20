@@ -11,8 +11,8 @@ export default function AuditButton() {
     
     return (
         <>
-            <button onClick={toggleModal} className="py-3.5 bg-[#14171C] rounded-xl text-white text-[13.3px] font-bold border border-white/10 cursor-pointer">
-                Free SEO Audit
+            <button onClick={toggleModal} className="py-3.5 md:px-[33px] md:py-[16px] rounded-md md:text-[17.5px] md:leading-[21px] font-bold border border-black cursor-pointer">
+                Download Resume
             </button>
 
             {showModal && <CreateAccount toggleModal={toggleModal} />}

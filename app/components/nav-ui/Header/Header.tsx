@@ -34,21 +34,21 @@ export default function Header() {
 
     return (
         <>
-            <header className={`px-[43px] fixed top-0 w-full z-50 flex justify-between items-center bg-[#0b0e14]/85 backdrop-blur-sm
+            <header className={`px-[10px] md:px-[43px] fixed top-0 w-full flex justify-center items-center z-50 backdrop-blur-sm
                 transition-all duration-300 ease-in-out
-                ${isScrolled ? "h-[55px]" : "h-[91px]"}
-                ${animatingBorder ? "border-b border-white" : "border-b border-gray-700"}`}>
+                ${isScrolled ? "h-[55px]" : "h-[91px]"}`}>
 
-                <div className="header-left flex items-center gap-[19px]">
-                    <div className="icon-div w-[35px] aspect-square flex justify-center items-center rounded-[10.5px] bg-[linear-gradient(-50deg,#6366F1,#9333EA)]">
-                        <p className="text-white text-[17px] leading-[21px] font-bold">AH</p>
-                    </div>
+                <div className="w-6xl flex justify-between items-center">
+                    <div className="header-left flex items-center gap-[19px]">
+                        <div className="icon-div w-[35px] aspect-square flex justify-center items-center rounded-[10.5px] bg-[linear-gradient(-50deg,#6366F1,#9333EA)]">
+                            <p className="text-white text-[17px] leading-[21px] font-bold">AH</p>
+                        </div>
                     
-                    <Sun color="#FACC15" size={28} />
-                </div>
-
-                <div>
-                    <Menu color="white" size={28} />
+                        <Sun color="#FACC15" size={28} />
+                    </div>
+                    <div>
+                        <Menu color="black" size={28} />
+                    </div>
                 </div>
             </header>
         </>
