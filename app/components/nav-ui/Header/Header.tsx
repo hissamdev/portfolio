@@ -16,7 +16,6 @@ export default function Header() {
 
           setAnimatingBorder(true);
           setTimeout(() => setAnimatingBorder(false), 300)
-          console.log("Header has been shrunk");
 
         } else if (isScrolledRef.current && scrollLocation < 110) {
           isScrolledRef.current = false;
@@ -24,7 +23,6 @@ export default function Header() {
 
           setAnimatingBorder(true);
           setTimeout(() => setAnimatingBorder(false), 300)
-          console.log("Header has been expanded");
         };
       }
 
@@ -34,7 +32,7 @@ export default function Header() {
 
     return (
         <>
-            <header className={`px-[10px] md:px-[43px] fixed top-0 w-full flex justify-center items-center z-50 backdrop-blur-sm
+            <header className={`px-2.5 md:px-[43px] fixed top-0 w-full flex justify-center items-center z-50 backdrop-blur-sm
                 transition-all duration-300 ease-in-out
                 ${isScrolled ? "h-[55px]" : "h-[91px]"}`}>
 

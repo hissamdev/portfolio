@@ -1,5 +1,7 @@
 import { ArrowRight, Check, Code, Github, Linkedin, Search, TrendingUp } from "lucide-react";
-import AuditButton from "./AuditButton";
+import AuditButton from "../AuditButton";
+import { RefObject } from "react";
+import HeroSkillHeading from "./HeroSkillHeading";
 
 export default function Hero() {
 
@@ -47,7 +49,7 @@ export default function Hero() {
                     <div className="p-9 max-w-[339px] flex bg-[#F8FAFC] hover:bg-[#F3F5FF] rounded-[21px]">
                         <div className="flex flex-col gap-3.5">
                             <Code />
-                            <h3 className="text-[17.5px] leading-[21px] font-bold">Full Stack Development</h3>
+                            <HeroSkillHeading text="Full Stack Development" scrollPosition={1743} />
                             <p className="text-sm">Crafting high-performance, accessible, and stunning user interfaces using modern frameworks.</p>
                         </div>
                     </div>
@@ -55,7 +57,7 @@ export default function Hero() {
                     <div className="p-9 max-w-[339px] flex bg-[#F8FAFC] hover:bg-[#F3F5FF] rounded-[21px]">
                         <div className="flex flex-col gap-3.5">
                             <Search />
-                            <h3 className="text-[17.5px] leading-[21px] font-bold">SEO & Visibility</h3>
+                            <HeroSkillHeading text="SEO & Visibility" scrollPosition={1743} />
                             <p className="text-sm">Crafting high-performance, accessible, and stunning user interfaces using modern frameworks.</p>
                         </div>
                     </div>
@@ -63,7 +65,7 @@ export default function Hero() {
                     <div className="p-9 max-w-[339px] flex bg-[#F8FAFC] hover:bg-[#F3F5FF] rounded-[21px]">
                         <div className="flex flex-col gap-3.5">
                             <TrendingUp />
-                            <h3 className="text-[17.5px] leading-[21px] font-bold">Digital Marketing & Paid Ads</h3>
+                            <HeroSkillHeading text="Digital Marketing & Paid Ads" scrollPosition={1743} />
                             <p className="text-sm">Crafting high-performance, accessible, and stunning user interfaces using modern frameworks.</p>
                         </div>
                     </div>
