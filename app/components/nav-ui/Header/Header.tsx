@@ -31,7 +31,6 @@ export default function Header() {
     }, []);
 
     return (
-        <>
             <header className={`px-2.5 md:px-[43px] fixed top-0 w-full flex justify-center items-center z-50 backdrop-blur-sm
                 transition-all duration-300 ease-in-out
                 ${isScrolled ? "h-[55px]" : "h-[91px]"}`}>
@@ -49,6 +48,5 @@ export default function Header() {
                     </div>
                 </div>
             </header>
-        </>
     )
 }

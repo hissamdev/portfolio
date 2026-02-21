@@ -10,7 +10,7 @@ export default function About() {
                         <div className="w-[73px] h-px bg-[#5856E6]"></div>
                         <h2 className="text-[17.5px] leading-[21px] text-[#5856E6] font-bold">About me</h2>
                     </div>
-                    <h3 className="pt-[17px] text-[23.5px] leading-[28px] font-bold">Full Stack Developer, SEO Specialist, Digital Marketer</h3>
+                    <h3 className="pt-[17px] text-[23.5px] leading-7 font-bold">Full Stack Developer, SEO Specialist, Digital Marketer</h3>
                     <p className="pt-[17px] w-[528px] text-[15.75px] leading-[19px]">
                         I'm Ahmed Hissam, a World-Class Senior Full-Stack Engineer based in New York City. My journey in tech started over 8 years ago, driven by a fascination with how code can build entirely new digital worlds.
                         <br /> <br />
@@ -20,22 +20,22 @@ export default function About() {
                     </p>
 
                     <div className="pt-[62px] w-full grid grid-cols-1 md:grid-cols-2 gap-y-[17px] gap-x-[27px]">
-                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-[10px] bg-[#F4F8FD] rounded-[10.5px] ">
+                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-2.5 bg-[#F4F8FD] rounded-[10.5px] ">
                             <CircleCheck size={15} color="green" />
                             <span className="text-[12.25px] leading-[15px] font-bold">Clean & Maintainable Code</span>
                         </div>
 
-                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-[10px] bg-[#F4F8FD] rounded-[10.5px] ">
+                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-2.5 bg-[#F4F8FD] rounded-[10.5px] ">
                             <CircleCheck size={15} color="green" />
                             <span className="text-[12.25px] leading-[15px] font-bold">Clean & Maintainable Code</span>
                         </div>
 
-                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-[10px] bg-[#F4F8FD] rounded-[10.5px] ">
+                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-2.5 bg-[#F4F8FD] rounded-[10.5px] ">
                             <CircleCheck size={15} color="green" />
                             <span className="text-[12.25px] leading-[15px] font-bold">Clean & Maintainable Code</span>
                         </div>
 
-                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-[10px] bg-[#F4F8FD] rounded-[10.5px] ">
+                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-2.5 bg-[#F4F8FD] rounded-[10.5px] ">
                             <CircleCheck size={15} color="green" />
                             <span className="text-[12.25px] leading-[15px] font-bold">Clean & Maintainable Code</span>
                         </div>

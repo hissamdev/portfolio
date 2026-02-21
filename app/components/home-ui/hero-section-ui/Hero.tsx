@@ -4,15 +4,13 @@ import { RefObject } from "react";
 import HeroSkillHeading from "./HeroSkillHeading";
 
 export default function Hero() {
-
     return (
-        <>
             <section className="hero-section pt-[100px] md:pt-[180px] max-w-6xl mx-auto bg-white">
                 <div className="hero-container flex justify-between">
                     <div className="hero-left px-[21px] md:p-0">
                         <div>
                             <div className="flex items-center gap-2.5">
-                                <div className="w-10.5 h-[2px] bg-[#5856E6] "></div>
+                                <div className="w-10.5 h-0.5 bg-[#5856E6] "></div>
                                 <span className="text-[#5856E6] md:text-[17.5px] md:font-bold">Hey, I&apos;m Ahmed Hissam</span>
                             </div>
                             <h1 className="md:pt-[23px] font-bold">
@@ -71,6 +69,5 @@ export default function Hero() {
                     </div>
                 </div>
             </section>
-        </>
     )
 }

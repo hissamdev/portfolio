@@ -3,7 +3,6 @@ import Image from "next/image"
 
 export default function Footer() {
     return (
-        <>
         <footer className="hidden lg:flex flex-col items-center bg-[#332323] text-white">
             <div className="pt-[94px] lg:w-[1196px] flex justify-between">
                 <div className="flex flex-col">
@@ -42,6 +41,5 @@ export default function Footer() {
                     </div>
             </div>
         </footer>
-        </>
     )
 }

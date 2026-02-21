@@ -1,19 +1,16 @@
-
-
-import Link from "next/link";
-import Image from "next/image";
 import Hero from "../components/home-ui/hero-section-ui/Hero";
 import About from "../components/home-ui/About";
 import Projects from "../components/home-ui/Projects";
+import { getProjects } from "../actions/projects";
 
-
-
-export default function Home() {
+export default async function Home() {
+  const projects = await getProjects();
+  
   return (
     <>
         <Hero />
         <About />
-        <Projects />
+        <Projects projects={projects} />
     </>
   );
 };

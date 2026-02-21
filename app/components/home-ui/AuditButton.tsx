@@ -11,7 +11,7 @@ export default function AuditButton() {
     
     return (
         <>
-            <button onClick={toggleModal} className="py-3.5 md:px-[33px] md:py-[16px] rounded-md md:text-[17.5px] md:leading-[21px] font-bold border border-black cursor-pointer">
+            <button onClick={toggleModal} className="py-3.5 md:px-[33px] md:py-4 rounded-md md:text-[17.5px] md:leading-[21px] font-bold border border-black cursor-pointer">
                 Download Resume
             </button>
 
