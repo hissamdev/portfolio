@@ -1,5 +1,5 @@
 import prisma from "@/lib/prisma"
-import { Prisma, Project } from "../generated/prisma/client"
+import { Prisma } from "../generated/prisma/client"
 
 export async function createProject() {
     await prisma.project.create({

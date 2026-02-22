@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Geist, Geist_Mono, Inter } from "next/font/google";
-
 import ComponentLoader from "./components/ComponentLoader";
-import Footer from "./components/nav-ui/Footer";
 
 import "./globals.css";
 import "./tailwind-files/github_clone.css";
@@ -45,8 +43,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${interFont.variable} antialiased`}
       >
         {process.env.NODE_ENV === "production" &&
-        process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}/>)}
+          process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}/>
+        )}
         <ComponentLoader />
         {children}
       </body>

@@ -12,12 +12,12 @@ export default function Projects({ projects }: { projects: ProjectWithTags[] }) 
     const projectsToDisplay = category === "all" ? projects : projects.filter(project => project.tags.some(tag => tag.name === category))
     
     return (
-        <section className="pt-28 max-w-6xl m-auto h-900">
+        <section className="px-[21px] md:px-0 pt-28 max-w-6xl mx-auto">
             <div className="flex items-center gap-2.5">
                 <div className="w-[73px] h-px bg-[#5856E6]"></div>
                 <h2 className="md:text-[17.5px] md:leading-[21px] text-[#5856E6] font-bold">Skills</h2>
             </div>
-            <div className="flex justify-between">
+            <div className="md:flex justify-between">
                 <div>
                     <h2 className="md:pt-[9px] text-[23.5px] leading-7 font-bold">Previous work and projects</h2>
                     <p className="md:pt-[17px] md:w-[592px] text-[15.75px] leading-[19px]">Exploring the intersection of complex engineering, growth-focused SEO, and high-impact digital marketing.</p>
@@ -53,9 +53,9 @@ export default function Projects({ projects }: { projects: ProjectWithTags[] }) 
                 </div>
             </div>
 
-            <div className="pt-[62px] project-cards grid md:grid-cols-[repeat(3,minmax(300,1fr))] md:gap-x-18 md:gap-y-12">
+            <div className="pt-[62px] project-cards grid gap-y-8 md:grid-cols-[repeat(3,minmax(300,1fr))] md:gap-x-18 md:gap-y-12">
                 <AnimatePresence mode="popLayout">
-                    {projectsToDisplay.map((p) => {
+                    {projectsToDisplay.map((p, index) => {
                         return (
                             <motion.div
                                 key={p.id}

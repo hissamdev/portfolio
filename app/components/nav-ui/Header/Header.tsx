@@ -35,7 +35,7 @@ export default function Header() {
                 transition-all duration-300 ease-in-out
                 ${isScrolled ? "h-[55px]" : "h-[91px]"}`}>
 
-                <div className="w-6xl flex justify-between items-center">
+                <div className="w-[300px] md:w-6xl flex justify-between items-center">
                     <div className="header-left flex items-center gap-[19px]">
                         <div className="icon-div w-[35px] aspect-square flex justify-center items-center rounded-[10.5px] bg-[linear-gradient(-50deg,#6366F1,#9333EA)]">
                             <p className="text-white text-[17px] leading-[21px] font-bold">AH</p>
