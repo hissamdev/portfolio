@@ -40,13 +40,13 @@ export default function TechStack() {
 
 
     return (
-        <section className="px-[21px] md:px-0 pt-[98px] max-w-6xl mx-auto h-900">
+        <section className="px-[21px] md:px-0 pt-[98px] max-w-6xl mx-auto">
             <h2 className="text-[28.5px] leading-[34px] font-bold underline">Tech Stack</h2>
             <div className="mt-[25px] border-l-2 sm:border-l-4 border-[#64748B]/26">
                 <p className="pl-2 md:pl-[18px] md:w-[379px] md:text-[17.25px] md:leading-[21px] text-[#64748B] font-bold">I use modern development tools combined with SEO and performance strategy to build and grow digital products that scale.</p>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-[20px] md:gap-0 justify-between">
+            <div className="flex flex-col md:flex-row gap-5 md:gap-0 justify-between">
                 {stackInfo.map(stack => (
                     <div key={stack.title} className="pt-[27px] max-w-[339px] w-full h-fit group">
                         <h3 className="text-[24.25px] leading-[29px] font-bold">{stack.title}</h3>
