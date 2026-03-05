@@ -1,3 +1,5 @@
+{/*
+
 "use server"
 
 import prisma from "@/lib/prisma";
@@ -22,4 +24,6 @@ export async function verifyOtp(joinedCode: string, email: string) {
     if (!verification) return { ok: false, message: "Code is invalid or has expired", status: 401 }
 
     return { ok: true, message: "Successfully verified email through OTP" }
-} 
+}
+
+*/}
