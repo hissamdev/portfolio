@@ -1,6 +1,6 @@
 'use client'
 import { useCallback, useEffect, useRef, useState } from "react"
-import { verifyOtp } from "@/app/actions/verifyOtp"
+// import { verifyOtp } from "@/app/actions/verifyOtp"
 
 export default function CodeInput({ email }: { email: string }) {
     const length = 6;
@@ -13,8 +13,6 @@ export default function CodeInput({ email }: { email: string }) {
             const joinedCode = code.join('')
             
             const handleVerification = async () => {
-                const response = await verifyOtp(joinedCode, email)
-                console.log(response)
             }
             handleVerification();
         }

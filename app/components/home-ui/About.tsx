@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <section className="px-[21px] md:px-0 pt-8 md:pt-[119px] max-w-6xl mx-auto">
+        <section className="px-[21px] md:px-0 pt-8 max-w-6xl mx-auto">
             <div className="about-alignment md:flex justify-between">
                 <div className="about-left">
                     <div className="flex items-center gap-2.5">

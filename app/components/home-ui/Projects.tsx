@@ -2,14 +2,22 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import clsx from 'clsx';
 import { motion, AnimatePresence } from "framer-motion";
-import { ProjectWithTags } from "@/app/actions/projects";
+import { getProjects } from "@/app/actions/projects";
 
-export default function Projects({ projects }: { projects: ProjectWithTags[] }) {
+export default function Projects({ projects }: { projects: any }) {
     const [category, setCategory] = useState("all");
-    const projectsToDisplay = category === "all" ? projects : projects.filter(project => project.tags.some(tag => tag.name === category))
+    const projectsToDisplay = category === "all" ? projects : projects.filter((project: any) => project.tags.some((tag: any) => tag.name === category))
+
+    useEffect(() => {
+        try {
+            getProjects()
+        } catch (e) {
+            console.error("Error creating user on mount: ", e)
+        }
+    }, [])
     
     return (
         <section className="px-[21px] md:px-0 pt-28 max-w-6xl mx-auto">
@@ -53,9 +61,9 @@ export default function Projects({ projects }: { projects: ProjectWithTags[] }) 
                 </div>
             </div>
 
-            <div className="pt-[62px] project-cards grid gap-y-8 md:grid-cols-[repeat(3,minmax(300,1fr))] md:gap-x-18 md:gap-y-12">
+            {/* <div className="pt-[62px] project-cards grid gap-y-8 md:grid-cols-[repeat(3,minmax(300,1fr))] md:gap-x-18 md:gap-y-12">
                 <AnimatePresence mode="popLayout">
-                    {projectsToDisplay.map((p, index) => {
+                    {projectsToDisplay.map((p: any, index: any) => {
                         return (
                             <motion.div
                                 key={p.id}
@@ -75,7 +83,7 @@ export default function Projects({ projects }: { projects: ProjectWithTags[] }) 
                                 </div>
                                 <div className="pt-6 px-[18px]">
                                     <div>
-                                        {p.tags.map((tag) => <span key={tag.name} className="py-[3.5px] px-[10.5px] gap-2.5 text-[10px] leading-3 font-bold text-[#64748B] bg-[#64748B]/10 rounded-[5.25px]">{tag.name}</span> )}
+                                        {p.tags.map((tag: any) => <span key={tag.name} className="py-[3.5px] px-[10.5px] gap-2.5 text-[10px] leading-3 font-bold text-[#64748B] bg-[#64748B]/10 rounded-[5.25px]">{tag.name}</span> )}
                                     </div>
                                     <h3 className="pt-3.5 text-[17.5px] leading-[22px] font-bold">{p.heading}</h3>
                                     <p className="pt-[10.5px] text-[12.25px] leading-[15px]">{p.description}</p>
@@ -86,7 +94,7 @@ export default function Projects({ projects }: { projects: ProjectWithTags[] }) 
                     })
                     }
                 </AnimatePresence>
-            </div>
+            </div> */}
         </section>
     )
-}
+} 

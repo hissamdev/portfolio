@@ -1,20 +1,20 @@
 'use server'
 
-import { auth } from "@/utils/auth";
+// import { auth } from "@/utils/auth";
 import { headers } from "next/headers";
 
 
 export async function requestAudit(formData: FormData) {
-    const email = formData.get("email") as string;
+    // const email = formData.get("email") as string;
 
-    await auth.api.signInMagicLink({
-        body: {
-            email: email,
-            callbackURL: '/dashboard',
-            newUserCallbackURL: '/dashboard',
-            errorCallbackURL: '/error-callback-url'
-        },
+    // await auth.api.signInMagicLink({
+    //     body: {
+    //         email: email,
+    //         callbackURL: '/dashboard',
+    //         newUserCallbackURL: '/dashboard',
+    //         errorCallbackURL: '/error-callback-url'
+    //     },
 
-        headers: await headers(),
-    })
-}
+    //     headers: await headers(),
+    // })
+} 
