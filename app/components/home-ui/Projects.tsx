@@ -20,6 +20,7 @@ export default function Projects() {
             const res = await getProjects()
 
             setProjects(res ?? [])
+            console.log(res)
         }
 
         load();

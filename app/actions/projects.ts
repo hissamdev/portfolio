@@ -33,8 +33,7 @@ import { usersTable, projectTable } from "@/lib/db/schema"
 export async function getProjects() {
     
     try {
-        const result = await db.select().from(projectTable);
-        return result
+        return await 
 
     } catch (error) {
         console.error("Error fetching projects: ", error)
