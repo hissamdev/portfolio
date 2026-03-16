@@ -1,7 +1,7 @@
 'use server'
 
 import { db } from "@/lib/db"
-import { usersTable } from "@/lib/db/schema"
+import { usersTable, projectTable } from "@/lib/db/schema"
 
 // export async function createProject() {
 //     await prisma.project.create({
@@ -33,17 +33,11 @@ import { usersTable } from "@/lib/db/schema"
 export async function getProjects() {
     
     try {
-        await db.insert(usersTable).values({
-        name: "Me",
-        age: "20",
-        email: 'email@gmail.com'
-    })
+        const result = await db.select().from(projectTable);
+        return result
 
-    const result = await db.select().from(usersTable);
-    console.log(result)
     } catch (error) {
-        console.error("Error inserting user: ", error)
-        throw(error)
+        console.error("Error fetching projects: ", error)
     }
     
 }

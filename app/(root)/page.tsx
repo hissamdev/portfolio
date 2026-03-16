@@ -13,7 +13,7 @@ export default async function Home() {
         <Hero />
         <HeroFeatureBoxes />
         <About />
-        <Projects projects={projects} />
+        <Projects />
         <TechStack />
     </>
   );

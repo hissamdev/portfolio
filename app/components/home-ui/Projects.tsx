@@ -6,18 +6,26 @@ import { useEffect, useState } from "react";
 import clsx from 'clsx';
 import { motion, AnimatePresence } from "framer-motion";
 import { getProjects } from "@/app/actions/projects";
+import { InferSelectModel } from "drizzle-orm";
+import { projectTable } from "@/lib/db/schema";
 
-export default function Projects({ projects }: { projects: any }) {
+type Projects = InferSelectModel<typeof projectTable>
+
+export default function Projects() {
     const [category, setCategory] = useState("all");
-    const projectsToDisplay = category === "all" ? projects : projects.filter((project: any) => project.tags.some((tag: any) => tag.name === category))
+    const [projects, setProjects] = useState<Projects[]>([])
 
     useEffect(() => {
-        try {
-            getProjects()
-        } catch (e) {
-            console.error("Error creating user on mount: ", e)
+        async function load() {
+            const res = await getProjects()
+
+            setProjects(res ?? [])
         }
+
+        load();
     }, [])
+    
+    const projectsToDisplay = category === "all" ? projects : projects.filter((project: any) => project.tags.some((tag: any) => tag.name === category))
     
     return (
         <section className="px-[21px] md:px-0 pt-28 max-w-6xl mx-auto">
@@ -61,7 +69,7 @@ export default function Projects({ projects }: { projects: any }) {
                 </div>
             </div>
 
-            {/* <div className="pt-[62px] project-cards grid gap-y-8 md:grid-cols-[repeat(3,minmax(300,1fr))] md:gap-x-18 md:gap-y-12">
+            <div className="pt-[62px] project-cards grid gap-y-8 md:grid-cols-[repeat(3,minmax(300,1fr))] md:gap-x-18 md:gap-y-12">
                 <AnimatePresence mode="popLayout">
                     {projectsToDisplay.map((p: any, index: any) => {
                         return (
@@ -94,7 +102,7 @@ export default function Projects({ projects }: { projects: any }) {
                     })
                     }
                 </AnimatePresence>
-            </div> */}
+            </div>
         </section>
     )
 } 

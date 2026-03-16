@@ -32,5 +32,4 @@ export const projectTable = pgTable('projects', {
   heading: text('heading').notNull(),
   description: text('description').notNull(),
   linkUrl: text('link_url').notNull(),
-
 })
