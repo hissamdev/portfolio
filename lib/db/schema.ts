@@ -22,8 +22,6 @@ export const usersTable = pgTable('users_table', {
   facebook: text('facebook'),
   youtube: text('youtube'),
   twitter: text('twitter'),
-
-  
 })
 
 export const projectTable = pgTable('projects', {
