@@ -2,8 +2,8 @@ import { Code, TrendingUp } from "lucide-react";
 
 export default function HeroRight() {
     return (
-        <div className="flex flex-col items-center gap-10">
-            <div className="w-[400px] h-[213px] flex flex-col rounded-2xl overflow-hidden">
+        <div className="pt-10 md:pt-0 px-[21px] md:px-0 md:flex flex-col items-center gap-4 md:gap-10 hidden">
+            <div className="w-full md:w-[400px] h-[213px] flex flex-col rounded-md md:rounded-2xl overflow-hidden">
                 <div className="pt-[3px] px-6 w-full h-[50px] flex justify-between items-center bg-[#151D29] border-b border-slate-700/50">
                     <div className="flex gap-2">
                         <div className="w-2.5 aspect-square bg-[#FF5F56] rounded-full"></div>
@@ -35,7 +35,7 @@ export default function HeroRight() {
                 </div>
             </div>
 
-            <div className="p-8 w-[350px] rounded-2xl border">
+            <div className="p-8 w-full md:w-[350px] rounded-2xl border">
                 <div className="flex gap-4">
                     <div className="p-3 bg-[#059669]/10 rounded-2xl">
                         <TrendingUp color="#059669" />
@@ -48,11 +48,11 @@ export default function HeroRight() {
                 </div>
 
                 <div className="pt-4">
-                    <p className="text-slate-500 text-[12px]">Strategic SEO optimization and data-driven marketing to enhance online visibility and drive organic growth.</p>
+                    <p className="text-slate-500 text-[12px]">Digital marketing management to improve your reach online by implementing organic and paid marketing methods.</p>
                 </div>
             </div>
 
-            <div className="p-8 w-[380px] rounded-2xl border">
+            <div className="p-8 w-full md:w-[380px] rounded-2xl border">
                 <div className="flex gap-4">
                     <div className="p-3 bg-violet-600/10 rounded-2xl">
                         <Code color="#7c3aed" />
@@ -65,7 +65,7 @@ export default function HeroRight() {
                 </div>
 
                 <div className="pt-4">
-                    <p className="text-slate-500 text-[12px]">Strategic SEO optimization and data-driven marketing to enhance online visibility and drive organic growth.</p>
+                    <p className="text-slate-500 text-[12px]">Specializing in modern technologies like Next.js, RSC, RESTful APIs, Relational Databases etc. to build performant applications. </p>
                 </div>
             </div>
         </div>

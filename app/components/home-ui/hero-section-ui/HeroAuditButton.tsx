@@ -71,7 +71,9 @@ export default function HeroAuditButton() {
                                             <p className="font-medium">Download Started</p>
                                         </div>
 
-                                        <button className="py-1.5 px-4 flex items-center gap-2 transition-all bg-purple-500 hover:bg-purple-500/90 text-white text-sm font-medium rounded-lg cursor-pointer">
+                                        <button
+                                            className="py-1.5 px-4 flex items-center gap-2 transition-all bg-purple-500 hover:bg-purple-500/90 text-white text-sm font-medium rounded-lg cursor-pointer"
+                                        >
                                             Save Again
                                             <RotateCw size={12} />
                                         </button>

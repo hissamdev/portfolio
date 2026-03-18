@@ -9,6 +9,6 @@ export default function HeroSkillHeading({ text, scrollPosition }: { text: strin
     }
 
     return (
-        <h3 onClick={scrollToProjects} className="self-start text-[17.5px] leading-[21px] font-bold cursor-pointer">{text}</h3>
+        <h3 onClick={scrollToProjects} className="text-[17.5px] leading-[21px] font-bold cursor-pointer">{text}</h3>
     )
 }

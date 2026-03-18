@@ -1,4 +1,6 @@
+import { Button } from "@/components/ui/button";
 import { Menu, Sun } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
@@ -37,13 +39,37 @@ export default function Header() {
 
                 <div className="w-[300px] md:w-6xl flex justify-between items-center">
                     <div className="header-left flex items-center gap-[19px]">
-                        <div className="icon-div w-[35px] aspect-square flex justify-center items-center rounded-[10.5px] bg-[linear-gradient(-50deg,#6366F1,#9333EA)]">
-                            <p className="text-white text-[17px] leading-[21px] font-bold">AH</p>
+                        <div className="flex items-center gap-2.5">
+                          <div className="icon-div w-[35px] aspect-square flex justify-center items-center rounded-[10.5px] bg-[linear-gradient(-50deg,#6366F1,#9333EA)] cursor-pointer">
+                              <p className="text-white text-[17px] leading-[21px] font-bold select-all">AH</p>
+                          </div>
+                          <p className="hidden md:block font-bold text-[17px] cursor-pointer">Ahmed Hissam</p>
                         </div>
                     
-                        <Sun color="#FACC15" size={28} />
+                        <div className="block md:hidden">
+                          <Sun color="#FACC15" size={28} />
+                        </div>
                     </div>
-                    <div>
+
+                    <nav className="hidden md:flex gap-5">
+                      <Button asChild variant="link" className="p-0 h-fit text-[15px]">
+                        <Link href="/">Home</Link>
+                      </Button>
+                      <Button asChild variant="link" className="p-0 h-fit text-[15px]">
+                        <Link href="/">About</Link>
+                      </Button>
+                      <Button asChild variant="link" className="p-0 h-fit text-[15px]">
+                        <Link href="/">Projects</Link>
+                      </Button>
+                      <Button asChild variant="link" className="p-0 h-fit text-[15px]">
+                        <Link href="/">Stack Info</Link>
+                      </Button>
+                      <Button asChild variant="link" className="p-0 h-fit text-[15px]">
+                        <Link href="/">Contact</Link>
+                      </Button>
+                    </nav>
+
+                    <div className="block md:hidden">
                         <Menu color="black" size={28} />
                     </div>
                 </div>

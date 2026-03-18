@@ -11,7 +11,7 @@ import HeroRight from "./HeroRight";
 export default function Hero() {
     return (
             <section className="hero-section pt-[100px] md:pt-[180px] max-w-6xl mx-auto bg-white">
-                <div className="hero-container flex justify-between">
+                <div className="hero-container flex flex-col md:flex-row justify-between">
                     <StaggerWrapper>
                         <div className="hero-left px-[21px] md:p-0">
                             <div>

@@ -1,5 +1,7 @@
+import { Button } from "@/components/ui/button";
 import { Award, CircleCheck } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
     return (
@@ -10,13 +12,15 @@ export default function About() {
                         <div className="w-9 md:w-[73px] h-px bg-[#5856E6]"></div>
                         <h2 className="text-[17.5px] leading-[21px] text-[#5856E6] font-bold">About me</h2>
                     </div>
-                    <h3 className="pt-[17px] text-xl md:text-[23.5px] md:leading-7 font-bold">Full Stack Developer, SEO Specialist, Digital Marketer</h3>
+                    <h3 className="pt-[17px] text-xl md:text-[23.5px] md:leading-7 font-bold">Full Stack Developer, Digital Marketing & SEO Specialist</h3>
                     <p className="pt-[17px] md:w-[528px] text-md md:text-[15.75px] md:leading-[19px]">
-                        I'm Ahmed Hissam, a World-Class Senior Full-Stack Engineer based in New York City. My journey in tech started over 8 years ago, driven by a fascination with how code can build entirely new digital worlds.
+                        I am Ahmed Hissam, a junior full stack developer for ~1 year and a digital marketing and SEO specialist for over 1 year. I am self taught in full stack development and have an in-person course certificate for digital marketing.
                         <br /> <br />
-                        Currently serving as a Lead Developer at a top-tier tech firm, I focus on architecting robust systems that prioritize clean code and exceptional UI/UX design. I've had the privilege of architecting a fintech platform handling over $1B in transactions and maintaining open-source libraries with thousands of stars.
+                        I build modern web applications that are accessible and trustworthy to create enjoyable experiences for users and efficient problem solving for businesses and founders. I built websites optimized for SEO to get found on Google efficiently.
                         <br /> <br />
-                        Beyond the screen, you'll find me behind a camera lens capturing cityscapes, strategizing over a chess board, or tinkering with micro-SaaS projects. I believe the best software is built at the intersection of logic and creativity.
+                        Currently, I am open to any remote international or on-site local opportunities.
+                        If you're interested or would like to learn more about me or my personal details,
+                        feel free to <Button variant="link" asChild className="px-0 h-fit text-[15px] leading-[19px] font-bold cursor-pointer"><Link href="/Ahmed-Hissam-Resume.pdf">download it here</Link></Button>.
                     </p>
 
                     <div className="pt-8 md:pt-[62px] w-full grid grid-cols-1 md:grid-cols-2 gap-y-[17px] gap-x-[27px]">
@@ -27,17 +31,17 @@ export default function About() {
 
                         <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-2.5 bg-[#F4F8FD] rounded-[10.5px] ">
                             <CircleCheck size={15} color="green" />
-                            <span className="text-[12.25px] leading-[15px] font-bold">Clean & Maintainable Code</span>
+                            <span className="text-[12.25px] leading-[15px] font-bold">Optimized Applications</span>
                         </div>
 
                         <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-2.5 bg-[#F4F8FD] rounded-[10.5px] ">
                             <CircleCheck size={15} color="green" />
-                            <span className="text-[12.25px] leading-[15px] font-bold">Clean & Maintainable Code</span>
+                            <span className="text-[12.25px] leading-[15px] font-bold">SEO Best Practices</span>
                         </div>
 
                         <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-2.5 bg-[#F4F8FD] rounded-[10.5px] ">
                             <CircleCheck size={15} color="green" />
-                            <span className="text-[12.25px] leading-[15px] font-bold">Clean & Maintainable Code</span>
+                            <span className="text-[12.25px] leading-[15px] font-bold">Paid Ad Campaigns</span>
                         </div>
                     </div>
                 </div>
