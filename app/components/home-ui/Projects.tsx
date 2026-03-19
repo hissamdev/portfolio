@@ -37,7 +37,10 @@ export default function Projects() {
             <div className="md:flex justify-between">
                 <div>
                     <h2 className="md:pt-[9px] text-[23.5px] leading-7 font-bold">Previous work and projects</h2>
-                    <p className="md:pt-[17px] md:w-[592px] text-[15.75px] leading-[19px]">Exploring the intersection of complex engineering, growth-focused SEO, and high-impact digital marketing.</p>
+                    <p className="md:pt-[17px] md:w-[592px] text-[15.75px] leading-[19px]"
+                    >
+                        Full Stack, Digital Marketing & SEO projects that I've previously worked on.
+                    </p>
                 </div>
                 
                 <div className="self-end">
