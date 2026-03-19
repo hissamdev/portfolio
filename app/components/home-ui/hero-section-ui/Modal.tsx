@@ -11,7 +11,7 @@ export default function Modal({ children, showModal, onClose }: { children: Reac
         }
     }, [showModal])
 
-    const handleBackdropClick = (e) => {
+    const handleBackdropClick = (e: React.MouseEvent<HTMLDialogElement>) => {
         if (e.target === modalRef.current) {
             onClose()
         }
