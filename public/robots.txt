@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /projects/
-Disallow: /cordra-studios/
 
 Sitemap: https://hissam.org/sitemap.xml
