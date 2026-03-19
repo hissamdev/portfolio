@@ -23,8 +23,11 @@ const interFont = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Ahmed Hissam's Portfolio - Full Stack Developer, Digital Marketer, SEO Expert",
-  description: "I build websites that are optimized for performance and scaling across the stack. Services range from maintenance, SEO, ad management etc.",
+  verification: {
+    google: "XQhhDENjsEeuJXsjo45W3N_pWSFSQfBG_z18lc58Gp4",
+  },
+  title: "Ahmed Hissam - Full Stack Developer, Digital Marketer & SEO Expert",
+  description: "Creating modern web applications and helping them grow while making sure your needs are met. Planned maintenance, focused pricing and more.",
   robots: {
     index: false,
     follow: false,
