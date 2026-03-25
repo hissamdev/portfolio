@@ -55,3 +55,11 @@ export const projectRelations = defineRelations({ projectTable, tagsTable, proje
     })
   }
 }))
+
+export const blogTable = pgTable('blogs', {
+  title: text(),
+  slug: text(),
+  content: text(),
+  creationDate: date('creation_date').defaultNow(),
+  lastEdited: date('last_edited').defaultNow(),
+})
