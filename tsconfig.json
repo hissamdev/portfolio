@@ -34,7 +34,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
-, "app/(root)/projects/small-projects/resume"  ],
+, "app/(pages)/projects/small-projects/resume"  ],
   "exclude": [
     "node_modules"
   ]
