@@ -57,8 +57,9 @@ export const projectRelations = defineRelations({ projectTable, tagsTable, proje
 }))
 
 export const blogTable = pgTable('blogs', {
+  id: uuid().defaultRandom().primaryKey(),
   title: text(),
-  slug: text(),
+  slug: text().unique().notNull(),
   content: text(),
   creationDate: date('creation_date').defaultNow(),
   lastEdited: date('last_edited').defaultNow(),

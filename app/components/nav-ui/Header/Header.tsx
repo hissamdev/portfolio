@@ -39,12 +39,14 @@ export default function Header() {
 
                 <div className="w-[300px] md:w-6xl flex justify-between items-center">
                     <div className="header-left flex items-center gap-[19px]">
-                        <div className="flex items-center gap-2.5">
-                          <div className="icon-div w-[35px] aspect-square flex justify-center items-center rounded-[10.5px] bg-[linear-gradient(-50deg,#6366F1,#9333EA)] cursor-pointer">
-                              <p className="text-white text-[17px] leading-[21px] font-bold select-all">AH</p>
+                        <Link href="/">
+                          <div className="flex items-center gap-2.5">
+                            <div className="icon-div w-[35px] aspect-square flex justify-center items-center rounded-[10.5px] bg-[linear-gradient(-50deg,#6366F1,#9333EA)] cursor-pointer">
+                                <p className="text-white text-[17px] leading-[21px] font-bold select-all">AH</p>
+                            </div>
+                            <p className="hidden md:block font-bold text-[17px] cursor-pointer">Ahmed Hissam</p>
                           </div>
-                          <p className="hidden md:block font-bold text-[17px] cursor-pointer">Ahmed Hissam</p>
-                        </div>
+                        </Link>
                     
                         <div className="block md:hidden">
                           <Sun color="#FACC15" size={28} />
@@ -54,6 +56,9 @@ export default function Header() {
                     <nav className="hidden md:flex gap-5">
                       <Button asChild variant="link" className="p-0 h-fit text-[15px]">
                         <Link href="/">Home</Link>
+                      </Button>
+                      <Button asChild variant="link" className="p-0 h-fit text-[15px]">
+                        <Link href="/blog/latest-post">Blog</Link>
                       </Button>
                       <Button asChild variant="link" className="p-0 h-fit text-[15px]">
                         <Link href="/">About</Link>

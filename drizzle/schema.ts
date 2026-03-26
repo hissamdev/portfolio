@@ -1,13 +1,23 @@
-import { pgTable, uuid, text, foreignKey, primaryKey, unique } from "drizzle-orm/pg-core"
+import { pgTable, uuid, text, date, foreignKey, primaryKey, unique } from "drizzle-orm/pg-core"
 import { sql } from "drizzle-orm"
 
 
+
+export const blogs = pgTable("blogs", {
+	id: uuid().defaultRandom().primaryKey(),
+	title: text(),
+	slug: text().notNull(),
+	content: text(),
+	creationDate: date("creation_date").default(sql`now()`),
+	lastEdited: date("last_edited").default(sql`now()`),
+}, (table) => [
+	unique("blogs_slug_key").on(table.slug),]);
 
 export const projectTags = pgTable("project_tags", {
 	projectId: uuid("project_id").notNull().references(() => projects.id),
 	tagId: uuid("tag_id").notNull().references(() => tags.id),
 }, (table) => [
-	primaryKey({ columns: [table.projectId, table.tagId], name: "project_tags_project_id_tag_id_pk"}),
+	primaryKey({ columns: [table.projectId, table.tagId], name: "project_tags_pkey"}),
 ]);
 
 export const projects = pgTable("projects", {
@@ -40,4 +50,4 @@ export const usersTable = pgTable("users_table", {
 	youtube: text(),
 	twitter: text(),
 }, (table) => [
-	unique("users_table_email_unique").on(table.email),	unique("users_table_username_unique").on(table.username),]);
+	unique("users_table_email_key").on(table.email),	unique("users_table_username_key").on(table.username),]);

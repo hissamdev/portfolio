@@ -1,26 +1,40 @@
 {
-  "id": "0f41b094-5171-4808-9b70-749baeaa1b54",
-  "prevIds": [
-    "6ebbd03d-d73c-4666-b386-3e906268ffaf"
-  ],
   "version": "8",
   "dialect": "postgres",
+  "id": "e8e557a3-7b23-4b7d-8dc9-0a12aa0311bd",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
   "ddl": [
     {
       "isRlsEnabled": false,
-      "name": "projects",
-      "schema": "public",
-      "entityType": "tables"
+      "name": "blogs",
+      "entityType": "tables",
+      "schema": "public"
     },
     {
-      "columns": [
-        "id"
-      ],
-      "nameExplicit": false,
-      "name": "projects_pkey",
-      "schema": "public",
-      "table": "projects",
-      "entityType": "pks"
+      "isRlsEnabled": false,
+      "name": "projects",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "isRlsEnabled": false,
+      "name": "project_tags",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "isRlsEnabled": false,
+      "name": "tags",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "isRlsEnabled": false,
+      "name": "users_table",
+      "entityType": "tables",
+      "schema": "public"
     },
     {
       "type": "uuid",
@@ -31,9 +45,87 @@
       "generated": null,
       "identity": null,
       "name": "id",
+      "entityType": "columns",
       "schema": "public",
-      "table": "projects",
-      "entityType": "columns"
+      "table": "blogs"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "title",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "blogs"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "slug",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "blogs"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "content",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "blogs"
+    },
+    {
+      "type": "date",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": "now()",
+      "generated": null,
+      "identity": null,
+      "name": "creation_date",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "blogs"
+    },
+    {
+      "type": "date",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": "now()",
+      "generated": null,
+      "identity": null,
+      "name": "last_edited",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "blogs"
+    },
+    {
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "name": "id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "projects"
     },
     {
       "type": "text",
@@ -44,9 +136,9 @@
       "generated": null,
       "identity": null,
       "name": "image_path",
+      "entityType": "columns",
       "schema": "public",
-      "table": "projects",
-      "entityType": "columns"
+      "table": "projects"
     },
     {
       "type": "text",
@@ -57,9 +149,9 @@
       "generated": null,
       "identity": null,
       "name": "image_alt",
+      "entityType": "columns",
       "schema": "public",
-      "table": "projects",
-      "entityType": "columns"
+      "table": "projects"
     },
     {
       "type": "text",
@@ -70,9 +162,9 @@
       "generated": null,
       "identity": null,
       "name": "heading",
+      "entityType": "columns",
       "schema": "public",
-      "table": "projects",
-      "entityType": "columns"
+      "table": "projects"
     },
     {
       "type": "text",
@@ -83,9 +175,9 @@
       "generated": null,
       "identity": null,
       "name": "description",
+      "entityType": "columns",
       "schema": "public",
-      "table": "projects",
-      "entityType": "columns"
+      "table": "projects"
     },
     {
       "type": "text",
@@ -96,15 +188,9 @@
       "generated": null,
       "identity": null,
       "name": "link_url",
+      "entityType": "columns",
       "schema": "public",
-      "table": "projects",
-      "entityType": "columns"
-    },
-    {
-      "isRlsEnabled": false,
-      "name": "project_tags",
-      "schema": "public",
-      "entityType": "tables"
+      "table": "projects"
     },
     {
       "type": "uuid",
@@ -115,9 +201,9 @@
       "generated": null,
       "identity": null,
       "name": "project_id",
+      "entityType": "columns",
       "schema": "public",
-      "table": "project_tags",
-      "entityType": "columns"
+      "table": "project_tags"
     },
     {
       "type": "uuid",
@@ -128,20 +214,217 @@
       "generated": null,
       "identity": null,
       "name": "tag_id",
+      "entityType": "columns",
       "schema": "public",
-      "table": "project_tags",
-      "entityType": "columns"
+      "table": "project_tags"
     },
     {
-      "columns": [
-        "project_id",
-        "tag_id"
-      ],
-      "nameExplicit": false,
-      "name": "project_tags_project_id_tag_id_pk",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "name": "id",
+      "entityType": "columns",
       "schema": "public",
-      "table": "project_tags",
-      "entityType": "pks"
+      "table": "tags"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "name",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "tags"
+    },
+    {
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "name": "id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "email",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "password",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "display_name",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "username",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "slug",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "company_name",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "birthday",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "website",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "bio",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "instagram",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "facebook",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "youtube",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "twitter",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "users_table"
     },
     {
       "nameExplicit": false,
@@ -155,10 +438,10 @@
       ],
       "onUpdate": "NO ACTION",
       "onDelete": "NO ACTION",
-      "name": "project_tags_project_id_projects_id_fk",
+      "name": "project_tags_project_id_projects_id_fkey",
+      "entityType": "fks",
       "schema": "public",
-      "table": "project_tags",
-      "entityType": "fks"
+      "table": "project_tags"
     },
     {
       "nameExplicit": false,
@@ -172,16 +455,41 @@
       ],
       "onUpdate": "NO ACTION",
       "onDelete": "NO ACTION",
-      "name": "project_tags_tag_id_tags_id_fk",
+      "name": "project_tags_tag_id_tags_id_fkey",
+      "entityType": "fks",
       "schema": "public",
-      "table": "project_tags",
-      "entityType": "fks"
+      "table": "project_tags"
     },
     {
-      "isRlsEnabled": false,
-      "name": "tags",
+      "columns": [
+        "project_id",
+        "tag_id"
+      ],
+      "nameExplicit": false,
+      "name": "project_tags_pkey",
+      "entityType": "pks",
       "schema": "public",
-      "entityType": "tables"
+      "table": "project_tags"
+    },
+    {
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "name": "blogs_pkey",
+      "schema": "public",
+      "table": "blogs",
+      "entityType": "pks"
+    },
+    {
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "name": "projects_pkey",
+      "schema": "public",
+      "table": "projects",
+      "entityType": "pks"
     },
     {
       "columns": [
@@ -194,38 +502,6 @@
       "entityType": "pks"
     },
     {
-      "type": "uuid",
-      "typeSchema": null,
-      "notNull": true,
-      "dimensions": 0,
-      "default": "gen_random_uuid()",
-      "generated": null,
-      "identity": null,
-      "name": "id",
-      "schema": "public",
-      "table": "tags",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": true,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "name",
-      "schema": "public",
-      "table": "tags",
-      "entityType": "columns"
-    },
-    {
-      "isRlsEnabled": false,
-      "name": "users_table",
-      "schema": "public",
-      "entityType": "tables"
-    },
-    {
       "columns": [
         "id"
       ],
@@ -236,186 +512,15 @@
       "entityType": "pks"
     },
     {
-      "type": "uuid",
-      "typeSchema": null,
-      "notNull": true,
-      "dimensions": 0,
-      "default": "gen_random_uuid()",
-      "generated": null,
-      "identity": null,
-      "name": "id",
+      "nameExplicit": false,
+      "columns": [
+        "slug"
+      ],
+      "nullsNotDistinct": false,
+      "name": "blogs_slug_key",
       "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": true,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "email",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "password",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "display_name",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "username",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "slug",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "company_name",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "birthday",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "website",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "bio",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "instagram",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "facebook",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "youtube",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
-    },
-    {
-      "type": "text",
-      "typeSchema": null,
-      "notNull": false,
-      "dimensions": 0,
-      "default": null,
-      "generated": null,
-      "identity": null,
-      "name": "twitter",
-      "schema": "public",
-      "table": "users_table",
-      "entityType": "columns"
+      "table": "blogs",
+      "entityType": "uniques"
     },
     {
       "nameExplicit": false,
@@ -423,7 +528,7 @@
         "email"
       ],
       "nullsNotDistinct": false,
-      "name": "users_table_email_unique",
+      "name": "users_table_email_key",
       "schema": "public",
       "table": "users_table",
       "entityType": "uniques"
@@ -434,7 +539,7 @@
         "username"
       ],
       "nullsNotDistinct": false,
-      "name": "users_table_username_unique",
+      "name": "users_table_username_key",
       "schema": "public",
       "table": "users_table",
       "entityType": "uniques"

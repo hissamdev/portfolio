@@ -7,7 +7,8 @@ import clsx from 'clsx';
 import { motion, AnimatePresence } from "framer-motion";
 import { getProjects } from "@/app/actions/projects";
 import { InferSelectModel } from "drizzle-orm";
-import { projectTable } from "@/lib/db/schema";
+import { blogTable, projectTable } from "@/lib/db/schema";
+import { db } from "@/lib/db";
 
 type Projects = InferSelectModel<typeof projectTable>
 
