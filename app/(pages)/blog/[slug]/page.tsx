@@ -9,24 +9,42 @@ import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeSanitize from 'rehype-sanitize'
 import rehypeStringify from 'rehype-stringify'
+import { cacheLife } from "next/cache"
 
+async function getPost(slug: string) {
+    // Return post row matching the URL slug
+    "use cache"
+    cacheLife("days")
+
+    const res = await db
+        .select()
+        .from(blogTable)
+        .where(eq(blogTable.slug, slug))
+    return res[0]
+}
+
+export async function generateStaticParams() {
+    const res = await db
+        .select({ slug: blogTable.slug })
+        .from(blogTable)
+
+    return res.map(p => ({
+        slug: p.slug,
+    }))
+}
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params
-    console.log("Reached dynamic route")
+    const postRow = await getPost(slug)
+    if (!postRow) return notFound() // Post doesn't exist
 
-    const post = await db.select({ content: blogTable.content }).from(blogTable).where(eq(blogTable.slug, slug))
-    const firstPost = post[0]?.content
-
-    // const firstPost = "# Hello world"
-    if (!firstPost) return notFound()
-
+    const postContent = postRow.content ?? "" // Content is nullable in the db
     const postHtml = await unified()
         .use(remarkParse)
         .use(remarkRehype)
         .use(rehypeSanitize)
         .use(rehypeStringify)
-        .process(firstPost)
+        .process(postContent)
     const stringHtml = String(postHtml)
 
     return (

@@ -1,15 +1,9 @@
-import 'dotenv/config'
-import { relations } from './relations'
-import { drizzle } from 'drizzle-orm/postgres-js'
-import postgres from 'postgres'
+import { drizzle } from "drizzle-orm/neon-http";
+import { neon } from "@neondatabase/serverless";
+import { config } from "dotenv";
+import { relations } from "./relations";
 
-let connectionString = process.env.DATABASE_URL
-if (connectionString?.includes('postgres:postgres@supabase_db_')) {
-  const url = URL.parse(connectionString)!
-  url.hostname = url.hostname.split('_')[1]
-  connectionString = url.href
-}
+config({ path: ".env" }); // or .env.local
 
-// Disable prefetch as it is not supported for "Transaction" pool mode
-export const client = postgres(connectionString!, { prepare: false })
-export const db = drizzle({ client, relations });
+const sql = neon(process.env.DATABASE_URL!);
+export const db = drizzle({ client: sql, relations });

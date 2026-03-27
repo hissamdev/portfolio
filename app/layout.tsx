@@ -6,6 +6,8 @@ import ComponentLoader from "./components/ComponentLoader";
 import "./globals.css";
 import "./tailwind-files/github_clone.css";
 import "./tailwind-files/portfolio_home.css";
+import PathnameHeader from "./components/nav-ui/Header/PathnameHeader";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +46,9 @@ export default function RootLayout({
           process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}/>
         )}
-        <ComponentLoader />
+        <Suspense fallback={null}>
+          <PathnameHeader />
+        </Suspense>
         {children}
       </body>
     </html>
