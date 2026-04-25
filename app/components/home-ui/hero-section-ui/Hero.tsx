@@ -1,4 +1,13 @@
-import { ArrowRight, Check, Code, Github, Linkedin, Search, TrendingUp } from "lucide-react";
+import {
+    ArrowRight,
+    Check,
+    Code,
+    Github,
+    Linkedin,
+    MoveUpRight,
+    Search,
+    TrendingUp,
+} from "lucide-react";
 import HeroAuditButton from "./HeroAuditButton";
 import { RefObject } from "react";
 import HeroSkillHeading from "./HeroSkillHeading";
@@ -7,55 +16,69 @@ import EntryAnimation from "../../framer-motion-components/EntryAnimation";
 import StaggerWrapper from "../../framer-motion-components/StaggerWrapper";
 import HeroCTA from "./HeroCTA";
 import HeroRight from "./HeroRight";
+import Image from "next/image";
 
 export default function Hero() {
     return (
-            <section className="hero-section pt-[100px] md:pt-[180px] max-w-6xl mx-auto bg-white">
-                <div className="hero-container flex flex-col md:flex-row justify-between">
-                    <StaggerWrapper>
-                        <div className="hero-left px-[21px] md:p-0">
-                            <div>
-                                <EntryAnimation>
-                                    <div className="flex items-center gap-2 md:gap-2.5">
-                                        <div className="w-5 md:w-10.5 h-px bg-[#5856E6] "></div>
-                                        <span className="text-[#5856E6] text-sm md:text-[17.5px] md:font-bold">Hey, I&apos;m Ahmed Hissam</span>
-                                    </div>
-                                </EntryAnimation>
-                                <EntryAnimation>
-                                    <h1
-                                        className="pt-3 md:pt-[23px] font-bold">
-                                        <span className="text-5xl md:text-[81px] md:leading-[98px]">Full Stack</span><br />
-                                        <span className="text-5xl md:text-[77px] md:leading-[93px] bg-[linear-gradient(90deg,#524AE6,#808AF7)] bg-clip-text text-transparent">Engineer</span>
-                                    </h1>
-                                </EntryAnimation>
-                                <EntryAnimation>
-                                    <h2 className="pt-4 text-md md:pt-5 md:text-[27px] md:leading-[33px] font-bold">
-                                        Results-driven software engineering
-                                    </h2>
-                                </EntryAnimation>
-                                <EntryAnimation>
-                                    <p className="pt-2 md:pt-[13px] md:w-[441px] text-[#606060] md:text-[17.5px] md:font-bold ">
-                                        I shape experiences with full stack development for small to medium businesses. Explore my portfolio to discover more about my services ranging from monthly maintenance to building entire websites tailored to your needs.
-                                    </p>
-                                </EntryAnimation>
-                            </div>
-                            <div className="pt-4 md:pt-[30px] flex flex-col md:flex-row gap-4 md:gap-7.5">
-                                <HeroCTA>Get in Touch</HeroCTA>
-                                <HeroAuditButton />
-                            </div>
-                            <div className="pt-[26px] flex justify-center md:justify-start items-center gap-3 md:gap-[18px]">
-                                <div className="flex gap-2 md:gap-[15px]">
-                                    <Github color="#94A3B8" />
-                                    <Linkedin color="#94A3B8" />
+        <section className="h-screen">
+            <div className="">
+                <h1 className="pt-8 text-[167.75px] font-bold text-center">
+                    Ahmed Hissam
+                </h1>
+
+                <div className="mt-6 max-w-7xl mx-auto flex gap-30">
+                    <div>
+                        <div className="relative w-80 aspect-square group -rotate-5 hover:rotate-0 duration-300">
+                            <div className="absolute inset-0 bg-purple-800 translate-4"></div>
+                            <Image
+                                alt="Picture of Ahmed Hissam"
+                                src="/Ahmed-Hissam-Recording-a-Resume.jpg"
+                                fill
+                                className="object-cover duration-300"
+                            />
+                        </div>
+                    </div>
+                    <div className="">
+                        {/* <div className="flex items-center gap-5">
+                            <div className="h-px bg-black max-w-12 w-full"></div>
+                            <span>Welcome to my Portfolio</span>
+                        </div> */}
+                        <div className="">
+                            <h2 className="text-3xl font-medium">
+                                I'm Dynamic Text
+                            </h2>
+                            <p className="mt-4 text-2xl text-[#666666] max-w-[806px]">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen
+                                book. It h
+                            </p>
+                        </div>
+                        <div className="relative mt-15 flex justify-between">
+                            <div className="py-2 pl-6 border-l h-fit">
+                                <span className="text-xl uppercase">
+                                    Follow Me
+                                </span>
+                                <div className="flex gap-4 mt-2">
+                                    <Linkedin />
                                 </div>
-                                <div className="w-[41px] h-px bg-[#94A3B8]"></div>
-                                <span className="text-[15px] leading-[18px] text-[#94A3B8] font-bold">View Profiles</span>
+                            </div>
+
+                            <div className="p-12 border bg-white rounded-full -translate-y-10 cursor-pointer">
+                                <div className="bg-blue-400 aspect-square w-20 flex justify-center items-center rounded-full group">
+                                    <MoveUpRight
+                                        size={35}
+                                        strokeWidth={1}
+                                        className="text-white group-hover:rotate-45 duration-300"
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </StaggerWrapper>
-
-                    <HeroRight />
+                    </div>
                 </div>
-            </section>
-    )
+            </div>
+        </section>
+    );
 }
