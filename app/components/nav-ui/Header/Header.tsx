@@ -12,7 +12,35 @@ export default function Header() {
                         <Linkedin />
                     </div>
 
-                    <div className="text-white">Looping horizontal texts</div>
+                    <div className="text-white flex overflow-hidden max-w-4xl w-full [mask-image:linear-gradient(to_right,transparent,black_5%,black_90%,transparent)]">
+                        <div className="flex whitespace-nowrap marque-scroll">
+                            <span className="px-4">
+                                max-w-[1170px] w-full mx-auto flex items-center
+                                justify-between
+                            </span>
+                            <span className="px-4">very random text here</span>
+                            <span className="px-4">
+                                max-w-[1170px] w-full mx-auto flex items-center
+                                justify-between
+                            </span>
+                            <span className="px-4">
+                                random text all over again
+                            </span>
+
+                            <span className="px-4">
+                                max-w-[1170px] w-full mx-auto flex items-center
+                                justify-between
+                            </span>
+                            <span className="px-4">very random text here</span>
+                            <span className="px-4">
+                                max-w-[1170px] w-full mx-auto flex items-center
+                                justify-between
+                            </span>
+                            <span className="px-4">
+                                random text all over again
+                            </span>
+                        </div>
+                    </div>
 
                     <div className="text-white flex gap-2">
                         <History className="w-5" />
