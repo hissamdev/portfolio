@@ -20,15 +20,15 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="h-screen">
-            <div className="">
-                <h1 className="pt-8 text-[167.75px] font-bold text-center">
+        <section className="h-fit md:h-screen">
+            <div className="px-3">
+                <h1 className="pt-8 text-5xl leading-14 md:leading-normal sm:text-[167.75px] font-bold md:text-center">
                     Ahmed Hissam
                 </h1>
 
-                <div className="mt-6 max-w-7xl mx-auto flex gap-30">
-                    <div>
-                        <div className="relative w-80 aspect-square group -rotate-5 hover:rotate-0 duration-300">
+                <div className="mt-3 md:mt-8 max-w-7xl mx-auto flex flex-col-reverse items-center md:flex-row gap-10 md:gap-30">
+                    <div className="-translate-x-2 md:translate-x-0">
+                        <div className="relative w-70 md:w-80 aspect-square group -rotate-5 hover:rotate-0 duration-300">
                             <div className="absolute inset-0 bg-purple-800 translate-4"></div>
                             <Image
                                 alt="Picture of Ahmed Hissam"
@@ -44,10 +44,10 @@ export default function Hero() {
                             <span>Welcome to my Portfolio</span>
                         </div> */}
                         <div className="">
-                            <h2 className="text-3xl font-medium">
+                            <h2 className="text-lg md:text-3xl font-medium">
                                 I'm Dynamic Text
                             </h2>
-                            <p className="mt-4 text-2xl text-[#666666] max-w-[806px]">
+                            <p className="mt-2 md:mt-4 md:text-2xl text-[#666666] max-w-201.5">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been
                                 the industry's standard dummy text ever since
@@ -56,9 +56,9 @@ export default function Hero() {
                                 book. It h
                             </p>
                         </div>
-                        <div className="relative mt-15 flex justify-between">
+                        <div className="relative mt-5 md:mt-15 flex flex-col md:flex-row justify-between">
                             <div className="py-2 pl-6 border-l h-fit">
-                                <span className="text-xl uppercase">
+                                <span className="md:text-xl uppercase">
                                     Follow Me
                                 </span>
                                 <div className="flex gap-4 mt-2">
@@ -66,7 +66,33 @@ export default function Hero() {
                                 </div>
                             </div>
 
-                            <div className="p-12 border bg-white rounded-full -translate-y-10 cursor-pointer">
+                            <div className="p-12 w-fit self-end border bg-white rounded-full md:-translate-y-10 cursor-pointer">
+                                <svg
+                                    viewBox="0 0 200 200"
+                                    className="absolute inset-0"
+                                >
+                                    <defs>
+                                        <path
+                                            id="circlePath"
+                                            d="
+                                                M 100, 100
+                                                m -75,0
+                                                a 75,75 0 1,1 150,0
+                                                a 75,75 0 1,1 -150,0
+                                            "
+                                        />
+                                    </defs>
+                                    <text
+                                        fill="black"
+                                        fontSize="16"
+                                        letterSpacing="7.7"
+                                    >
+                                        <textPath href="#circlePath">
+                                            HIRE ME NOW • HIRE ME NOW •
+                                        </textPath>
+                                    </text>
+                                </svg>
+
                                 <div className="bg-blue-400 aspect-square w-20 flex justify-center items-center rounded-full group">
                                     <MoveUpRight
                                         size={35}

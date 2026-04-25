@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
-        <section className="pt-[128px] h-900">
-            
+        <section className="pt-32 h-900">
+            <div></div>
         </section>
-    )
+    );
 }
