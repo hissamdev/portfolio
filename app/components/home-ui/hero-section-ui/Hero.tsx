@@ -22,7 +22,7 @@ export default function Hero() {
     return (
         <section className="h-fit md:h-screen">
             <div className="px-3">
-                <h1 className="pt-8 text-5xl leading-14 md:leading-normal sm:text-[167.75px] font-bold md:text-center">
+                <h1 className="pt-8 text-5xl leading-14 md:leading-normal sm:text-[167.75px] font-bold md:text-center font-urbanist ">
                     Ahmed Hissam
                 </h1>
 
