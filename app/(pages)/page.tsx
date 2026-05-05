@@ -8,6 +8,7 @@ import XMarqueText from "../components/home-ui/hero-section-ui/XMarqueText";
 import FeaturedProjects from "../components/home-ui/FeaturedProjects";
 import AbstractFlexbox from "../components/home-ui/AbstractFlexbox";
 import Services from "../components/home-ui/Services";
+import Footer from "../components/nav-ui/Footer";
 
 export default async function Home() {
     const projects = "test";
@@ -23,6 +24,7 @@ export default async function Home() {
             <AbstractFlexbox />
             <Services />
             <TechStack />
+            <Footer />
         </>
     );
 }
