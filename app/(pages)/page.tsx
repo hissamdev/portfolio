@@ -7,6 +7,7 @@ import HeroFeatureBoxes from "../components/home-ui/hero-section-ui/HeroFeatureB
 import XMarqueText from "../components/home-ui/hero-section-ui/XMarqueText";
 import FeaturedProjects from "../components/home-ui/FeaturedProjects";
 import AbstractFlexbox from "../components/home-ui/AbstractFlexbox";
+import Services from "../components/home-ui/Services";
 
 export default async function Home() {
     const projects = "test";
@@ -20,6 +21,7 @@ export default async function Home() {
             <About />
             <Projects />
             <AbstractFlexbox />
+            <Services />
             <TechStack />
         </>
     );
