@@ -1,71 +1,99 @@
 import { Button } from "@/components/ui/button";
-import { Award, CircleCheck } from "lucide-react";
+import { Award, CircleCheck, MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
     return (
-        <section className="px-[21px] md:px-0 pt-8 max-w-6xl mx-auto">
+        <section className="px-5.25 md:px-0 pt-8 max-w-7xl mx-auto">
             <div className="about-alignment md:flex justify-between">
                 <div className="about-left">
-                    <div className="flex items-center gap-2.5">
-                        <div className="w-9 md:w-[73px] h-px bg-[#5856E6]"></div>
-                        <h2 className="text-[17.5px] leading-[21px] text-[#5856E6] font-bold">About me</h2>
-                    </div>
-                    <h3 className="pt-[17px] text-xl md:text-[23.5px] md:leading-7 font-bold">Full Stack Developer, Digital Marketing & SEO Specialist</h3>
-                    <p className="pt-[17px] md:w-[528px] text-md md:text-[15.75px] md:leading-[19px]">
-                        I am Ahmed Hissam, a junior full stack developer for ~1 year and a digital marketing and SEO specialist for over 1 year. I am self taught in full stack development and have an in-person course certificate for digital marketing.
+                    <h2 className="text-[17.5px] leading-5.25 uppercase text-[#5856E6] font-bold">
+                        About me
+                    </h2>
+                    <h3 className="pt-4.25 text-xl md:text-[43.5px] tracking-normal font-bold">
+                        Specializing in Modern Frameworks
+                    </h3>
+                    <p className="pt-[21.75px] md:w-[700px]  md:text-[21.75px]">
+                        I build modern web applications that are accessible and
+                        trustworthy to create enjoyable experiences for users
+                        and efficient problem solving for businesses and
+                        founders. I built websites optimized for SEO to get
+                        found on Google efficiently.
                         <br /> <br />
-                        I build modern web applications that are accessible and trustworthy to create enjoyable experiences for users and efficient problem solving for businesses and founders. I built websites optimized for SEO to get found on Google efficiently.
-                        <br /> <br />
-                        Currently, I am open to any remote international or on-site local opportunities.
-                        If you're interested or would like to learn more about me or my personal details,
-                        feel free to <Button variant="link" asChild className="px-0 h-fit text-[15px] leading-[19px] font-bold cursor-pointer"><Link href="/Ahmed-Hissam-Resume.pdf">download it here</Link></Button>.
+                        Currently, I am open to any remote international or
+                        on-site local opportunities. If you're interested or
+                        would like to learn more about me or my personal
+                        details, feel free to{" "}
+                        <Button
+                            variant="link"
+                            asChild
+                            className="px-0 h-fit text-[20.75px] leading-4.75 font-bold cursor-pointer"
+                        >
+                            <Link href="/Ahmed-Hissam-Resume.pdf">
+                                download it here
+                            </Link>
+                        </Button>
+                        .
                     </p>
 
-                    <div className="pt-8 md:pt-[62px] w-full grid grid-cols-1 md:grid-cols-2 gap-y-[17px] gap-x-[27px]">
-                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-2.5 bg-[#F4F8FD] rounded-[10.5px] ">
-                            <CircleCheck size={15} color="green" />
-                            <span className="text-[12.25px] leading-[15px] font-bold">Clean & Maintainable Code</span>
-                        </div>
+                    <div className="p-12 w-fit self-end border bg-white rounded-full md:translate-y-10 cursor-pointer">
+                        <svg viewBox="0 0 200 200" className="absolute inset-0">
+                            <defs>
+                                <path
+                                    id="circlePath"
+                                    d="
+                                                M 100, 100
+                                                m -75,0
+                                                a 75,75 0 1,1 150,0
+                                                a 75,75 0 1,1 -150,0
+                                            "
+                                />
+                            </defs>
+                            <text
+                                fill="black"
+                                fontSize="16"
+                                letterSpacing="7.7"
+                            >
+                                <textPath href="#circlePath">
+                                    HIRE ME NOW • HIRE ME NOW •
+                                </textPath>
+                            </text>
+                        </svg>
 
-                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-2.5 bg-[#F4F8FD] rounded-[10.5px] ">
-                            <CircleCheck size={15} color="green" />
-                            <span className="text-[12.25px] leading-[15px] font-bold">Optimized Applications</span>
-                        </div>
-
-                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-2.5 bg-[#F4F8FD] rounded-[10.5px] ">
-                            <CircleCheck size={15} color="green" />
-                            <span className="text-[12.25px] leading-[15px] font-bold">SEO Best Practices</span>
-                        </div>
-
-                        <div className="pl-[17px] h-[45px] flex-1 flex items-center gap-2.5 bg-[#F4F8FD] rounded-[10.5px] ">
-                            <CircleCheck size={15} color="green" />
-                            <span className="text-[12.25px] leading-[15px] font-bold">Paid Ad Campaigns</span>
+                        <div className="bg-blue-400 aspect-square w-20 flex justify-center items-center rounded-full group">
+                            <MoveUpRight
+                                size={35}
+                                strokeWidth={1}
+                                className="text-white group-hover:rotate-45 duration-300"
+                            />
                         </div>
                     </div>
                 </div>
 
-                <div className="about-right relative z-10">
-                    <div className="relative z-20 p-2.5 bg-white shadow-2xl rounded-[9px]">
-                        <div className="relative z-30 md:w-[360px] h-[318px] rounded-[9px] overflow-hidden object-[70%_center] ">
-                            <Image
-                                src="/Ahmed-Hissam-Recording-a-Resume.jpg"
-                                alt="Ahmed Hissam recording a resume video for Full Stack, SEO and Digital Marketing positions."
-                                fill
-                                priority
-                                className="object-cover"
-                            />
+                <div className="mt-20">
+                    <div className="about-right relative z-10">
+                        <div className="relative z-20 p-2.5 bg-white shadow-2xl rounded-[9px]">
+                            <div className="relative z-30 md:w-[360px] h-[318px] rounded-[9px] overflow-hidden object-[70%_center] ">
+                                <Image
+                                    src="/Ahmed-Hissam-Recording-a-Resume.jpg"
+                                    alt="Ahmed Hissam recording a resume video for Full Stack, SEO and Digital Marketing positions."
+                                    fill
+                                    priority
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="absolute -bottom-10 right-10 z-40 w-[106px] h-[124px] flex flex-col justify-center items-center gap-[9px] bg-[#4F46E5] rounded-2xl">
+                                <Award size={40} color="white" />
+                                <span className="text-[18.5px] font-bold text-white">
+                                    1+ YoE
+                                </span>
+                            </div>
                         </div>
-
-                        <div className="absolute -bottom-10 right-10 z-40 w-[106px] h-[124px] flex flex-col justify-center items-center gap-[9px] bg-[#4F46E5] rounded-2xl">
-                            <Award size={40} color="white" />
-                            <span className="text-[18.5px] font-bold text-white">1+ YoE</span>
-                        </div>
+                        <div className="absolute -top-4 -left-2 md:w-[394px] h-[371px] -rotate-6 border-2 border-dashed border-[#BFBFBF]/40 z-0 rounded-2xl" />
                     </div>
-                    <div className="absolute -top-4 -left-2 md:w-[394px] h-[371px] -rotate-6 border-2 border-dashed border-[#BFBFBF]/40 z-0 rounded-2xl" />
                 </div>
             </div>
         </section>
-    )
+    );
 }
