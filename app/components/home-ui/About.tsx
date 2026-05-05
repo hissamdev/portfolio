@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <section className="px-5.25 md:px-0 pt-8 max-w-7xl mx-auto">
+        <section className="px-5.25 md:px-0 pt-8 max-w-361.5 mx-auto">
             <div className="about-alignment md:flex justify-between">
                 <div className="about-left">
                     <h2 className="text-[17.5px] leading-5.25 uppercase text-[#5856E6] font-bold">
@@ -14,7 +14,7 @@ export default function About() {
                     <h3 className="pt-4.25 text-xl md:text-[43.5px] tracking-normal font-bold">
                         Specializing in Modern Frameworks
                     </h3>
-                    <p className="pt-[21.75px] md:w-[700px]  md:text-[21.75px]">
+                    <p className="pt-[21.75px] md:w-175 md:text-[21.75px]">
                         I build modern web applications that are accessible and
                         trustworthy to create enjoyable experiences for users
                         and efficient problem solving for businesses and
@@ -74,7 +74,7 @@ export default function About() {
                 <div className="mt-20">
                     <div className="about-right relative z-10">
                         <div className="relative z-20 p-2.5 bg-white shadow-2xl rounded-[9px]">
-                            <div className="relative z-30 md:w-[360px] h-[318px] rounded-[9px] overflow-hidden object-[70%_center] ">
+                            <div className="relative z-30 md:w-90 h-79.5 rounded-[9px] overflow-hidden object-[70%_center] ">
                                 <Image
                                     src="/Ahmed-Hissam-Recording-a-Resume.jpg"
                                     alt="Ahmed Hissam recording a resume video for Full Stack, SEO and Digital Marketing positions."
@@ -83,14 +83,14 @@ export default function About() {
                                     className="object-cover"
                                 />
                             </div>
-                            <div className="absolute -bottom-10 right-10 z-40 w-[106px] h-[124px] flex flex-col justify-center items-center gap-[9px] bg-[#4F46E5] rounded-2xl">
+                            <div className="absolute -bottom-10 right-10 z-40 w-26.5 h-31 flex flex-col justify-center items-center gap-2.25 bg-[#4F46E5] rounded-2xl">
                                 <Award size={40} color="white" />
                                 <span className="text-[18.5px] font-bold text-white">
                                     1+ YoE
                                 </span>
                             </div>
                         </div>
-                        <div className="absolute -top-4 -left-2 md:w-[394px] h-[371px] -rotate-6 border-2 border-dashed border-[#BFBFBF]/40 z-0 rounded-2xl" />
+                        <div className="absolute -top-4 -left-2 md:w-98.5 h-92.75 -rotate-6 border-2 border-dashed border-[#BFBFBF]/40 z-0 rounded-2xl" />
                     </div>
                 </div>
             </div>

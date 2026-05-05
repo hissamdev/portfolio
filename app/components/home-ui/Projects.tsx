@@ -2,13 +2,11 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import clsx from "clsx";
 import { motion, AnimatePresence } from "framer-motion";
-import { getProjects } from "@/app/actions/projects";
 import { InferSelectModel } from "drizzle-orm";
 import { blogTable, projectTable } from "@/lib/db/schema";
-import { db } from "@/lib/db";
 
 type Projects = InferSelectModel<typeof projectTable>;
 
@@ -56,7 +54,7 @@ export default function Projects() {
               );
 
     return (
-        <section className="px-5.25 md:px-0 pt-28 max-w-361.5 mx-auto">
+        <section className="px-5.25 md:px-0 pt-40 max-w-361.5 mx-auto">
             <div className="flex items-center gap-2.5">
                 <div className="w-18.25 h-px bg-[#5856E6]"></div>
                 <h2 className="md:text-[17.5px] md:leading-5.25 text-[#5856E6] font-bold">
@@ -84,7 +82,7 @@ export default function Projects() {
     );
 }
 
-export function ProjectCards({ projectsToDisplay }) {
+export function ProjectCards({ projectsToDisplay }: any) {
     return (
         <div className="mt-15.5 project-cards grid gap-y-8 md:grid-cols-4 md:gap-x-18 md:gap-y-12">
             <AnimatePresence mode="popLayout">
@@ -143,7 +141,7 @@ export function ProjectCards({ projectsToDisplay }) {
     );
 }
 
-export function CategorySelector({ category, setCategory }) {
+export function CategorySelector({ category, setCategory }: any) {
     return (
         <div className="self-end">
             <div className="p-[5.25px] flex bg-[#EFEFEF] rounded-[10.5px]">
@@ -160,7 +158,7 @@ export function CategorySelector({ category, setCategory }) {
                 <span
                     onClick={() => setCategory("FullStack")}
                     className={clsx(
-                        "py-3 mr-[5px] px-[17px] text-[12.25px] leading-[15px] tracking-[1.75px] font-bold hover:text-gray-600 rounded-[7px] cursor-pointer",
+                        "py-3 mr-1.25 px-4.25 text-[12.25px] leading-3.75 tracking-[1.75px] font-bold hover:text-gray-600 rounded-[7px] cursor-pointer",
                         category === "FullStack" &&
                             "bg-black text-white hover:text-white",
                     )}
@@ -170,7 +168,7 @@ export function CategorySelector({ category, setCategory }) {
                 <span
                     onClick={() => setCategory("SEO")}
                     className={clsx(
-                        "py-3 mr-[5px] px-[17px] text-[12.25px] leading-[15px] tracking-[1.75px] font-bold hover:text-gray-600 rounded-[7px] cursor-pointer",
+                        "py-3 mr-1.25 px-4.25 text-[12.25px] leading-3.75 tracking-[1.75px] font-bold hover:text-gray-600 rounded-[7px] cursor-pointer",
                         category === "SEO" &&
                             "bg-black text-white hover:text-white",
                     )}
@@ -180,7 +178,7 @@ export function CategorySelector({ category, setCategory }) {
                 <span
                     onClick={() => setCategory("dm")}
                     className={clsx(
-                        "py-3 mr-[5px] px-[17px] text-[12.25px] leading-[15px] tracking-[1.75px] font-bold hover:text-gray-600 rounded-[7px] cursor-pointer",
+                        "py-3 mr-1.25 px-4.25 text-[12.25px] leading-3.75 tracking-[1.75px] font-bold hover:text-gray-600 rounded-[7px] cursor-pointer",
                         category === "dm" &&
                             "bg-black text-white hover:text-white",
                     )}
