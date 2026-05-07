@@ -3,14 +3,16 @@ import { ChevronDown, History, Linkedin, Menu, Sun } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import BoxAnimatedButton from "../../ui/BoxAnimatedButton";
+import InteractiveSocialIcons from "./InteractiveSocialIcons";
 
 export default function Header() {
     return (
         <header className="h-fit">
             <div className="bg-[#4F46E5]">
-                <div className="py-4 px-4 md:px-12 w-full mx-auto flex justify-between">
-                    <div className="text-white md:max-w-[191.25px] md:w-full flex items-center">
+                <div className="px-4 md:px-12 w-full h-14 mx-auto flex justify-between">
+                    <div className="text-white md:max-w-[191.25px] md:w-full flex items-center gap-6">
                         <Linkedin className="w-5" />
+                        <InteractiveSocialIcons />
                     </div>
 
                     <div className="text-white hidden md:flex overflow-hidden max-w-4xl w-full mask-[linear-gradient(to_right,transparent,black_5%,black_90%,transparent)]">
