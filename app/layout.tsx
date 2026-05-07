@@ -43,9 +43,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" className="relative">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} ${interFont.variable} ${urbanistFont.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} ${interFont.variable} ${urbanistFont.variable} relative antialiased`}
             >
                 <Suspense fallback={null}>
                     <PathnameHeader />
