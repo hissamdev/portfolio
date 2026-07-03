@@ -1,7 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { ChevronDown, History, Linkedin, Menu, Sun } from "lucide-react";
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { ChevronDown, History, Linkedin } from "lucide-react";
 import BoxAnimatedButton from "../../ui/BoxAnimatedButton";
 import InteractiveSocialIcons from "./InteractiveSocialIcons";
 
@@ -15,32 +12,22 @@ export default function Header() {
                         <InteractiveSocialIcons />
                     </div>
 
-                    <div className="text-white hidden md:flex overflow-hidden max-w-4xl w-full mask-[linear-gradient(to_right,transparent,black_5%,black_90%,transparent)]">
-                        <div className="flex items-center whitespace-nowrap marque-scroll">
+                    <div className="text-white hidden md:flex overflow-hidden max-w-3xl w-full mask-[linear-gradient(to_right,transparent,black_5%,black_90%,transparent)]">
+                        <div className="flex items-center whitespace-nowrap header-marque-scroll">
+                            <span className="px-4">Full Stack Developer</span>
                             <span className="px-4">
-                                max-w-[1170px] w-full mx-auto flex items-center
-                                justify-between
-                            </span>
-                            <span className="px-4">very random text here</span>
-                            <span className="px-4">
-                                max-w-[1170px] w-full mx-auto flex items-center
-                                justify-between
+                                Latest Next.js Features
                             </span>
                             <span className="px-4">
-                                random text all over again
+                                Complex applications designed to grow
                             </span>
 
+                            <span className="px-4">Full Stack Developer</span>
                             <span className="px-4">
-                                max-w-[1170px] w-full mx-auto flex items-center
-                                justify-between
-                            </span>
-                            <span className="px-4">very random text here</span>
-                            <span className="px-4">
-                                max-w-[1170px] w-full mx-auto flex items-center
-                                justify-between
+                                Latest Next.js Features
                             </span>
                             <span className="px-4">
-                                random text all over again
+                                Complex applications designed to grow
                             </span>
                         </div>
                     </div>

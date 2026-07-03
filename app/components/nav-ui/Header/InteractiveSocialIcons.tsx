@@ -1,6 +1,5 @@
 import { useMotionValue, motion, useSpring } from "framer-motion";
 import { Linkedin } from "lucide-react";
-import React from "react";
 
 export default function InteractiveSocialIcons() {
     const x = useMotionValue(0);
@@ -29,7 +28,7 @@ export default function InteractiveSocialIcons() {
     };
 
     return (
-        <div className="">
+        <div>
             <motion.div
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}

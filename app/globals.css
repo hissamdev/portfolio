@@ -79,11 +79,11 @@ body {
     }
 }
 
-.marque-scroll {
-    animation: marquee 30s linear infinite;
+.header-marque-scroll {
+    animation: marquee 10s linear infinite;
 }
 
-.marque-scroll:hover {
+.header-marque-scroll:hover {
     animation-play-state: paused;
 }
 

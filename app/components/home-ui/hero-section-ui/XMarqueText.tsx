@@ -1,21 +1,44 @@
 export default function XMarqueText() {
     return (
-        <div className="relative h-100 overflow-hidden">
-            <div className="absolute inset-0 flex justify-center items-center">
-                <div className="rotate-8 bg-white border-t border-b py-4 border-gray-300">
-                    <p className="marque-scroll font-urbanist text-7xl text-center text-transparent [-webkit-text-stroke:1px_gray] whitespace-nowrap">
-                        Next.js . React . TypeScript . Tailwind .
-                    </p>
-                    <p className="marque-scroll font-urbanist text-7xl text-center text-transparent [-webkit-text-stroke:1px_gray] whitespace-nowrap">
-                        REACT DEVELOPER . REACT DEVELOPER . REACT DEVELOPER .
-                    </p>
+        <div className="relative h-110 overflow-hidden border">
+            <div
+                className="absolute top-[40%] left-1/2 w-[150%] -translate-x-1/2 rotate-9 h-fit py-4
+                text-7xl font-urbanist text-transparent [-webkit-text-stroke:1px_gray] whitespace-nowrap
+            bg-white border-y border-gray-300"
+            >
+                <div className="marque-scroll w-fit">
+                    <span>
+                        text-7xl font-urbanist text-transparent
+                        [-webkit-text-stroke:1px_gray] whitespace-nowrap
+                        text-7xl font-urbanist text-transparent
+                        [-webkit-text-stroke:1px_gray] whitespace-nowrap
+                    </span>
+                    <span>
+                        text-7xl font-urbanist text-transparent
+                        [-webkit-text-stroke:1px_gray] whitespace-nowrap
+                        text-7xl font-urbanist text-transparent
+                        [-webkit-text-stroke:1px_gray] whitespace-nowrap
+                    </span>
                 </div>
             </div>
-            <div className="absolute inset-0 flex justify-center items-center">
-                <div className="-rotate-8 w-[150%] bg-white border-t border-b py-4 border-gray-300">
-                    <p className=" font-urbanist text-7xl text-center text-transparent [-webkit-text-stroke:1px_gray] whitespace-nowrap">
-                        REACT DEVELOPER . REACT DEVELOPER . REACT DEVELOPER .
-                    </p>
+            <div
+                className="absolute top-[40%] left-1/2 w-[150%] -translate-x-1/2 -rotate-9 h-fit py-4
+                text-7xl font-urbanist text-transparent [-webkit-text-stroke:1px_gray] whitespace-nowrap
+            bg-white border-y border-gray-300"
+            >
+                <div className="marque-scroll w-fit">
+                    <span>
+                        text-7xl font-urbanist text-transparent
+                        [-webkit-text-stroke:1px_gray] whitespace-nowrap
+                        text-7xl font-urbanist text-transparent
+                        [-webkit-text-stroke:1px_gray] whitespace-nowrap
+                    </span>
+                    <span>
+                        text-7xl font-urbanist text-transparent
+                        [-webkit-text-stroke:1px_gray] whitespace-nowrap
+                        text-7xl font-urbanist text-transparent
+                        [-webkit-text-stroke:1px_gray] whitespace-nowrap
+                    </span>
                 </div>
             </div>
         </div>
