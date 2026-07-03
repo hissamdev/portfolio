@@ -1,13 +1,21 @@
 import { Linkedin, MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import CircleCTA from "../../ui/CircleCTA";
+import Typewriter from "../../animated/Typewriter";
+import RollingText from "../../animated/RollingText";
 
 export default function Hero() {
     return (
         <section className="h-fit md:h-screen">
             <div className="px-3">
                 <h1 className="text-5xl leading-14 md:leading-normal sm:text-[167.75px] font-bold md:text-center font-urbanist ">
-                    Ahmed Hissam
+                    <Typewriter
+                        words={[
+                            "Ahmed Hissam.",
+                            "Full Stack Developer",
+                            "Next.js Developer",
+                        ]}
+                    />
                 </h1>
 
                 <div className="mt-3 md:mt-8 max-w-7xl mx-auto flex flex-col-reverse items-center md:flex-row gap-10 md:gap-30">
@@ -29,7 +37,14 @@ export default function Hero() {
                         </div> */}
                         <div className="">
                             <h2 className="text-lg md:text-3xl font-medium">
-                                I'm Dynamic Text
+                                I am a{" "}
+                                <RollingText
+                                    phrases={[
+                                        "full stack developer",
+                                        "SEO expert",
+                                        "Digital Marketer",
+                                    ]}
+                                />
                             </h2>
                             <p className="mt-2 md:mt-4 md:text-2xl text-[#666666] max-w-201.5">
                                 Lorem Ipsum is simply dummy text of the printing
