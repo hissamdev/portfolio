@@ -10,6 +10,7 @@ import AbstractFlexbox from "../components/home-ui/AbstractFlexbox";
 import Services from "../components/home-ui/Services";
 import Footer from "../components/nav-ui/Footer";
 import Process from "../components/home-ui/Process";
+import Featured from "../components/home-ui/new-prototypes/Featured";
 
 export default async function Home() {
     const projects = "test";
@@ -18,6 +19,7 @@ export default async function Home() {
     return (
         <>
             <Hero />
+            {/* <Featured />
             <XMarqueText />
             <FeaturedProjects />
             <About />
@@ -26,7 +28,7 @@ export default async function Home() {
             <Services />
             <Process />
             <TechStack />
-            <Footer />
+            <Footer /> */}
         </>
     );
 }

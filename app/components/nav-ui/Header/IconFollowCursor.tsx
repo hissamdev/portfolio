@@ -1,7 +1,15 @@
-import { useMotionValue, motion, useSpring } from "framer-motion";
-import { Linkedin } from "lucide-react";
+"use client";
 
-export default function InteractiveSocialIcons() {
+import { useMotionValue, motion, useSpring } from "framer-motion";
+import React from "react";
+
+export default function IconFollowCursor({
+    padding = 10,
+    children,
+}: {
+    padding: number;
+    children: React.ReactNode;
+}) {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
     const springX = useSpring(x, { stiffness: 150, damping: 15 });
@@ -28,14 +36,14 @@ export default function InteractiveSocialIcons() {
     };
 
     return (
-        <div>
+        <div className="">
             <motion.div
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
-                style={{ x: springX, y: springY }}
-                className="p-7 cursor-pointer"
+                style={{ x: springX, y: springY, padding }}
+                className={`cursor-pointer `}
             >
-                <Linkedin className="w-4.5" />
+                {children}
             </motion.div>
         </div>
     );

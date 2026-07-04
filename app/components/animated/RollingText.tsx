@@ -31,7 +31,7 @@ export default function RollingText({
         return () => clearInterval(timer);
     }, [phrases, interval, showIndex]);
     return (
-        <div className="inline-grid overflow-hidden h-[1.2em] grid-cols-1 grid-rows-1 relative align-bottom w-100">
+        <div className="inline-grid overflow-hidden md:h-[1.2em] grid-cols-1 grid-rows-1 relative align-bottom md:w-100">
             <AnimatePresence mode="popLayout">
                 <motion.span
                     key={showIndex}
