@@ -87,6 +87,14 @@ body {
     animation-play-state: paused;
 }
 
+.cross-marquee-scroll {
+    animation: marquee 28s linear infinite;
+}
+
+.cross-marquee-scroll:hover {
+    animation-play-state: paused;
+}
+
 .main-header-nav ul,
 .main-header-nav li {
     @apply px-[10px] xl:px-[20px];

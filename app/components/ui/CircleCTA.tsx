@@ -3,10 +3,7 @@ import { MoveUpRight } from "lucide-react";
 export default function CircleCTA() {
     return (
         <div className="p-12 w-fit self-end border bg-white rounded-full md:-translate-y-10 cursor-pointer">
-            <svg
-                viewBox="0 0 200 200"
-                className="absolute inset-0 animate-spin"
-            >
+            <svg viewBox="0 0 200 200" className="absolute inset-0">
                 <defs>
                     <path
                         id="circlePath"

@@ -41,8 +41,9 @@ export default function About() {
                     <CircleCTA />
                 </div>
 
-                <div className="mt-20">
-                    <div className="about-right relative z-10">
+                <div>
+                    <div>Hi</div>
+                    {/* <div className="about-right relative z-10">
                         <div className="relative z-20 p-2.5 bg-white shadow-2xl rounded-[9px]">
                             <div className="relative z-30 md:w-90 h-79.5 rounded-[9px] overflow-hidden object-[70%_center] ">
                                 <Image
@@ -61,7 +62,7 @@ export default function About() {
                             </div>
                         </div>
                         <div className="absolute -top-4 -left-2 md:w-98.5 h-92.75 -rotate-6 border-2 border-dashed border-[#BFBFBF]/40 z-0 rounded-2xl" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

@@ -3,14 +3,12 @@ import About from "../components/home-ui/About";
 import Projects from "../components/home-ui/Projects";
 import { addTag, getProjects } from "../actions/projects";
 import TechStack from "../components/home-ui/TechStack";
-import HeroFeatureBoxes from "../components/home-ui/hero-section-ui/HeroFeatureBoxes";
-import XMarqueText from "../components/home-ui/hero-section-ui/XMarqueText";
 import FeaturedProjects from "../components/home-ui/FeaturedProjects";
 import AbstractFlexbox from "../components/home-ui/AbstractFlexbox";
 import Services from "../components/home-ui/Services";
 import Footer from "../components/nav-ui/Footer";
 import Process from "../components/home-ui/Process";
-import Featured from "../components/home-ui/new-prototypes/Featured";
+import NewXMarquee from "../components/home-ui/hero-section-ui/NewXMarquee";
 
 export default async function Home() {
     const projects = "test";
@@ -19,16 +17,16 @@ export default async function Home() {
     return (
         <>
             <Hero />
-            {/* <Featured />
-            <XMarqueText />
-            <FeaturedProjects />
+            <NewXMarquee />
             <About />
+            <FeaturedProjects />
+
             <Projects />
             <AbstractFlexbox />
             <Services />
             <Process />
             <TechStack />
-            <Footer /> */}
+            <Footer />
         </>
     );
 }

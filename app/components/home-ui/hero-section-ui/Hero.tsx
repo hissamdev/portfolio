@@ -1,4 +1,4 @@
-import { Linkedin } from "lucide-react";
+import { Linkedin, Twitch, Twitter } from "lucide-react";
 import Image from "next/image";
 import RollingText from "../../animated/RollingText";
 import IconFollowCursor from "../../nav-ui/Header/IconFollowCursor";
@@ -54,9 +54,15 @@ export default function Hero() {
                                 <span className="text-sm md:text-xl uppercase">
                                     Follow Me
                                 </span>
-                                <div className="flex gap-4 mt-2">
+                                <div className="flex mt-2 -translate-x-4">
                                     <IconFollowCursor padding={10}>
                                         <Linkedin className="w-5 md:w-10" />
+                                    </IconFollowCursor>
+                                    <IconFollowCursor padding={10}>
+                                        <Twitter className="w-5 md:w-10" />
+                                    </IconFollowCursor>
+                                    <IconFollowCursor padding={10}>
+                                        <Twitch className="w-5 md:w-10" />
                                     </IconFollowCursor>
                                 </div>
                             </div>
